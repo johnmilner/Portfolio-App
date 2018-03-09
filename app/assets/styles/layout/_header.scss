@@ -50,17 +50,12 @@
   width: 50%;
 }
 
-.icon {
-  background-image: url('../../../assets/images/sprites/sprite-e4336ce2.svg');
-}
-
 .icon--angle-down {
+  color: white;
   position: absolute;
-  width: 3.2rem;
-  height: 5.1rem;
-  top: 90%;
+  top: 150%;
   left: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, -50%);
 }
 
   .hero-btn {
