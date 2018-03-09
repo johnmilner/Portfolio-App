@@ -1,0 +1,198 @@
+/* Container Grid Setup Here */
+
+
+.container {
+  padding: 0 0;
+  margin: 0 0;
+  max-width: $grid-width;
+  margin: 0 auto;
+
+    @include respond(phone) {
+      max-width: 100%;
+    }
+
+    @include respond(phone-bs-override) {
+      min-width: 100%;
+    }
+
+
+  // &:not(:last-child) {    
+  //     margin-bottom: $gutter-vertical;
+
+  //     @include respond(tab-port) {
+  //         margin-bottom: $gutter-vertical-small;
+  //     }
+  // }
+
+  @include respond(tab-land) {
+      max-width: 100%;
+  }
+
+  @include respond(tab-port-bs-override) {
+    min-width: 100%;
+  }
+
+  @include respond(desktop) {
+    max-width: 100%;
+  }
+
+  @include respond(mid-desktop) {
+    max-width: 100%;
+  }
+
+  @include respond(hires-desktop) {
+    max-width: 100%;
+  }
+
+
+  @include respond(big-desktop) {
+    max-width: 100%;
+  }
+
+  @include clearfix;
+
+  [class^="col-"] {
+      float: left;
+      
+  }
+  //     &:not(:last-child) {
+  //         margin-right: $gutter-horizontal;
+
+  //         @include respond(tab-port) {
+  //             margin-right: 0;
+  //             margin-bottom: $gutter-vertical-small;
+  //         }
+  //     }
+
+  //     @include respond(tab-port) {
+  //         width: 100% !important;
+  //     }
+  // }
+
+  .col-1-of-1 {
+    //width: calc((100% - #{$gutter-horizontal}) / 2);
+    width: 100%;
+    
+}
+
+  .col-1-of-2 {
+      //width: calc((100% - #{$gutter-horizontal}) / 2);
+      width: 50%;
+  }
+
+  .col-1-of-3 {
+      //width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+      width: 33.333333%;
+
+      @include respond(phone) {
+        display: block;
+        float: left;
+        width: 100%;
+      }
+  }
+
+  .col-2-of-3 {
+      // width: calc(2 * ((100% - 2 * #{$gutter-horizontal}) / 3));
+      width: 66.6666667%;
+
+      @include respond(phone) {
+        display: block;
+        float: left;
+        width: 100%;
+      }
+  }
+
+  .col-1-of-4 {
+      width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+  }
+
+  .col-2-of-4 {
+      width: calc(2 * ((100% - 3 * #{$gutter-horizontal}) / 4) + #{$gutter-horizontal});
+  }
+
+  .col-3-of-4 {
+      width: calc(3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal});
+  }
+
+}
+
+
+
+  .box {
+    position: relative;
+    color:white;
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  .box::before {
+    content: "";
+    width: 1px;
+    margin-left: -1px;
+    float: left;
+    height: 0;
+    padding-top: 591.44px / 1127.34px * 100%;
+  }
+  .box::after { /* to clear float */
+    content: "";
+    display: table;
+    clear: both;
+  }
+    
+  .visible-grid-item:nth-child(2) div {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+  }
+  .visible-grid-item:nth-child(3) div {
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+  }
+  .visible-grid-item:nth-child(4) div {
+    -webkit-animation-delay: 0.8s;
+            animation-delay: 0.8s;
+  }
+  .visible-grid-item:nth-child(5) div {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+  .visible-grid-item:nth-child(6) div {
+    -webkit-animation-delay: 1.2s;
+            animation-delay: 1.2s;
+  }
+  .visible-grid-item:nth-child(7) div {
+    -webkit-animation-delay: 1.4s;
+            animation-delay: 1.4s;
+  }
+  .visible-grid-item:nth-child(8) div {
+    -webkit-animation-delay: 1.6s;
+            animation-delay: 1.6s;
+  }
+  .visible-grid-item:nth-child(9) div {
+    -webkit-animation-delay: 1.8s;
+            animation-delay: 1.8s;
+  }
+  .visible-grid-item:nth-child(10) div {
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  .visible-grid-item:nth-child(11) div {
+    -webkit-animation-delay: 2.2s;
+            animation-delay: 2.2s;
+  }
+  .visible-grid-item:nth-child(12) div {
+    -webkit-animation-delay: 2.4s;
+            animation-delay: 2.4s;
+  }
+  .visible-grid-item:nth-child(13) div {
+    -webkit-animation-delay: 2.6s;
+            animation-delay: 2.6s;
+  }
+  .visible-grid-item:nth-child(14) div {
+    -webkit-animation-delay: 2.8s;
+            animation-delay: 2.8s;
+  }
+  
+  // .empty .inner-content {
+  //   display: none;
+  // }

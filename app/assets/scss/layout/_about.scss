@@ -1,0 +1,41 @@
+  /* About Section */
+  
+  .about {
+    position: relative;
+    text-align: center;
+    padding: 3.25rem 8rem;
+    border-top: 1px solid #ddd;
+    z-index: 2;
+    background: #fff;
+    margin-top: -1px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+
+      @include respond(phone) {
+        padding: .5rem .5rem;
+      }
+  }
+
+  .profile-foto {
+    //position: absolute;
+    //top: 80%;
+    //left: 50%;
+    // margin-top: -15rem; /* Half the height */
+    // margin-left: -9rem; /* Half the width */
+    //transform: translate(-50%);
+    margin: 0 auto;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    height: 300px;
+    width: 300px;
+    border: 10px solid white;
+    border-radius: 50%;
+    background-size: cover;
+    background-image: url('../../../assets/images/profile-foto.jpg');
+    background-repeat: no-repeat;
+    margin-bottom: 2.75rem;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
+  }
+  
+  /*#about {display: block; position: relative; top: 60px;}
+  */

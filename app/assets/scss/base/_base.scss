@@ -1,0 +1,63 @@
+/* CSS Normalize */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* Box-sizing border-box */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.5);
+    outline: 0;
+    text-decoration: none !important;
+    //color: slategrey !important;
+  }
+  
+a:hover {
+    outline: 0;
+    text-decoration: none !important;
+  }
+
+  a:active, a:focus {
+    color: rgba(255,255,255,0.5);
+  }
+  
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+  }
+
+  html {
+    //This defines what 1rem is
+    font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
+
+    // @include respond(tab-land) { // width < 1200?
+    //   font-size: 56.25%;
+    // }
+  
+    // @include respond(tab-port) { // width < 900?
+    //   font-size: 50%;
+    // }
+  
+    // @include respond(big-desktop) {
+    //   font-size: 75%;
+    // }
+  
+  }
+
+ .barba-container {
+    background-color: #fff;
+  }
+
+
+
+

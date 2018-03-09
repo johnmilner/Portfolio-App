@@ -1,0 +1,50 @@
+#button-wrapper {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+
+  }
+
+  .button-bar {
+      height: 5rem;
+  }
+
+
+  /* General button style (reset) */
+  button {
+      border: none;
+      font-family: inherit;
+      font-size: inherit;
+      color: inherit;
+      background: none;
+      cursor: pointer;
+      padding: 0rem 2rem 4rem 2rem;
+      display: inline-block;
+      margin: 15px 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      outline: none;
+      position: relative;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  
+  button:after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  
+.button-bar button.button-bar-filter-btn-active,
+.button-bar button.button-bar-toggle-btn-active,
+.button-bar button.button-bar-sort-btn-active {
+	color: #0e83cd;
+    background: #fff;
+}
