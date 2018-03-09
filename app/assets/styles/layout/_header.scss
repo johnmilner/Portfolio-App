@@ -36,22 +36,28 @@
 
 .main-headline {
   position: absolute;
-  left: 42%;
+  left: 20%;
   top: 20%;
   transform: translate(-50%, -50%);
 }
 
 .composition {
   position: absolute;
-  top: 60%;
-  left: 50%;
+  top: 50%;
+  left: 30%;
   transform: translate(-50%, -50%);
   height: 50%;
   width: 50%;
 }
 
-.fa-angle-down {
+.icon {
+  background-image: url('../../../assets/images/sprites/sprite-e4336ce2.svg');
+}
+
+.icon--angle-down {
   position: absolute;
+  width: 3.2rem;
+  height: 5.1rem;
   top: 90%;
   left: 50%;
   transform: translate(-50%, 50%);
