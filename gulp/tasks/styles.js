@@ -7,7 +7,8 @@ cssImport = require('postcss-import'),
 mixins = require('postcss-mixins'),
 hexrgba = require('postcss-hexrgba'),
 concatcss = require('gulp-concat-css'),
-cssnext = require('postcss-cssnext');
+cssnext = require('postcss-cssnext'),
+cssnano = require('gulp-cssnano');
 
 
 gulp.task('styles', function() {
@@ -19,6 +20,7 @@ gulp.task('styles', function() {
       console.log(errorInfo.toString());
       this.emit('end');
     })
+    .pipe(cssnano())
     .pipe(gulp.dest('./app/temp/styles'));
 });
 
