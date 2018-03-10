@@ -10067,6 +10067,9 @@ $("document").ready(function () {
     load: {
       filter: "all"
     },
+    controls: {
+      toggleLogic: 'and'
+    },
     classNames: {
       block: 'button-bar',
       elementToggle: 'toggle-btn',
