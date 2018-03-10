@@ -420,11 +420,6 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
   src: url("https://fonts.googleapis.com/css?family=Playfair+Display:400,900");
 }
 
-@font-face {
-  font-family: 'Roboto Condensed';
-  src: url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed");
-}
-
 .main-headline {
   font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
   color: white;
@@ -1068,7 +1063,7 @@ button {
   margin: 15px 30px;
   text-transform: uppercase !important;
   letter-spacing: 1px;
-  font-family: 'Roboto Condensed', sans-serif !important;
+  font-family: 'Roboto', sans-serif !important;
   text-transform: uppercase;
   font-size: 13px !important;
   font-size: 1.3rem !important;
@@ -2126,12 +2121,18 @@ Instead edit gulp/templates/sprite */
   }
 }
 
-.main-headline {
+.tagline {
   position: absolute;
-  left: 10%;
-  top: 15%;
+  top: 20%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.main-headline:hover {
+  -webkit-animation: rubberBand 1s;
+          animation: rubberBand 1s;
 }
 
 .composition {
