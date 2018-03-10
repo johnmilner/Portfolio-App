@@ -311,6 +311,10 @@ html {
   -o-transition: none !important;
 }
 
+p {
+  margin: 0 auto !important;
+}
+
 /* Box Hover Image Animation */
 
 .project {
