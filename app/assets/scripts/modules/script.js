@@ -185,5 +185,9 @@ mixitup('.container', {
     $(".envelope").toggleClass("active");
   });
 
+  $(window).load(function() {
+  $("body").removeClass("preload");
+});
+
   
 });

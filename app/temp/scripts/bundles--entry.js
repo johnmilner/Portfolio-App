@@ -10093,6 +10093,10 @@ $("document").ready(function () {
   $(".email-button").click(function () {
     $(".envelope").toggleClass("active");
   });
+
+  $(window).load(function () {
+    $("body").removeClass("preload");
+  });
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 

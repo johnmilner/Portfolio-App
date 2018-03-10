@@ -69,7 +69,7 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
   }
 }
 
-footer a.pin {
+.icon--angle-down {
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
 }
@@ -302,6 +302,13 @@ html {
 
 .barba-container {
   background-color: #fff;
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
 }
 
 /* Box Hover Image Animation */
@@ -1412,16 +1419,6 @@ body .social .follow {
           transform: scale(0.95);
 }
 
-.fa-angle-down {
-  color: white;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
 .envelope-wrapper {
   position: relative;
   display: inline-block;
@@ -1589,11 +1586,11 @@ body,
 Instead edit gulp/templates/sprite */
 
 .icon {
-  background-image: url("../../../assets/images/sprites/sprite-e4336ce2.svg");
+  background-image: url("../../../assets/images/sprites/sprite-ecaf0614.svg");
 }
 
 .no-svg .icon {
-  background-image: url("../../../assets/images/sprites/sprite-e4336ce2.png");
+  background-image: url("../../../assets/images/sprites/sprite-ecaf0614.png");
 }
 
 .icon--angle-down {
@@ -1866,7 +1863,7 @@ Instead edit gulp/templates/sprite */
 
 .icon--angle-down {
   position: absolute;
-  top: 95%;
+  top: 92%;
   width: 64px;
   width: 6.4rem;
   height: 64px;
@@ -1874,18 +1871,6 @@ Instead edit gulp/templates/sprite */
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-}
-
-.fa-angle-down {
-  position: absolute;
-  top: 150%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 20px;
-  width: 2rem;
-  height: 20px;
-  height: 2rem;
 }
 
 .hero-btn {
@@ -9059,19 +9044,6 @@ input[type="button"].btn-block {
   .hidden-print {
     display: none !important;
   }
-}
-
-@font-face {
-  font-family: 'Font Awesome 5 Free';
-  font-style: normal;
-  font-weight: 400;
-  src: url("webfonts/fa-regular-400.eot");
-  src: url("webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("webfonts/fa-regular-400.woff2") format("woff2"), url("webfonts/fa-regular-400.woff") format("woff"), url("webfonts/fa-regular-400.ttf") format("truetype"), url("webfonts/fa-regular-400.svg#fontawesome") format("svg");
-}
-
-.far {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 400;
 }
 
 /*
