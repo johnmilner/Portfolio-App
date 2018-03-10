@@ -128,11 +128,6 @@ footer a.pin {
 }
 
 @font-face {
-  font-family: 'Brandon Med';
-  src: url("../../../assets/fonts/vendor/Brandon_med.otf") format("opentype");
-}
-
-@font-face {
   font-family: 'Monoton';
   src: url("https://fonts.googleapis.com/css?family=Monoton");
 }
@@ -1848,29 +1843,49 @@ Instead edit gulp/templates/sprite */
 
 .main-headline {
   position: absolute;
-  left: 20%;
-  top: 20%;
+  left: 10%;
+  top: 10%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
 .composition {
   position: absolute;
-  top: 50%;
-  left: 30%;
+  top: 40%;
+  left: 25%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   height: 50%;
   width: 50%;
 }
 
+.icon {
+  background-size: 6.4rem 6.4rem;
+  background-repeat: no-repeat;
+}
+
 .icon--angle-down {
-  color: white;
+  position: absolute;
+  top: 95%;
+  width: 64px;
+  width: 6.4rem;
+  height: 64px;
+  height: 6.4rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.fa-angle-down {
   position: absolute;
   top: 150%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 20px;
+  width: 2rem;
+  height: 20px;
+  height: 2rem;
 }
 
 .hero-btn {
@@ -9044,6 +9059,19 @@ input[type="button"].btn-block {
   .hidden-print {
     display: none !important;
   }
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  src: url("webfonts/fa-regular-400.eot");
+  src: url("webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("webfonts/fa-regular-400.woff2") format("woff2"), url("webfonts/fa-regular-400.woff") format("woff"), url("webfonts/fa-regular-400.ttf") format("truetype"), url("webfonts/fa-regular-400.svg#fontawesome") format("svg");
+}
+
+.far {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400;
 }
 
 /*

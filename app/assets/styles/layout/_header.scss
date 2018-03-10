@@ -36,26 +36,41 @@
 
 .main-headline {
   position: absolute;
-  left: 20%;
-  top: 20%;
+  left: 10%;
+  top: 10%;
   transform: translate(-50%, -50%);
 }
 
 .composition {
   position: absolute;
-  top: 50%;
-  left: 30%;
+  top: 40%;
+  left: 25%;
   transform: translate(-50%, -50%);
   height: 50%;
   width: 50%;
 }
 
+.icon {
+  background-size: 6.4rem 6.4rem;
+  background-repeat: no-repeat;
+}
+
 .icon--angle-down {
-  color: white;
+  position: absolute;
+  top: 95%;
+  width: 6.4rem;
+  height: 6.4rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fa-angle-down {
   position: absolute;
   top: 150%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 2rem;
+  height: 2rem;
 }
 
   .hero-btn {
