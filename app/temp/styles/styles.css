@@ -431,7 +431,7 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
   font-weight: 300;
   letter-spacing: -0.035em;
   text-rendering: optimizelegibility;
-  font-size: 3vw;
+  font-size: 5vw;
   line-height: 1.3em;
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
@@ -2129,7 +2129,7 @@ Instead edit gulp/templates/sprite */
 .main-headline {
   position: absolute;
   left: 10%;
-  top: 20%;
+  top: 15%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
