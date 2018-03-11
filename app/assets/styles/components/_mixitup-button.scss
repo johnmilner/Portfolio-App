@@ -6,8 +6,9 @@
   }
 
   .button-bar {
-      height: 5rem;
+      height: 10rem;
       color: #fff;
+      border-bottom: 1px solid #333;
   }
 
 
@@ -19,7 +20,7 @@
       color: #fff;
       background: none;
       cursor: pointer !important;
-      padding: 1.7rem 2.2rem 4rem 2.2rem !important;
+      padding: 1.7rem 2.2rem 1rem 2.2rem !important;
       display: inline-block;
       margin: 0px 0px;
       text-transform: uppercase !important;

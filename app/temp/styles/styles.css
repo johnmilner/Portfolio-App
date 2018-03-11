@@ -420,6 +420,11 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
   src: url("https://fonts.googleapis.com/css?family=Playfair+Display:400,900");
 }
 
+@font-face {
+  font-family: 'BrandonText-Medium';
+  src: url("../../../temp/fonts/BrandonText-Medium.OTF");
+}
+
 .main-headline {
   font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
   color: white;
@@ -445,10 +450,11 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
           animation: rubberBand 1s;
 }
 
-nav ul {
+.navigation__item {
   font-size: 12.5px;
   font-size: 1.25rem;
-  font-family: 'Brandon Med', Arial, sans-serif;
+  font-family: 'BrandonText-Medium', Arial, sans-serif;
+  font-weight: 700;
 }
 
 h1 {
@@ -517,6 +523,23 @@ h3.ctasp {
   h3.ctasp {
     font-size: 8vw;
   }
+}
+
+.projects {
+  margin: 0 auto;
+  padding-left: 65px;
+  padding-left: 6.5rem;
+}
+
+h5 {
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif !important;
+  text-transform: uppercase;
+  font-size: 13px !important;
+  font-size: 1.3rem !important;
+  font-weight: 700 !important;
+  color: white !important;
+  text-align: center;
 }
 
 .surf {
@@ -1053,9 +1076,10 @@ p {
 }
 
 .button-bar {
-  height: 50px;
-  height: 5rem;
+  height: 100px;
+  height: 10rem;
   color: #fff;
+  border-bottom: 1px solid #333;
 }
 
 /* General button style (reset) */
@@ -1067,8 +1091,8 @@ button {
   color: #fff;
   background: none;
   cursor: pointer !important;
-  padding: 17px 22px 40px 22px !important;
-  padding: 1.7rem 2.2rem 4rem 2.2rem !important;
+  padding: 17px 22px 10px 22px !important;
+  padding: 1.7rem 2.2rem 1rem 2.2rem !important;
   display: inline-block;
   margin: 0px 0px;
   text-transform: uppercase !important;
@@ -2204,7 +2228,7 @@ Instead edit gulp/templates/sprite */
   text-align: center;
   padding: 32.5px 80px;
   padding: 3.25rem 8rem;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #333;
   z-index: 2;
   background-color: transparent !important;
   margin-top: -1px;
