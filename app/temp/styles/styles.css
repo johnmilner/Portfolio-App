@@ -588,7 +588,7 @@ html {
 }
 
 .barba-container {
-  background-color: #fff;
+  background-color: #333;
 }
 
 .preload * {
@@ -1055,6 +1055,7 @@ p {
 .button-bar {
   height: 50px;
   height: 5rem;
+  color: #fff;
 }
 
 /* General button style (reset) */
@@ -1063,13 +1064,13 @@ button {
   border: none;
   font-family: inherit;
   font-size: inherit;
-  color: inherit;
+  color: #fff;
   background: none;
   cursor: pointer !important;
-  padding: 17px 20px 40px 20px !important;
-  padding: 1.7rem 2rem 4rem 2rem !important;
+  padding: 17px 22px 40px 22px !important;
+  padding: 1.7rem 2.2rem 4rem 2.2rem !important;
   display: inline-block;
-  margin: 15px 30px;
+  margin: 0px 0px;
   text-transform: uppercase !important;
   letter-spacing: 1px;
   font-family: 'Roboto', sans-serif !important;
@@ -1095,7 +1096,7 @@ button:after {
 .button-bar button.button-bar-toggle-btn-active,
 .button-bar button.button-bar-sort-btn-active {
   color: #0e83cd;
-  background: #fff;
+  background: #333;
 }
 
 body {
@@ -1912,11 +1913,10 @@ Instead edit gulp/templates/sprite */
 /* Container Grid Setup Here */
 
 .container {
-  padding: 0 0;
-  margin: 0 0;
+  padding: 0 0 !important;
+  margin: 0 0 !important;
   max-width: 1140px;
   max-width: 114rem;
-  margin: 0 auto;
 }
 
 @media (max-width: 37.5em) {
