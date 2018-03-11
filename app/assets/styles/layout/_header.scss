@@ -41,18 +41,7 @@
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-}
-.main-headline {
-  // text-align: center;
-  //padding: 10rem 0 0 30rem;
-  // position: absolute;
-  // left: 50%;
-  // top: 15%;
-  // transform: translate(-50%, -50%);
-}
-
-.main-headline:hover {
-  animation: rubberBand 1s;
+  cursor: pointer;
 }
 
 .composition {

@@ -18,7 +18,7 @@
 .main-headline {
   font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
   color: white;
-  font-weight: 300;
+  font-weight: 200;
   letter-spacing: -0.035em;
   text-rendering: optimizelegibility;
   font-size: 5vw;
@@ -32,6 +32,12 @@
   overflow:hidden;
   white-space:nowrap;
 
+  &:hover {
+    text-shadow: 0.5rem 1rem 2rem rgba(0,0,0,0.2);
+    transition: all .5s;
+    animation: rubberBand 1s;
+  }
+
   @include respond(phone) {
    
   }
@@ -43,6 +49,8 @@
 
   }
 }
+
+
 
 nav ul {
   font-size: 1.25rem;
