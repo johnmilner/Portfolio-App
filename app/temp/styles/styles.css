@@ -529,6 +529,11 @@ h3.ctasp {
   margin: 0 auto;
   padding-left: 65px;
   padding-left: 6.5rem;
+  height: 60px;
+  height: 6rem;
+  padding-top: 20px;
+  padding-top: 2rem;
+  border-top: 1px solid #777;
 }
 
 h5 {
@@ -1076,10 +1081,11 @@ p {
 }
 
 .button-bar {
-  height: 100px;
-  height: 10rem;
+  height: 60px;
+  height: 6rem;
   color: #fff;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #777;
+  border-top: 1px solid #777;
 }
 
 /* General button style (reset) */
@@ -1739,6 +1745,8 @@ body .social .follow {
 .envelope-wrapper {
   position: relative;
   display: inline-block;
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
 }
 
 .envelope {
@@ -2191,7 +2199,8 @@ Instead edit gulp/templates/sprite */
   animation: dboxRainbow 30s ease infinite;
   -webkit-font-smoothing: subpixel-antialiased;
   width: 100%;
-  padding: 0 0;
+  padding: 100px 0 0 0;
+  padding: 10rem 0 0 0;
   font-size: 14px;
   font-size: 1.4rem;
   color: #f7f7f7;
@@ -2225,6 +2234,8 @@ Instead edit gulp/templates/sprite */
   border-top: 1px solid #777;
   padding-top: 20px;
   padding-top: 2rem;
+  padding-left: 40px;
+  padding-left: 4rem;
   display: inline-block;
 }
 
@@ -2272,8 +2283,8 @@ Instead edit gulp/templates/sprite */
   border-top: 1px solid #777;
   padding-top: 20px;
   padding-top: 2rem;
-  padding-right: 20px;
-  padding-right: 2rem;
+  padding-right: 40px;
+  padding-right: 4rem;
   width: 80%;
   float: right;
 }

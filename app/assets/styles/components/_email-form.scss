@@ -1,12 +1,8 @@
-// General
-// *, *:before, *:after {  box-sizing: border-box; }
-// html { background: radial-gradient(ellipse at top, #40485a 0%, #282e3a 60%);  height: 100%; width: 100%; }
-// body {text-align:center; height: 100%; width: 100%; overflow:hidden;}
-
 // Envelope
 .envelope-wrapper {
   position:relative;
   display:inline-block;
+  transform: scale(.75);
 }
 .envelope{
   margin: -9em auto 0;

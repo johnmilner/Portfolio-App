@@ -7,7 +7,7 @@
   animation: dboxRainbow 30s ease infinite;
   -webkit-font-smoothing: subpixel-antialiased;
   width: 100%;
-  padding: 0 0;
+  padding: 10rem 0 0 0;
   font-size: 1.4rem;
   color: $color-grey-light-1;
 
@@ -32,6 +32,7 @@
   &__navigation {
       border-top: 1px solid $color-grey-dark;
       padding-top: 2rem;
+      padding-left: 4rem;
       display: inline-block;
 
       @include respond(tab-port) {
@@ -74,7 +75,7 @@
   &__copyright {
       border-top: 1px solid $color-grey-dark;
       padding-top: 2rem;
-      padding-right: 2rem;
+      padding-right: 4rem;
       width: 80%;
       float: right;
 
