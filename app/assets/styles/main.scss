@@ -5,15 +5,15 @@
 @import "base/typography";
 @import "base/base";
 
-@import "components/project-box.scss";
-@import "components/mixitup-button.scss";
-@import "components/timeline.scss";
-@import "components/navigation.scss";
-@import "components/composition.scss";
-@import "components/email-form.scss";
-@import "components/bg-video.scss";
+@import "components/project-box";
+@import "components/mixitup-button";
+@import "components/timeline";
+@import "components/navigation";
+@import "components/composition";
+@import "components/email-form";
+@import "components/bg-video";
 
-@import "modules/_sprite.scss";
+@import "modules/sprite";
 
 @import "layout/grid.scss";
 @import "layout/header.scss";

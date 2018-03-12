@@ -18,8 +18,8 @@
         <div class="barba-container">
             <div class="container">
                 <div class="row">
-                    <div class="col-1-of-1">
-                        <div class="box1" id="home">
+                    <div class="box1">
+                        <div id="home">
                             <div class="navigation" id="navigation">
                                 <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
@@ -49,12 +49,8 @@
                                         </li>
 
                                         <li class="navigation__item">
-                                            <a href="#pres" class="navigation__link">
-                                                <span>04</span>Presentations</a>
-                                        </li>
-                                        <li class="navigation__item">
                                             <a href="#contact" class="navigation__link">
-                                                <span>05</span>Contact</a>
+                                                <span>04</span>Contact</a>
                                         </li>
 
                                     </ul>
@@ -63,32 +59,29 @@
                             <article>
                                 <div class="tagline">
                                     <h4 class="main-headline">Digital Savoir Faire!
-                                            <!-- <a href="#button-wrapper" class="hero-btn js-scroll-trigger">View projects »</a> -->
+                                        <!-- <a href="#button-wrapper" class="hero-btn js-scroll-trigger">View projects »</a> -->
                                     </h4>
                                 </div>
                                 <div class="col-1-of-1">
-                                    
+
                                     <div class="composition">
                                         <ul id="">
                                             <li>
                                                 <a href="/project.html">
-                                                    <img id="i1" srcset="assets/images/yelp-camp.png 300w, img/nat-1-large.jpg 1000w"
-                                                        sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 1"
-                                                        class="composition__photo composition__photo--p1" src="/src/img/projects/nat-1.jpg">
+                                                    <img id="i1" srcset="assets/images/yelp-camp.png 300w, img/nat-1-large.jpg 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                                        alt="Photo 1" class="composition__photo composition__photo--p1" src="/src/img/projects/nat-1.jpg">
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="/project.html">
-                                                    <img id="i2" srcset="assets/images/smart-brain.png 300w, img/nat-2-large.jpg 1000w"
-                                                        sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 2"
-                                                        class="composition__photo composition__photo--p2" src="/src/img/projects/nat-2.jpg">
+                                                    <img id="i2" srcset="assets/images/smart-brain.png 300w, img/nat-2-large.jpg 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                                        alt="Photo 2" class="composition__photo composition__photo--p2" src="/src/img/projects/nat-2.jpg">
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="/project.html">
-                                                    <img id="i3" srcset="assets/images/budgety.png 300w, img/nat-3-large.jpg 1000w"
-                                                        sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 3"
-                                                        class="composition__photo composition__photo--p3" src="src/img/projects/nat-3.jpg">
+                                                    <img id="i3" srcset="assets/images/budgety.png 300w, img/nat-3-large.jpg 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                                        alt="Photo 3" class="composition__photo composition__photo--p3" src="src/img/projects/nat-3.jpg">
                                                 </a>
                                             </li>
 
@@ -96,26 +89,27 @@
                                     </div>
                                 </div>
                         </div>
-                        
-                            <a class="js-scroll-trigger animated flash" href="#button-wrapper">
-                                <i class="icon icon--angle-down"></i>
-                                <!-- <i class="fas fa-angle-down fa-2x"></i> -->
-                            </a>
+
+                        <a class="js-scroll-trigger animated flash" href="#button-wrapper">
+                            <i class="icon icon--angle-down"></i>
+                            <!-- <i class="fas fa-angle-down fa-2x"></i> -->
+                        </a>
                         </article>
                     </div>
                 </div>
-                <div class="col-1-of-1" id="button-wrapper">
-                    <div class="col-1-of-1 projects">
+                <div id="button-wrapper">
+                    <div class="projects">
                         <h5>Projects</h5>
                     </div>
                     <div class="button-bar">
-                        <button  class="filter-btn" data-filter="all">Show all</button>
-                        <button type="button" class="filter-btn" data-filter=".category-a" >Vanilla Javacript</button>
+                        <button class="filter-btn" data-filter="all">Show all</button>
+                        <button type="button" class="filter-btn" data-filter=".category-a">Vanilla Javacript</button>
                         <button type="button" class="filter-btn" data-filter=".category-b">HTML5/CSS3</button>
                         <button type="button" class="filter-btn" data-filter=".category-c">React</button>
                         <button type="button" class="filter-btn" data-filter=".category-d">API Projects</button>
                     </div>
-                    <div id="mix-wrapper">
+                    <!-- <div id="mix-wrapper"></div> -->
+                    <div class="row">
                         <div class="col-1-of-3">
                             <figure class="mix-target category-c category-d box box2">
                                 <div class="inner-content">
@@ -168,207 +162,246 @@
                                 </div>
                             </figure>
                         </div>
-                    </div>
-
-                    <div class="col-1-of-3">
-                        <figure class="mix-target category-a box box17">
-                            <div class="inner-content">
-                                    <a href="https://johnmilner.github.io/Budgety-App/" target="_blank" class="project bud">
-                                        <div class="copy"><span>Budgety</span><em>Made with Vanilla Javascript</em></div>
-                                        <div class="overlay"></div>
-                                    </a>
-                            </div>
-                        </figure>
-                    </div>
-                
-                <div class="col-1-of-3">
-                    <figure class="mix-target category-a box box3">
-                        <div class="inner-content">
-                            <a href="https://johnmilner.github.io/Countdown-Timer/" target="_blank" class="project countdown">
-                                <div class="copy"><span>Countdown Timer</span><em>Made with Vanilla Javascript</em></div>
-                                <div class="overlay"></div>
-                            </a>
-                        </div>
-                    </figure>
-                </div>
-                <div class="col-1-of-3">
-                    <figure class="mix-target category-a box box4">
-                        <div class="inner-content">
-                                <a href="https://johnmilner.github.io/Custom-Video-Player/" target="_blank" class="project hvp">
-                                    <div class="copy"><span>HTML5 Video Player</span><em>Made with Vanilla Javascript</em></div>
-                                    <div class="overlay"></div>
-                                </a>
-                        </div>
-                    </figure>
-                </div>
-                <div id="work"></div>
-                <div class="col-1-of-3">
-                    <figure class="mix-target category-d box box5">
-                        <div class="inner-content">
-                                <a href="https://johnmilner.github.io/Cafetography/" target="_blank" class="project cafe">
-                                    <div class="copy"><span>Open Maps Mashup</span><em>Made with Vanilla Javascript and Open Maps API</em></div>
-                                    <div class="overlay"></div>
-                                </a>
-                        </div>
-                    </figure>
-                </div>
-                <div class="col-1-of-3">
-                <figure class="mix-target category-a box box6">
-                    <div class="inner-content">
-                            <a href="https://johnmilner.github.io/Whack-A-Mole-Game-JS/" target="_blank" class="project wam">
-                                <div class="copy"><span>Whack A Mole</span><em>Made with Vanilla Javascript</em></div>
-                                <div class="overlay"></div>
-                            </a>
-                    </div>
-                </figure>
-                </div>
-        
-                <div class="col-1-of-3">
-                    <figure class="mix-target category-a category-d box box7">
-                        <div class="inner-content">
-                                <a href="https://johnmilner.github.io/Patatap/" target="_blank" class="project pat">
-                                    <div class="copy"><span>Patatap Clone</span><em>Made with Vanilla Javascript and Howler JS</em></div>
-                                    <div class="overlay"></div>
-                                </a>
-                        </div>
-                    </figure>
-                </div>
-        
-                <div class="col-1-of-3">
-                    <figure class="mix-target category-a box box2">
-                            <div class="inner-content">
-                                    <a href="https://johnmilner.github.io/Unreal-Webcam-JS/" target="_blank" class="project webcam">
-                                        <div class="copy"><span>Unreal Webcam</span><em>Made with Vanilla Javascript</em></div>
-                                        <div class="overlay"></div>
-                                    </a>
-                            </div>
-                    </figure>
-                </div>
-        
-                <div class="col-1-of-3">
-                    <figure class="mix-target category-b box box8">
-                        <div class="inner-content">
-                                <a href="https://johnmilner.github.io/travel-site/" target="_blank" class="project travel">
-                                    <div class="copy"><span>Travel Marketing Site</span><em>Made with HTML5, CSS3 & Vanilla Javascript</em></div>
-                                    <div class="overlay"></div>
-                                </a>
-                        </div>
-                    </figure>
-                </div>
-        
-                <div class="col-1-of-3">
-                        <figure class="mix-target category-a category-d box box9">
-                            <div class="inner-content">
-                                    <a href="https://johnmilner.github.io/Random-User-Generator/" target="_blank" class="project random">
-                                        <div class="copy"><span>Random User Generator</span><em>Made with Vanilla Javascript and Random User API</em></div>
-                                        <div class="overlay"></div>
-                                    </a>
-                            </div>
-                        </figure>
-                    </div>
-                    <div class="col-1-of-3">
-                        <figure class="mix-target category-a box box11">
-                            <div class="inner-content">
-                                    <a href="https://johnmilner.github.io/Voicenator-5000-JS/" target="_blank" class="project voice">
-                                        <div class="copy"><span>The Voicenator</span><em>Made with Vanilla Javascript</em></div>
-                                        <div class="overlay"></div>
-                                    </a>
-                            </div>
-                        </figure>
-                    </div>
-        
-                    <div class="col-1-of-3">
-                            <figure class="mix-target category-a box box12">
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-a box box17">
                                 <div class="inner-content">
-                                        <a href="https://floating-citadel-44633.herokuapp.com/" target="_blank" class="project yelp">
-                                            <div class="copy"><span>Yelp Camp</span><em>A dynamic web app made with Express, Mongo DB and Javascript</em></div>
-                                            <div class="overlay"></div>
-                                        </a>
+                                    <a href="https://johnmilner.github.io/Budgety-App/" target="_blank" class="project bud">
+                                        <div class="copy">
+                                            <span>Budgety</span>
+                                            <em>Made with Vanilla Javascript</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
                                 </div>
                             </figure>
                         </div>
-                
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-a box box3">
+                                <div class="inner-content">
+                                    <a href="https://johnmilner.github.io/Countdown-Timer/" target="_blank" class="project countdown">
+                                        <div class="copy">
+                                            <span>Countdown Timer</span>
+                                            <em>Made with Vanilla Javascript</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-a box box4">
+                                <div class="inner-content">
+                                    <a href="https://johnmilner.github.io/Custom-Video-Player/" target="_blank" class="project hvp">
+                                        <div class="copy">
+                                            <span>HTML5 Video Player</span>
+                                            <em>Made with Vanilla Javascript</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+                        <div id="work"></div>
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-d box box5">
+                                <div class="inner-content">
+                                    <a href="https://johnmilner.github.io/Cafetography/" target="_blank" class="project cafe">
+                                        <div class="copy">
+                                            <span>Open Maps Mashup</span>
+                                            <em>Made with Vanilla Javascript and Open Maps API</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-a box box6">
+                                <div class="inner-content">
+                                    <a href="https://johnmilner.github.io/Whack-A-Mole-Game-JS/" target="_blank" class="project wam">
+                                        <div class="copy">
+                                            <span>Whack A Mole</span>
+                                            <em>Made with Vanilla Javascript</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-a category-d box box7">
+                                <div class="inner-content">
+                                    <a href="https://johnmilner.github.io/Patatap/" target="_blank" class="project pat">
+                                        <div class="copy">
+                                            <span>Patatap Clone</span>
+                                            <em>Made with Vanilla Javascript and Howler JS</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-a box box2">
+                                <div class="inner-content">
+                                    <a href="https://johnmilner.github.io/Unreal-Webcam-JS/" target="_blank" class="project webcam">
+                                        <div class="copy">
+                                            <span>Unreal Webcam</span>
+                                            <em>Made with Vanilla Javascript</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-b box box8">
+                                <div class="inner-content">
+                                    <a href="https://johnmilner.github.io/travel-site/" target="_blank" class="project travel">
+                                        <div class="copy">
+                                            <span>Travel Marketing Site</span>
+                                            <em>Made with HTML5, CSS3 & Vanilla Javascript</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-a category-d box box9">
+                                <div class="inner-content">
+                                    <a href="https://johnmilner.github.io/Random-User-Generator/" target="_blank" class="project random">
+                                        <div class="copy">
+                                            <span>Random User Generator</span>
+                                            <em>Made with Vanilla Javascript and Random User API</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-a box box11">
+                                <div class="inner-content">
+                                    <a href="https://johnmilner.github.io/Voicenator-5000-JS/" target="_blank" class="project voice">
+                                        <div class="copy">
+                                            <span>The Voicenator</span>
+                                            <em>Made with Vanilla Javascript</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-a box box12">
+                                <div class="inner-content">
+                                    <a href="https://floating-citadel-44633.herokuapp.com/" target="_blank" class="project yelp">
+                                        <div class="copy">
+                                            <span>Yelp Camp</span>
+                                            <em>A dynamic web app made with Express, Mongo DB and Javascript</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+
                         <div class="col-1-of-3">
                             <figure class="mix-target category-a box box13">
                                 <div class="inner-content">
-                                        <a href="https://johnmilner.github.io/Fun-with-HTML5Canvas/" target="_blank" class="project painter">
-                                            <div class="copy"><span>JS Painter</span><em>Made with Vanilla Javascript</em></div>
-                                            <div class="overlay"></div>
-                                        </a>
+                                    <a href="https://johnmilner.github.io/Fun-with-HTML5Canvas/" target="_blank" class="project painter">
+                                        <div class="copy">
+                                            <span>JS Painter</span>
+                                            <em>Made with Vanilla Javascript</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
                                 </div>
                             </figure>
                         </div>
-                
+
                         <div class="col-1-of-3">
                             <figure class="mix-target category-a box box14">
                                 <div class="inner-content">
-                                        <a href="https://johnmilner.github.io/Random-Color-Game/" target="_blank" class="project color">
-                                            <div class="copy"><span>The Great RGB Color Game</span><em>Made with Vanilla Javascript</em></div>
-                                            <div class="overlay"></div>
-                                        </a>
+                                    <a href="https://johnmilner.github.io/Random-Color-Game/" target="_blank" class="project color">
+                                        <div class="copy">
+                                            <span>The Great RGB Color Game</span>
+                                            <em>Made with Vanilla Javascript</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
                                 </div>
                             </figure>
-                        </div> 
+                        </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
-                    <div class="row">
-                        <div class="col-1-of-1">
-                            <div id="about" class="about">
-                                <div class="bg-video">
-                                        <video class="bg-video__content" autoplay muted loop>
-                                            <source src="temp/video/love-coding.mp4" type="video/mp4">
-                                            <source src="temp/video/love-coding.webm" type="video/webm">
-                                            Your browser is not supported!
-                                        </video>
-                                </div>
-                                <h3 class="cta">Digital Savoire Faire!</h3>
-                                <div id="profile-foto" class="profile-foto fade-in-up"></div>
-                                <p>
-                                    John Milner is a web developer and digital creative based in San Diego, California. He has award-winning experience working across global and regional campaigns for clients such as Nike, Nokia, Axe (Lynx), Bud Light, Quaker, and Ad Council. He is well-versed across all platforms and believes emotion and story are fundamental to creating fresh brand-driven content and interactions. His work bridges culture, design and technology from interactive, mobile and social to gaming, film and television -- with a focus on creating holistic, engaging and entertaining brand experiences.
-                                </p>
-                            </div>
-                           
+            </div>
+            <div class="row">
+                <div class="about">
+                    <div id="about">
+                        <div class="bg-video">
+                            <video class="bg-video__content" autoplay muted loop>
+                                <source src="temp/video/love-coding.mp4" type="video/mp4">
+                                <source src="temp/video/love-coding.webm" type="video/webm"> Your browser is not supported!
+                            </video>
+                        </div>
+                        <h3 class="cta">Digital Savoire Faire!</h3>
+                        <div id="profile-foto" class="profile-foto fade-in-up"></div>
+                        <p>
+                            John Milner is a web developer and digital creative based in San Diego, California. He has award-winning experience working
+                            across global and regional campaigns for clients such as Nike, Nokia, Axe (Lynx), Bud Light,
+                            Quaker, and Ad Council. He is well-versed across all platforms and believes emotion and story
+                            are fundamental to creating fresh brand-driven content and interactions. His work bridges culture,
+                            design and technology from interactive, mobile and social to gaming, film and television -- with
+                            a focus on creating holistic, engaging and entertaining brand experiences.
+                        </p>
+                    </div>
+                  </div>
+                </div>
+
                     <div id="contact"></div>
                     <footer class="footer">
-                        <div class="footer__logo-box">
-                            
-                            <div class="envelope-wrapper">
-                                    <div class="envelope">
-                                        <div class="envelope-top"></div>
-                                        <div class="card"> 
-                                        <form>
-                                            <input class="name-input" placeholder="Your Email" name="author" type="text" value="" >
-                                            <textarea class="comment" class="message-content" name="comment" placeholder="you da best" aria-required="true"></textarea>
-                                        </form>
-                                        </div>
-                                        </div>
-                                    <span class="email-button">email me </span>
+                            <div class="footer__logo-box">
+                
+                                <picture class="footer__logo">
+                                    <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x"
+                                            media="(max-width: 37.5em)">
+                                    <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png">
+                                </picture>
+                
+                
+                                
+                            </div>
+                            <div class="row">
+                                <div class="col-1-of-2">
+                                    <div class="footer__navigation">
+                                        <ul class="footer__list">
+                                            <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                                            <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+                                            <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
+                                            <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
+                                            <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                                        </ul>
                                     </div>
-            
-            
-                            
-                        </div>
-                        <div class="row">
-                            <div class="col-1-of-2">
-                                <div class="footer__navigation">
-                                    <ul class="footer__list">
-                                        <li class="footer__item"><a href="#" class="footer__link">About</a></li>
-                                        <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
-                                        <li class="footer__item"><a href="#" class="footer__link">Speaking Engagements</a></li>
-                                        <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
-                                        <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
-                                    </ul>
+                                </div>
+                                <div class="col-1-of-2">
+                                    <p class="footer__copyright">
+                                        Built by <a href="#" class="footer__link">Jonas Schmedtmann</a> for his online course <a href="#" class="footer__link">Advanced CSS and Sass</a>.
+                                        Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use this webpage for both personal
+                                        and commercial use, but NOT to claim it as your own design. A credit to the original author, Jonas
+                                        Schmedtmann, is of course highly appreciated!
+                                    </p>
                                 </div>
                             </div>
-                            <div class="col-1-of-2">
-                                    
-                                <p class="footer__copyright">
-                                        Bacon ipsum dolor amet tenderloin bresaola cow jowl landjaeger meatball, doner kevin venison beef tri-tip shoulder turkey. Hamburger corned beef brisket, cupim ham hock pork pig short ribs porchetta tri-tip. Alcatra sausage buffalo strip steak jowl. Kielbasa doner short ribs, pig jowl ham shankle pork loin sausage chicken pork belly. Shank hamburger venison, jerky leberkas frankfurter strip steak corned beef.
-                                </p>
-                            </div>
-                        </div>
-                    </footer>
-
+                        </footer>
                 </div>
             </div>
         </div>
