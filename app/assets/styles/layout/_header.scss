@@ -1,14 +1,23 @@
-#box1 {
+.box1 {
     display: flex;
     flex: 1;
     float: none !important;
-    background: linear-gradient(238deg, #fd8800, #fd008f, #9700fd, #0082c8, #05c7e6, #4bd58d);
-    background-size: 1200% 1200%;
-    -webkit-animation: dboxRainbow 30s ease infinite;
-    -moz-animation: dboxRainbow 30s ease infinite;
-    -o-animation: dboxRainbow 30s ease infinite;
-    animation: dboxRainbow 30s ease infinite;
-    -webkit-font-smoothing: subpixel-antialiased;
+    // background: linear-gradient(238deg, #fd8800, #fd008f, #9700fd, #0082c8, #05c7e6, #4bd58d);
+    // background-size: 1200% 1200%;
+    // -webkit-animation: dboxRainbow 30s ease infinite;
+    // -moz-animation: dboxRainbow 30s ease infinite;
+    // -o-animation: dboxRainbow 30s ease infinite;
+    // animation: dboxRainbow 30s ease infinite;
+    // -webkit-font-smoothing: subpixel-antialiased;
+    height: 85vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)),
+    url(../../../assets/images/programming.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    position: relative;
 
 }
 
@@ -47,7 +56,7 @@
 
 .composition {
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 25%;
   transform: translate(-50%, -50%);
   height: 50%;

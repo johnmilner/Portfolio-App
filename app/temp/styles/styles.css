@@ -140,8 +140,8 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
 .composition {
   -webkit-animation: animation 1000ms linear both;
   animation: animation 1000ms linear both;
-  -webkit-animation-delay: 1.3s;
-          animation-delay: 1.3s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 
 /* Generated with Bounce.js. Edit at https://goo.gl/y3FSYm */
@@ -627,7 +627,7 @@ html {
 }
 
 p {
-  margin: 0 auto !important;
+  margin: 0 auto;
 }
 
 /* Box Hover Image Animation */
@@ -862,10 +862,6 @@ p {
 
 /* Colours for each box */
 
-.box1 {
-  background: #1abc9c;
-}
-
 .box2 {
   background: #3498db;
 }
@@ -1081,11 +1077,10 @@ p {
 }
 
 .button-bar {
-  height: 60px;
-  height: 6rem;
+  height: 50px;
+  height: 5rem;
   color: #fff;
-  border-bottom: 1px solid #777;
-  border-top: 1px solid #777;
+  border-top: 1px solid #555;
 }
 
 /* General button style (reset) */
@@ -1097,8 +1092,8 @@ button {
   color: #fff;
   background: none;
   cursor: pointer !important;
-  padding: 17px 22px 10px 22px !important;
-  padding: 1.7rem 2.2rem 1rem 2.2rem !important;
+  padding: 17px 22px 17px 22px !important;
+  padding: 1.7rem 2.2rem 1.7rem 2.2rem !important;
   display: inline-block;
   margin: 0px 0px;
   text-transform: uppercase !important;
@@ -1112,6 +1107,10 @@ button {
   position: relative;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+button:hover {
+  background-color: rgba(63, 63, 63, .5);
 }
 
 button:after {
@@ -2061,7 +2060,7 @@ Instead edit gulp/templates/sprite */
   animation-delay: 2.8s;
 }
 
-#box1 {
+.box1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2069,11 +2068,12 @@ Instead edit gulp/templates/sprite */
       -ms-flex: 1;
           flex: 1;
   float: none !important;
-  background: linear-gradient(238deg, #fd8800, #fd008f, #9700fd, #0082c8, #05c7e6, #4bd58d);
-  background-size: 1200% 1200%;
-  -webkit-animation: dboxRainbow 30s ease infinite;
-  animation: dboxRainbow 30s ease infinite;
-  -webkit-font-smoothing: subpixel-antialiased;
+  height: 85vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(85, 197, 122, .8)), to(rgba(40, 180, 133, .8))), url("../../../assets/images/programming.jpg");
+  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, .8), rgba(40, 180, 133, .8)), url("../../../assets/images/programming.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
 }
 
 .box1::before {
@@ -2113,7 +2113,7 @@ Instead edit gulp/templates/sprite */
 
 .composition {
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 25%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -2214,8 +2214,8 @@ Instead edit gulp/templates/sprite */
 
 .footer__logo-box {
   text-align: center;
-  margin-bottom: 80px;
-  margin-bottom: 8rem;
+  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 @media (max-width: 56.25em) {
@@ -2236,6 +2236,8 @@ Instead edit gulp/templates/sprite */
   padding-top: 2rem;
   padding-left: 40px;
   padding-left: 4rem;
+  margin-left: 20px;
+  margin-left: 2rem;
   display: inline-block;
 }
 
@@ -2262,7 +2264,6 @@ Instead edit gulp/templates/sprite */
 .footer__link:link,
 .footer__link:visited {
   color: #f7f7f7;
-  background-color: #333;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
@@ -2272,7 +2273,7 @@ Instead edit gulp/templates/sprite */
 
 .footer__link:hover,
 .footer__link:active {
-  color: #7ed56f;
+  color: #f7f7f7;
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, .4);
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, .4);
   -webkit-transform: rotate(5deg) scale(1.3);
@@ -2285,6 +2286,9 @@ Instead edit gulp/templates/sprite */
   padding-top: 2rem;
   padding-right: 40px;
   padding-right: 4rem;
+  display: inline-block;
+  margin-right: 20px;
+  margin-right: 2rem;
   width: 80%;
   float: right;
 }
