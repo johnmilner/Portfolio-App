@@ -69,24 +69,35 @@ p {
   margin: 0 auto;
 }
 
-.icon {
-  background-size: 6rem;
-  width: 22px;
-  height: 24px;
-  background-repeat: no-repeat;
+/**
+ * Hide the overflow in IE.
+ */
+
+ svg:not(:root) {
+  overflow: hidden;
 }
 
+.icon {
+  background-size: 60px;
+  width: 21.5px;
+  height: 24px;
+  background-repeat: no-repeat;
+
+}
+
+
 .social-icons {
-	text-align: center;
+  text-align: center;
+  transform: scale(1.1);
 }
 
 .social-icons__icon {
-  //background-color: #d59541;
   display: inline-block;
   margin: 0 5px 5px 5px !important;
   width: 72px;
   height: 72px;
   position: relative;
+
 }
 
 @media (min-width: 530px) {
@@ -104,23 +115,33 @@ p {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+
 }
 
+.icon--twitter, 
+.icon--linkedin-in, 
+.icon--medium {
+  transition: all .2s;
 
-// .icon--linked-in {
-//   width: 2.4rem;
-//   height: 2.4rem;
-// }
+  &:hover,
+  &:active {
+    opacity:0.6;
+  }
+}
+
+.icon--twitter {
+  width: 26px;
+  height: 24px; 
+  
+}
+
 
 // .icon--medium {
 //   width: 2.4rem;
 //   height: 2.4rem;
 // }
 
-.icon--twitter {
-  width: 26px;
-  height: 24px;
-}
+
 
 
 

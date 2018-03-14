@@ -630,15 +630,25 @@ p {
   margin: 0 auto;
 }
 
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
 .icon {
-  background-size: 6rem;
-  width: 22px;
+  background-size: 60px;
+  width: 21.5px;
   height: 24px;
   background-repeat: no-repeat;
 }
 
 .social-icons {
   text-align: center;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .social-icons__icon {
@@ -663,6 +673,22 @@ p {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.icon--twitter,
+.icon--linkedin-in,
+.icon--medium {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.icon--twitter:hover,
+.icon--twitter:active,
+.icon--linkedin-in:hover,
+.icon--linkedin-in:active,
+.icon--medium:hover,
+.icon--medium:active {
+  opacity: 0.6;
 }
 
 .icon--twitter {
@@ -1873,12 +1899,13 @@ body .social .follow {
 }
 
 .email-button {
-  background-color: #E74C3C;
+  background-color: #333;
   border: 1px solid #b24c45;
   color: white;
   text-align: center;
+  font-family: 'Lato', sans-serif;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.3em;
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: .75em .5em;
@@ -2290,7 +2317,7 @@ Instead edit gulp/templates/sprite */
 }
 
 .footer__navigation {
-  border-top: 1px solid #777;
+  border-top: 1px solid #fff;
   padding-top: 20px;
   padding-top: 2rem;
   padding-left: 140px;
@@ -2340,7 +2367,7 @@ Instead edit gulp/templates/sprite */
 }
 
 .footer__copyright {
-  border-top: 1px solid #777;
+  border-top: 1px solid #fff;
   padding-top: 20px;
   padding-top: 2rem;
   padding-right: 40px;
