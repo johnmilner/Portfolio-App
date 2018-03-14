@@ -1113,6 +1113,10 @@ button:hover {
   background-color: rgba(63, 63, 63, .5);
 }
 
+button:active {
+  background-color: #242423;
+}
+
 button:after {
   content: '';
   position: absolute;
@@ -1928,17 +1932,35 @@ body,
 Instead edit gulp/templates/sprite */
 
 .icon {
-  background-image: url("../../../assets/images/sprites/sprite-ecaf0614.svg");
+  background-image: url("../../../assets/images/sprites/sprite-afa41aa4.svg");
 }
 
 .no-svg .icon {
-  background-image: url("../../../assets/images/sprites/sprite-ecaf0614.png");
+  background-image: url("../../../assets/images/sprites/sprite-afa41aa4.png");
 }
 
 .icon--angle-down {
   width: 322px;
   height: 514px;
   background-position: 0 0;
+}
+
+.icon--linkedin-in {
+  width: 450px;
+  height: 514px;
+  background-position: 41.70984455958549% 0;
+}
+
+.icon--medium {
+  width: 450px;
+  height: 514px;
+  background-position: 100% 0;
+}
+
+.icon--twitter {
+  width: 514px;
+  height: 514px;
+  background-position: 0 100%;
 }
 
 .row {
@@ -2158,6 +2180,7 @@ Instead edit gulp/templates/sprite */
   padding: 32.5px 80px;
   padding: 3.25rem 8rem;
   border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
   z-index: 2;
   background-color: transparent !important;
   margin-top: -1px;
@@ -2204,6 +2227,8 @@ Instead edit gulp/templates/sprite */
   font-size: 14px;
   font-size: 1.4rem;
   color: #f7f7f7;
+  padding-bottom: 150px;
+  padding-bottom: 15rem;
 }
 
 @media (max-width: 56.25em) {
@@ -2298,6 +2323,27 @@ Instead edit gulp/templates/sprite */
     width: 100%;
     float: none;
   }
+}
+
+.icon--linkedin-in {
+  width: 24px;
+  width: 2.4rem;
+  height: 24px;
+  height: 2.4rem;
+}
+
+.icon--medium {
+  width: 24px;
+  width: 2.4rem;
+  height: 24px;
+  height: 2.4rem;
+}
+
+.icon--twitter {
+  width: 24px;
+  width: 2.4rem;
+  height: 24px;
+  height: 2.4rem;
 }
 
 /*!

@@ -37,8 +37,11 @@
       -moz-transition: all 0.3s;
       transition: all 0.3s;
 
-      &:hover {
+    &:hover {
         background-color: rgba(63,63,63,0.5);
+    }
+    &:active {
+        background-color: rgb(36,36,35);
     }
   }
   

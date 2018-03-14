@@ -10,6 +10,7 @@
   padding: 10rem 0 0 0;
   font-size: 1.4rem;
   color: $color-grey-light-1;
+  padding-bottom: 15rem;
 
   @include respond(tab-port) {
       padding: 8rem 0;
@@ -87,4 +88,19 @@
           float: none;
       }
   }
+}
+
+.icon--linkedin-in {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.icon--medium {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.icon--twitter {
+    width: 2.4rem;
+    height: 2.4rem;
 }
