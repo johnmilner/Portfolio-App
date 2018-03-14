@@ -89,6 +89,8 @@ p {
 .social-icons {
   text-align: center;
   transform: scale(1.1);
+  position: relative;
+  width: 100%;
 }
 
 .social-icons__icon {
@@ -138,6 +140,11 @@ p {
 .icon--github {
   width: 23px;
   height: 24px; 
+}
+
+.icon--angle-down {
+  width: 15.5px;
+  height: 24px;
 }
 
 
