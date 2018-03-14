@@ -6,6 +6,7 @@
   -o-animation: dboxRainbow 30s ease infinite;
   animation: dboxRainbow 30s ease infinite;
   -webkit-font-smoothing: subpixel-antialiased;
+  background-color: #333;
   width: 100%;
   padding: 10rem 0 0 0;
   font-size: 1.4rem;
@@ -33,7 +34,7 @@
   &__navigation {
       border-top: 1px solid $color-grey-dark;
       padding-top: 2rem;
-      padding-left: 4rem;
+      padding-left: 14rem;
       margin-left: 2rem;
       display: inline-block;
 
@@ -90,17 +91,3 @@
   }
 }
 
-.icon--linkedin-in {
-    width: 2.4rem;
-    height: 2.4rem;
-}
-
-.icon--medium {
-    width: 2.4rem;
-    height: 2.4rem;
-}
-
-.icon--twitter {
-    width: 2.4rem;
-    height: 2.4rem;
-}

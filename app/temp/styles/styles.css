@@ -630,6 +630,46 @@ p {
   margin: 0 auto;
 }
 
+.icon {
+  background-size: 6rem;
+  width: 22px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+
+.social-icons {
+  text-align: center;
+}
+
+.social-icons__icon {
+  display: inline-block;
+  margin: 0 5px 5px 5px !important;
+  width: 72px;
+  height: 72px;
+  position: relative;
+}
+
+@media (min-width: 530px) {
+  .social-icons__icon {
+    width: 72px;
+    margin: 0 5px;
+  }
+}
+
+.social-icons__icon .icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.icon--twitter {
+  width: 26px;
+  height: 24px;
+}
+
 /* Box Hover Image Animation */
 
 .project {
@@ -1940,26 +1980,26 @@ Instead edit gulp/templates/sprite */
 }
 
 .icon--angle-down {
-  width: 322px;
-  height: 514px;
+  /* width: 322px;
+    height: 514px; */
   background-position: 0 0;
 }
 
 .icon--linkedin-in {
-  width: 450px;
-  height: 514px;
+  /* width: 450px;
+    height: 514px; */
   background-position: 41.70984455958549% 0;
 }
 
 .icon--medium {
-  width: 450px;
-  height: 514px;
+  /* width: 450px;
+    height: 514px; */
   background-position: 100% 0;
 }
 
 .icon--twitter {
-  width: 514px;
-  height: 514px;
+  /* width: 514px;
+    height: 514px; */
   background-position: 0 100%;
 }
 
@@ -2143,19 +2183,12 @@ Instead edit gulp/templates/sprite */
   width: 50%;
 }
 
-.icon {
-  background-size: 6.4rem 6.4rem;
-  background-repeat: no-repeat;
-}
-
 .icon--angle-down {
   position: absolute;
   top: 92%;
-  width: 64px;
-  width: 6.4rem;
-  height: 64px;
-  height: 6.4rem;
-  left: 50%;
+  left: 51.5%;
+  width: 16px;
+  height: 24px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -2221,6 +2254,7 @@ Instead edit gulp/templates/sprite */
   -webkit-animation: dboxRainbow 30s ease infinite;
   animation: dboxRainbow 30s ease infinite;
   -webkit-font-smoothing: subpixel-antialiased;
+  background-color: #333;
   width: 100%;
   padding: 100px 0 0 0;
   padding: 10rem 0 0 0;
@@ -2259,8 +2293,8 @@ Instead edit gulp/templates/sprite */
   border-top: 1px solid #777;
   padding-top: 20px;
   padding-top: 2rem;
-  padding-left: 40px;
-  padding-left: 4rem;
+  padding-left: 140px;
+  padding-left: 14rem;
   margin-left: 20px;
   margin-left: 2rem;
   display: inline-block;
@@ -2323,27 +2357,6 @@ Instead edit gulp/templates/sprite */
     width: 100%;
     float: none;
   }
-}
-
-.icon--linkedin-in {
-  width: 24px;
-  width: 2.4rem;
-  height: 24px;
-  height: 2.4rem;
-}
-
-.icon--medium {
-  width: 24px;
-  width: 2.4rem;
-  height: 24px;
-  height: 2.4rem;
-}
-
-.icon--twitter {
-  width: 24px;
-  width: 2.4rem;
-  height: 24px;
-  height: 2.4rem;
 }
 
 /*!

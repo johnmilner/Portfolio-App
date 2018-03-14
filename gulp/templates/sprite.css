@@ -14,8 +14,8 @@ Instead edit gulp/templates/sprite */
   {{/first}}
 
   .icon--{{base}} {
-    width: {{width.outer}}px;
-    height: {{height.outer}}px;
+    /* width: {{width.outer}}px;
+    height: {{height.outer}}px; */
     background-position: {{position.relative.xy}};
   }
 {{/shapes}}
