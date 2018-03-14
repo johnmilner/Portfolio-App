@@ -120,7 +120,8 @@ p {
 
 .icon--twitter, 
 .icon--linkedin-in, 
-.icon--medium {
+.icon--medium,
+.icon--github {
   transition: all .2s;
 
   &:hover,
@@ -130,9 +131,13 @@ p {
 }
 
 .icon--twitter {
-  width: 26px;
+  width: 24px;
   height: 24px; 
-  
+}
+
+.icon--github {
+  width: 23px;
+  height: 24px; 
 }
 
 

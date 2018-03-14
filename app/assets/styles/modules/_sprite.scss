@@ -2,11 +2,11 @@
 Instead edit gulp/templates/sprite */
 
     .icon {
-      background-image: url('../../../assets/images/sprites/sprite-afa41aa4.svg');
+      background-image: url('../../../assets/images/sprites/sprite-fe1468cd.svg');
     }
 
     .no-svg .icon {
-     background-image: url('../../../assets/images/sprites/sprite-afa41aa4.png');
+     background-image: url('../../../assets/images/sprites/sprite-fe1468cd.png');
     }
 
 
@@ -16,20 +16,26 @@ Instead edit gulp/templates/sprite */
     background-position: 0 0;
   }
 
-  .icon--linkedin-in {
-    /* width: 450px;
+  .icon--github {
+    /* width: 498px;
     height: 514px; */
     background-position: 41.70984455958549% 0;
   }
 
-  .icon--medium {
+  .icon--linkedin-in {
     /* width: 450px;
     height: 514px; */
     background-position: 100% 0;
   }
 
+  .icon--medium {
+    /* width: 450px;
+    height: 514px; */
+    background-position: 0 100%;
+  }
+
   .icon--twitter {
     /* width: 514px;
     height: 514px; */
-    background-position: 0 100%;
+    background-position: 59.523809523809526% 100%;
   }

@@ -677,7 +677,8 @@ svg:not(:root) {
 
 .icon--twitter,
 .icon--linkedin-in,
-.icon--medium {
+.icon--medium,
+.icon--github {
   -webkit-transition: all .2s;
   transition: all .2s;
 }
@@ -687,12 +688,19 @@ svg:not(:root) {
 .icon--linkedin-in:hover,
 .icon--linkedin-in:active,
 .icon--medium:hover,
-.icon--medium:active {
+.icon--medium:active,
+.icon--github:hover,
+.icon--github:active {
   opacity: 0.6;
 }
 
 .icon--twitter {
-  width: 26px;
+  width: 24px;
+  height: 24px;
+}
+
+.icon--github {
+  width: 23px;
   height: 24px;
 }
 
@@ -1999,11 +2007,11 @@ body,
 Instead edit gulp/templates/sprite */
 
 .icon {
-  background-image: url("../../../assets/images/sprites/sprite-afa41aa4.svg");
+  background-image: url("../../../assets/images/sprites/sprite-fe1468cd.svg");
 }
 
 .no-svg .icon {
-  background-image: url("../../../assets/images/sprites/sprite-afa41aa4.png");
+  background-image: url("../../../assets/images/sprites/sprite-fe1468cd.png");
 }
 
 .icon--angle-down {
@@ -2012,22 +2020,28 @@ Instead edit gulp/templates/sprite */
   background-position: 0 0;
 }
 
-.icon--linkedin-in {
-  /* width: 450px;
+.icon--github {
+  /* width: 498px;
     height: 514px; */
   background-position: 41.70984455958549% 0;
 }
 
-.icon--medium {
+.icon--linkedin-in {
   /* width: 450px;
     height: 514px; */
   background-position: 100% 0;
 }
 
+.icon--medium {
+  /* width: 450px;
+    height: 514px; */
+  background-position: 0 100%;
+}
+
 .icon--twitter {
   /* width: 514px;
     height: 514px; */
-  background-position: 0 100%;
+  background-position: 59.523809523809526% 100%;
 }
 
 .row {
