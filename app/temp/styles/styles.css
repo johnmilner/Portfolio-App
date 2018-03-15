@@ -651,6 +651,12 @@ svg:not(:root) {
   position: relative;
 }
 
+@media (min-width: 22em) {
+  .social-icons {
+    padding-top: 3rem;
+  }
+}
+
 .social-icons__icon {
   display: inline-block;
   margin: 0 5px 5px 5px !important;

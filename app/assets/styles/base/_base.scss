@@ -90,6 +90,10 @@ p {
   text-align: center;
   transform: scale(1.3);
   position: relative;
+
+  @include respond(small-phone) {
+    padding-top: 3rem;
+  }
 }
 
 .social-icons__icon {
