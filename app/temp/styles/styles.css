@@ -527,8 +527,7 @@ h3.ctasp {
 
 .projects {
   margin: 0 auto;
-  padding-left: 65px;
-  padding-left: 6.5rem;
+  width: 100%;
   height: 60px;
   height: 6rem;
   padding-top: 20px;
@@ -639,7 +638,7 @@ svg:not(:root) {
 }
 
 .icon {
-  background-size: 60px;
+  background-size: 90px;
   width: 21.5px;
   height: 24px;
   background-repeat: no-repeat;
@@ -647,8 +646,8 @@ svg:not(:root) {
 
 .social-icons {
   text-align: center;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
   position: relative;
   width: 100%;
 }
@@ -680,7 +679,8 @@ svg:not(:root) {
 .icon--twitter,
 .icon--linkedin-in,
 .icon--medium,
-.icon--github {
+.icon--github,
+.icon--envelope {
   -webkit-transition: all .2s;
   transition: all .2s;
 }
@@ -692,7 +692,9 @@ svg:not(:root) {
 .icon--medium:hover,
 .icon--medium:active,
 .icon--github:hover,
-.icon--github:active {
+.icon--github:active,
+.icon--envelope:hover,
+.icon--envelope:active {
   opacity: 0.6;
 }
 
@@ -702,12 +704,17 @@ svg:not(:root) {
 }
 
 .icon--github {
-  width: 23px;
+  width: 24px;
   height: 24px;
 }
 
 .icon--angle-down {
   width: 15.5px;
+  height: 24px;
+}
+
+.icon--envelope {
+  width: 24px;
   height: 24px;
 }
 
@@ -2014,11 +2021,11 @@ body,
 Instead edit gulp/templates/sprite */
 
 .icon {
-  background-image: url("../../../assets/images/sprites/sprite-fe1468cd.svg");
+  background-image: url("../../../assets/images/sprites/sprite-a7f98f91.svg");
 }
 
 .no-svg .icon {
-  background-image: url("../../../assets/images/sprites/sprite-fe1468cd.png");
+  background-image: url("../../../assets/images/sprites/sprite-a7f98f91.png");
 }
 
 .icon--angle-down {
@@ -2027,28 +2034,34 @@ Instead edit gulp/templates/sprite */
   background-position: 0 0;
 }
 
+.icon--envelope {
+  /* width: 514px;
+    height: 514px; */
+  background-position: 24.137931034482758% 0;
+}
+
 .icon--github {
   /* width: 498px;
     height: 514px; */
-  background-position: 41.70984455958549% 0;
+  background-position: 61.925925925925924% 0;
 }
 
 .icon--linkedin-in {
   /* width: 450px;
     height: 514px; */
-  background-position: 100% 0;
+  background-position: 0 100%;
 }
 
 .icon--medium {
   /* width: 450px;
     height: 514px; */
-  background-position: 0 100%;
+  background-position: 32.18884120171674% 100%;
 }
 
 .icon--twitter {
   /* width: 514px;
     height: 514px; */
-  background-position: 59.523809523809526% 100%;
+  background-position: 100% 0;
 }
 
 .row {
@@ -2233,8 +2246,8 @@ Instead edit gulp/templates/sprite */
 
 .icon--angle-down {
   position: absolute;
-  top: 88%;
-  left: 51.5%;
+  top: 84%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -2337,10 +2350,8 @@ Instead edit gulp/templates/sprite */
 
 .footer__navigation {
   border-top: 1px solid #fff;
-  padding-top: 20px;
-  padding-top: 2rem;
-  padding-left: 140px;
-  padding-left: 14rem;
+  padding: 20px 30px 0 40px;
+  padding: 2rem 3rem 0 4rem;
   margin-left: 20px;
   margin-left: 2rem;
   display: inline-block;
