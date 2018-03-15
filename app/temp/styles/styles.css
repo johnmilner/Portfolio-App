@@ -659,10 +659,15 @@ svg:not(:root) {
   position: relative;
 }
 
-@media (min-width: 530px) {
+@media (max-width: 75em) {
   .social-icons__icon {
     width: 70px;
-    margin: 0 5px;
+  }
+}
+
+@media (max-width: 48em) {
+  .social-icons__icon {
+    width: 40px;
   }
 }
 
@@ -2073,13 +2078,6 @@ Instead edit gulp/templates/sprite */
   margin: 0 auto;
 }
 
-@media (max-width: 56.25em) {
-  .row {
-    max-width: 50rem;
-    padding: 0 3rem;
-  }
-}
-
 .row::after {
   content: "";
   display: table;
@@ -2327,9 +2325,15 @@ Instead edit gulp/templates/sprite */
   padding-bottom: 15rem;
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 75em) {
   .footer {
     padding: 18rem 0;
+  }
+}
+
+@media (max-width: 48em) {
+  .footer {
+    padding: 35rem 0 18rem 0;
   }
 }
 
@@ -2363,6 +2367,13 @@ Instead edit gulp/templates/sprite */
 @media (max-width: 56.25em) {
   .footer__navigation {
     width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 48em) {
+  .footer__navigation {
+    width: 88%;
     text-align: center;
   }
 }
@@ -2415,6 +2426,13 @@ Instead edit gulp/templates/sprite */
 @media (max-width: 56.25em) {
   .footer__copyright {
     width: 100%;
+    float: none;
+  }
+}
+
+@media (max-width: 48em) {
+  .footer__copyright {
+    width: 95%;
     float: none;
   }
 }

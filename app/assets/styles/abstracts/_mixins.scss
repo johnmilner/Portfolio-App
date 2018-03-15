@@ -37,7 +37,10 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
 @mixin respond($breakpoint) {
     @if $breakpoint == phone {
         @media (max-width: 37.5em) { @content };    //600px
-    } 
+    }
+    @if $breakpoint == ipad-port {
+        @media (max-width: 48em) { @content };    //768px
+    }
     @if $breakpoint == tab-port {
         @media (max-width: 56.25em) { @content };     //900px
     }
