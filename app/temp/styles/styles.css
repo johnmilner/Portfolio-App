@@ -649,9 +649,11 @@ svg:not(:root) {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
   position: relative;
+  padding-top: 40px;
+  padding-top: 4rem;
 }
 
-@media (min-width: 22em) {
+@media (max-width: 22em) {
   .social-icons {
     padding-top: 3rem;
   }
@@ -2343,14 +2345,13 @@ Instead edit gulp/templates/sprite */
   animation: dboxRainbow 30s ease infinite;
   -webkit-font-smoothing: subpixel-antialiased;
   background-color: #333;
+  border-top: 1px solid #333;
   width: 100%;
-  padding: 100px 0 0 0;
-  padding: 10rem 0 0 0;
   font-size: 14px;
   font-size: 1.4rem;
   color: #f7f7f7;
-  padding-bottom: 150px;
-  padding-bottom: 15rem;
+  padding: 150px 0;
+  padding: 15rem 0;
 }
 
 @media (max-width: 75em) {
@@ -2362,6 +2363,12 @@ Instead edit gulp/templates/sprite */
 @media (max-width: 48em) {
   .footer {
     padding: 35rem 0 18rem 0;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .footer {
+    padding-top: 30rem;
   }
 }
 
@@ -2385,8 +2392,8 @@ Instead edit gulp/templates/sprite */
 
 .footer__navigation {
   border-top: 1px solid #fff;
-  padding: 20px 30px 0 40px;
-  padding: 2rem 3rem 0 4rem;
+  padding: 0px 30px 0 40px;
+  padding: 0rem 3rem 0 4rem;
   margin-left: 20px;
   margin-left: 2rem;
   display: inline-block;

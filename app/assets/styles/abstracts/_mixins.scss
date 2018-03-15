@@ -36,7 +36,7 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
 */
 @mixin respond($breakpoint) { 
     @if $breakpoint == small-phone {
-        @media (min-width: 22em) { @content };    //375px
+        @media (max-width: 22em) { @content };    //375px
     }
     @if $breakpoint == phone {
         @media (max-width: 37.5em) { @content };    //600px
