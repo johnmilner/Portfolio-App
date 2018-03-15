@@ -11,6 +11,8 @@
       //border-bottom: 1px solid #777;
       border-top: 1px solid #555;
 
+      
+
   }
 
 
@@ -43,6 +45,12 @@
     &:active {
         background-color: rgb(36,36,35);
     }
+
+    @include respond(phone) {
+        display: block;
+        float: left;
+        width: 100%;
+      }
   }
   
   button:after {

@@ -1209,6 +1209,14 @@ button:active {
   background-color: #242423;
 }
 
+@media (max-width: 37.5em) {
+  button {
+    display: block;
+    float: left;
+    width: 100%;
+  }
+}
+
 button:after {
   content: '';
   position: absolute;
@@ -2078,6 +2086,12 @@ Instead edit gulp/templates/sprite */
   margin: 0 auto;
 }
 
+@media (max-width: 37.5em) {
+  .row {
+    max-width: 100%;
+  }
+}
+
 .row::after {
   content: "";
   display: table;
@@ -2094,6 +2108,14 @@ Instead edit gulp/templates/sprite */
 
 .row .col-1-of-3 {
   width: 33.33333%;
+}
+
+@media (max-width: 37.5em) {
+  .row .col-1-of-3 {
+    display: block;
+    float: left;
+    width: 100%;
+  }
 }
 
 .box {
