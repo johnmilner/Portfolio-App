@@ -77,21 +77,29 @@
     margin: 0;
     padding: 0;
 
+    &::before {
+      content: "";
+      width: 1px;
+      margin-left: -1px;
+      float: left;
+      height: 0;
+      padding-top: 591.44px / 1127.34px * 100%;
+    }
+
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
   }
   
-  .box::before {
-    content: "";
-    width: 1px;
-    margin-left: -1px;
-    float: left;
-    height: 0;
-    padding-top: 591.44px / 1127.34px * 100%;
-  }
-  .box::after { /* to clear float */
-    content: "";
-    display: table;
-    clear: both;
-  }
+  // .box::before {
+    
+  // }
+  // .box::after { /* to clear float */
+    
+  // }
     
   .visible-grid-item:nth-child(2) div {
     -webkit-animation-delay: 0.4s;

@@ -48,9 +48,9 @@ li {
     //   font-size: 50%;
     // }
   
-    // @include respond(big-desktop) {
-    //   font-size: 75%;
-    // }
+    @include respond(big-desktop) {
+      font-size: 75%;
+    }
   
   }
 
@@ -92,8 +92,8 @@ p {
   position: relative;
   //padding-top: 4rem;
 
-  @include respond(small-phone) {
-    padding-top: 3rem;
+  @include respond(phone) {
+    padding-top: 4rem;
   }
 }
 
@@ -152,7 +152,7 @@ p {
 }
 
 .icon--github {
-  width: 24.3px;
+  width: 24.05px;
   height: 24px; 
 }
 

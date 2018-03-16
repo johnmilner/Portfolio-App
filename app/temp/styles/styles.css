@@ -614,6 +614,12 @@ html {
   font-size: 62.5%;
 }
 
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
 .barba-container {
   background-color: #333;
 }
@@ -651,9 +657,9 @@ svg:not(:root) {
   position: relative;
 }
 
-@media (max-width: 22em) {
+@media (max-width: 37.5em) {
   .social-icons {
-    padding-top: 3rem;
+    padding-top: 4rem;
   }
 }
 
@@ -714,7 +720,7 @@ svg:not(:root) {
 }
 
 .icon--github {
-  width: 24.3px;
+  width: 24.05px;
   height: 24px;
 }
 
@@ -2141,7 +2147,6 @@ Instead edit gulp/templates/sprite */
 }
 
 .box::after {
-  /* to clear float */
   content: "";
   display: table;
   clear: both;
@@ -2367,6 +2372,12 @@ Instead edit gulp/templates/sprite */
 @media (max-width: 37.5em) {
   .footer {
     padding-top: 30rem;
+  }
+}
+
+@media (max-width: 22em) {
+  .footer {
+    padding-top: 20rem;
   }
 }
 
