@@ -414,8 +414,10 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
   width: 40px;
   height: 40px;
   position: absolute;
-  top: 48%;
-  left: 48%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background-color: #333;
 }
 
@@ -1839,7 +1841,7 @@ body .social .follow {
   .composition__photo {
     float: left;
     position: relative;
-    width: 33.33333333%;
+    width: 100%;
     -webkit-box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .2);
             box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .2);
   }
