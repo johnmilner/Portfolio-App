@@ -1,10 +1,5 @@
-import jQuery from 'jquery';
-import 'jquery.easing';
-import '../../../temp/scripts/modernizr';
-import Waypoint from 'waypoints/lib/noframework.waypoints.min';
 import Barba from 'barba.js';
 import mixitup from 'mixitup';
-
 
 function createWaypoint(element, classToToggle, offset, cb) {
   return jQuery(element).waypoint(function(direction) {
