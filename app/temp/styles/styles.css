@@ -422,7 +422,7 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
 
 @font-face {
   font-family: 'BrandonText-Medium';
-  src: url("../../../temp/fonts/BrandonText-Medium.OTF");
+  src: url("../../../assets/fonts/BrandonText-Medium.OTF");
 }
 
 .main-headline {
@@ -2049,11 +2049,11 @@ body,
 Instead edit gulp/templates/sprite */
 
 .icon {
-  background-image: url("../../../assets/images/sprites/sprite-a7f98f91.svg");
+  background-image: url("../images/sprites/sprite-a7f98f91.svg");
 }
 
 .no-svg .icon {
-  background-image: url("../../../assets/images/sprites/sprite-a7f98f91.png");
+  background-image: url("../images/sprites/sprite-a7f98f91.png");
 }
 
 .icon--angle-down {

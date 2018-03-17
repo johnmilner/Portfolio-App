@@ -5,7 +5,10 @@ usemin = require('gulp-usemin'),
 rev = require('gulp-rev'),
 cssnano = require('gulp-cssnano'),
 uglify = require('gulp-uglify'),
+concatCss = require('gulp-concat-css'),
+font2css = require('gulp-font2css').default,
 browserSync = require('browser-sync').create();
+
 
 gulp.task('previewDist', function() {
 	browserSync.init({
@@ -20,12 +23,19 @@ gulp.task('deleteDistFolder', ['icons'], function() {
 	return del("./build");
 });
 
+gulp.task('fonts', function() {
+	return gulp.src('assets/fonts/**/*.{otf,ttf,woff,woff2}')
+	  .pipe(font2css())
+	  .pipe(concatCss('fonts.css'))
+	  .pipe(gulp.dest('temp/styles'))
+  })
+
 gulp.task('copyGeneralFiles', ['deleteDistFolder'], function() {
 	var pathsToCopy = [
 		'./app/**/*',
 		'!./app/index.html',
 		'!./app/assets/images/**',
-		'!./app/assets/scss/**',
+		'!./app/assets/styles/**',
 		'!./app/assets/scripts/**',
 		'!./app/temp',
 		'!./app/temp/**'
@@ -58,8 +68,8 @@ gulp.task('usemin', ['styles', 'scripts'], function() {
 		css: [function() {return rev()}, function() {return cssnano()}],
 		js: [function() {return rev()}, function() {return uglify()}]
 	}))
-	.pipe(gulp.dest('./docs'));
+	.pipe(gulp.dest('./build'));
 });
 
 
-gulp.task('build', ['deleteDistFolder', 'copyGeneralFiles', 'optimizeImages', 'useminTrigger']);
+gulp.task('build', ['deleteDistFolder', 'fonts', 'copyGeneralFiles', 'optimizeImages', 'useminTrigger']);

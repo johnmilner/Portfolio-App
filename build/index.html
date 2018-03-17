@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' 
+    rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <title>John Milner Development Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/images/icon.png">
+    <link rel="stylesheet" href="/assets/styles/styles-4667b0d195.css"/>
+</head>
+
+<body>
+    <div id="barba-wrapper">
+        <div class="barba-container">
+            <div class="container" id="home">
+                <div class="row">
+                    <div class="box1">
+                            <div class="navigation" id="navigation">
+                                <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+                                <label for="navi-toggle" class="navigation__button">
+                                    <span class="navigation__icon">&nbsp;</span>
+                                </label>
+
+                                <div class="navigation__background">&nbsp;</div>
+
+                                <nav class="navigation__nav">
+                                    <ul class="navigation__list">
+                                        <li class="navigation__item nav-logo">
+                                            <a></a>
+                                        </li>
+                                        <li class="navigation__item js-scroll-trigger">
+                                            <a href="#home" class="navigation__link">
+                                                <span>01</span>Home</a>
+                                        </li>
+                                        <li class="navigation__item js-scroll-trigger">
+                                            <a href="#button-wrapper" class="navigation__link">
+                                                <span>02</span>Projects</a>
+                                        </li>
+
+                                        <li class="navigation__item">
+                                            <a href="#about" class="navigation__link">
+                                                <span>03</span>About</a>
+                                        </li>
+
+                                        <li class="navigation__item">
+                                            <a href="#contact" class="navigation__link">
+                                                <span>04</span>Contact</a>
+                                        </li>
+                                     </ul>
+                                </nav>
+                            </div>
+                            <article>
+                                <!-- <div class="tagline">
+                                    <h4 class="main-headline">
+                                       
+                                    </h4>
+                                </div> -->
+                                <div class="row">
+                                    <div class="composition">
+                                                <img src="assets/images/budgety.png" class="composition__photo composition__photo--p1"> 
+                              
+                                                <img src="assets/images/smart-brain.png" class="composition__photo composition__photo--p2">
+                                                     
+                                                <img srcset="assets/images/robofriends.png" class="composition__photo composition__photo--p3"> 
+                              
+                                              </div>
+                        </div>
+                        <a class="js-scroll-trigger animated flash" href="#button-wrapper">
+                                <span class="icon icon--angle-down"></span>
+                        </a>
+                        </article>
+                    </div>
+                </div>
+                <div id="button-wrapper">
+                    <div class="projects">
+                        <h5>Projects</h5>
+                    </div>
+                    <div class="button-bar">
+                        <button class="filter-btn" data-filter="all">Show all</button>
+                        <button type="button" class="filter-btn" data-filter=".category-a">Vanilla Javacript</button>
+                        <button type="button" class="filter-btn" data-filter=".category-b">HTML5/CSS3</button>
+                        <button type="button" class="filter-btn" data-filter=".category-c">React</button>
+                        <button type="button" class="filter-btn" data-filter=".category-d">API Projects</button>
+                    </div>
+                    <div id="mix-wrapper">
+                    <div class="row">
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-c category-d box box2">
+                                <div class="inner-content">
+                                    <a href="https://smart-brain-jm.herokuapp.com/" target="_blank" class="project sma">
+                                        <div class="copy">
+                                            <span>Smart Brain Face Recognition</span>
+                                            <em>Made with MERN stack</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-b box box15">
+                                <div class="inner-content">
+                                    <a href="https://johnmilner.github.io/Natours-Site/" target="_blank" class="project nat">
+                                        <div class="copy">
+                                            <span>Natours Travel Site</span>
+                                            <em>Made with HTML5, CSS3 and Flexbox Goodness</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-c category-d box box10">
+                                <div class="inner-content">
+                                    <a href="https://johnmilner.github.io/Robot-Friends/" target="_blank" class="project rob">
+                                        <div class="copy">
+                                            <span>RoboFriends App</span>
+                                            <em>Made with MERN stack and Robot API</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-a box box16">
+                                <div class="inner-content">
+                                    <a href="https://johnmilner.github.io/Pig-Dice-Game/" target="_blank" class="project pig">
+                                        <div class="copy">
+                                            <span>Pig Dice Game</span>
+                                            <em>Made with Vanilla Javascript </em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-a box box17">
+                                <div class="inner-content">
+                                    <a href="https://johnmilner.github.io/Budgety-App/" target="_blank" class="project bud">
+                                        <div class="copy">
+                                            <span>Budgety</span>
+                                            <em>Made with Vanilla Javascript</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-a box box3">
+                                <div class="inner-content">
+                                    <a href="https://johnmilner.github.io/Countdown-Timer/" target="_blank" class="project countdown">
+                                        <div class="copy">
+                                            <span>Countdown Timer</span>
+                                            <em>Made with Vanilla Javascript</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-a box box4">
+                                <div class="inner-content">
+                                    <a href="https://johnmilner.github.io/Custom-Video-Player/" target="_blank" class="project hvp">
+                                        <div class="copy">
+                                            <span>HTML5 Video Player</span>
+                                            <em>Made with Vanilla Javascript</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+                        <div id="work"></div>
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-d box box5">
+                                <div class="inner-content">
+                                    <a href="https://johnmilner.github.io/Cafetography/" target="_blank" class="project cafe">
+                                        <div class="copy">
+                                            <span>Open Maps Mashup</span>
+                                            <em>Made with Vanilla Javascript and Open Maps API</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-a box box6">
+                                <div class="inner-content">
+                                    <a href="https://johnmilner.github.io/Whack-A-Mole-Game-JS/" target="_blank" class="project wam">
+                                        <div class="copy">
+                                            <span>Whack A Mole</span>
+                                            <em>Made with Vanilla Javascript</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-a category-d box box7">
+                                <div class="inner-content">
+                                    <a href="https://johnmilner.github.io/Patatap/" target="_blank" class="project pat">
+                                        <div class="copy">
+                                            <span>Patatap Clone</span>
+                                            <em>Made with Vanilla Javascript and Howler JS</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-a box box2">
+                                <div class="inner-content">
+                                    <a href="https://johnmilner.github.io/Unreal-Webcam-JS/" target="_blank" class="project webcam">
+                                        <div class="copy">
+                                            <span>Unreal Webcam</span>
+                                            <em>Made with Vanilla Javascript</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-b box box8">
+                                <div class="inner-content">
+                                    <a href="https://johnmilner.github.io/travel-site/" target="_blank" class="project travel">
+                                        <div class="copy">
+                                            <span>Travel Marketing Site</span>
+                                            <em>Made with HTML5, CSS3 & Vanilla Javascript</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-a category-d box box9">
+                                <div class="inner-content">
+                                    <a href="https://johnmilner.github.io/Random-User-Generator/" target="_blank" class="project random">
+                                        <div class="copy">
+                                            <span>Random User Generator</span>
+                                            <em>Made with Vanilla Javascript and Random User API</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-a box box11">
+                                <div class="inner-content">
+                                    <a href="https://johnmilner.github.io/Voicenator-5000-JS/" target="_blank" class="project voice">
+                                        <div class="copy">
+                                            <span>The Voicenator</span>
+                                            <em>Made with Vanilla Javascript</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-a box box12">
+                                <div class="inner-content">
+                                    <a href="https://floating-citadel-44633.herokuapp.com/" target="_blank" class="project yelp">
+                                        <div class="copy">
+                                            <span>Yelp Camp</span>
+                                            <em>A dynamic web app made with Express, Mongo DB and Javascript</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-a box box13">
+                                <div class="inner-content">
+                                    <a href="https://johnmilner.github.io/Fun-with-HTML5Canvas/" target="_blank" class="project painter">
+                                        <div class="copy">
+                                            <span>JS Painter</span>
+                                            <em>Made with Vanilla Javascript</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+
+                        <div class="col-1-of-3">
+                            <figure class="mix-target category-a box box14">
+                                <div class="inner-content">
+                                    <a href="https://johnmilner.github.io/Random-Color-Game/" target="_blank" class="project color">
+                                        <div class="copy">
+                                            <span>The Great RGB Color Game</span>
+                                            <em>Made with Vanilla Javascript</em>
+                                        </div>
+                                        <div class="overlay"></div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="about">
+                    <div id="about">
+                        <div class="bg-video">
+                            <video class="bg-video__content" autoplay muted loop>
+                                <source src="assets/video/love-coding.mp4" type="video/mp4">
+                                <source src="assets/video/love-coding.webm" type="video/webm"> Your browser is not supported!
+                            </video>
+                        </div>
+                        <h3 class="cta">Digital Savoire Faire!</h3>
+                        <div id="profile-foto" class="profile-foto"></div>
+                        <p>
+                            John Milner is a web developer and digital creative based in San Diego, California. He has award-winning experience working
+                            across global and regional campaigns for clients such as Nike, Nokia, Axe (Lynx), Bud Light,
+                            Quaker, and Ad Council. He is well-versed across all platforms and believes emotion and story
+                            are fundamental to creating fresh brand-driven content and interactions. His work bridges culture,
+                            design and technology from interactive, mobile and social to gaming, film and television -- with
+                            a focus on creating holistic, engaging and entertaining brand experiences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact"></div>
+            <footer class="footer">
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <div class="footer__navigation">
+                                <div class="social-icons">
+                                        <a href="https://twitter.com/_johnio" target="_blank" class="social-icons__icon"><span class="icon icon--twitter"></span></a>
+                                        <a href="https://linkedin.com/in/johnmilnerio" target="_blank" class="social-icons__icon"><span class="icon icon--linkedin-in"></span></a>
+                                        <a href="https://medium.com/@johnmilner" target="_blank" class="social-icons__icon"><span class="icon icon--medium"></span></a>
+                                        <a href="https://github.com/johnmilner" target="_blank" class="social-icons__icon"><span class="icon icon--github"></span></a>
+                                        <a href="mailto: john.milner@mac.com" target="_blank" class="social-icons__icon"><span class="icon icon--envelope"></span></a>
+                                   </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-1-of-3">
+                        <div class="footer__logo-box">
+                            <div class="envelope-wrapper">
+                                <div class="envelope">
+                                    <div class="envelope-top"></div>
+                                    <div class="card">
+                                        <form form action="https://johnmilner.us12.list-manage.com/subscribe/post" method="POST">
+                                        <input type="hidden" name="u" value="949b7152f5441427c5ed9e09c">
+                                        <input type="hidden" name="id" value="0478214c0d">
+                                            <input class="name-input" type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="Your email" value="">
+                                            <textarea type="text" name="MERGE7" id="MERGE7" size="25" value="" placeholder="you da best" aria-required="true"></textarea>
+                                        </form>
+                                    </div>
+                                </div>
+                                <span class="email-button">
+                                    <input type="submit" class="formEmailButton" name="submit" value="Email Me"> 
+                                    <input type="hidden" name="ht" value="60bce4d8fc8c4535a9f5b87d9bab813080f27170:MTUyMTA3MTMzOS45MzAx">
+                                    <input type="hidden" name="mc_signupsource" value="hosted">
+                                </span>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="col-1-of-2">
+                        <p class="footer__copyright">
+                            Built from scratch by <a href="#" class="footer__link">John Milner</a>,
+                            using HTML5, CSS3, Vanilla Javascript and JQuery.
+                        </p>
+                    </div>
+                    
+                </div>
+            </footer>
+        </div>
+    </div>
+   
+    <script src="/assets/scripts/bundles--entry-b306313091.js"></script>
+    
+</body>
+
+</html>
