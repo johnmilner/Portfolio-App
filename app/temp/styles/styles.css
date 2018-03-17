@@ -2269,8 +2269,8 @@ Instead edit gulp/templates/sprite */
           flex: 1;
   float: none !important;
   height: 85vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(85, 197, 122, .8)), to(rgba(40, 180, 133, .8))), url("../../../assets/images/programming.jpg");
-  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, .8), rgba(40, 180, 133, .8)), url("../../../assets/images/programming.jpg");
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(85, 197, 122, .8)), to(rgba(40, 180, 133, .8))), url("../images/programming.jpg");
+  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, .8), rgba(40, 180, 133, .8)), url("../images/programming.jpg");
   background-size: cover;
   background-position: center bottom;
   position: relative;
