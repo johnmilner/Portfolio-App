@@ -509,20 +509,6 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
   font-weight: 700;
 }
 
-h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 28.75px;
-  font-size: 2.875rem;
-  font-weight: 300;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
-  text-rendering: optimizelegibility;
-  letter-spacing: -0.02em;
-  color: #3d444a;
-  line-height: 1.2em;
-  margin-bottom: 27.5px;
-  margin-bottom: 2.75rem;
-}
-
 p {
   font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
   width: auto;
@@ -585,6 +571,31 @@ h3.ctasp {
   padding-top: 20px;
   padding-top: 2rem;
   border-top: 1px solid #777;
+}
+
+.tagline {
+  color: #fff;
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  padding-top: 10em;
+  padding-bottom: 11em;
+}
+
+.main-headline-r1 {
+  color: #f95759;
+  border-bottom: 3px dotted #5d5d5d;
+  font-size: 3em;
+  font-weight: 800;
+  line-height: 1.6em;
+  display: inline-block;
+}
+
+.main-headline-r2 {
+  margin: 0;
+  font-size: 12em;
+  line-height: 1em;
+  font-weight: 100;
 }
 
 h5 {
@@ -2271,8 +2282,8 @@ Instead edit gulp/templates/sprite */
           flex: 1;
   float: none !important;
   height: 85vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(85, 197, 122, .8)), to(rgba(40, 180, 133, .8))), url("../images/programming.jpg");
-  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, .8), rgba(40, 180, 133, .8)), url("../images/programming.jpg");
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(51, 51, 51, .8)), to(rgba(119, 119, 119, .8))), url("../images/programming.jpg");
+  background-image: linear-gradient(to right bottom, rgba(51, 51, 51, .8), rgba(119, 119, 119, .8)), url("../images/programming.jpg");
   background-size: cover;
   background-position: center bottom;
   position: relative;
@@ -2305,11 +2316,12 @@ Instead edit gulp/templates/sprite */
 
 .tagline {
   position: absolute;
-  top: 20%;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 85%;
   cursor: pointer;
 }
 

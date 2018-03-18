@@ -59,17 +59,17 @@
 }
 
 
-h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.875rem;
-    font-weight: 300;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-    text-rendering: optimizelegibility;
-    letter-spacing: -0.02em;
-    color: #3d444a;
-    line-height: 1.2em;
-    margin-bottom: 2.75rem;
-  }
+// h1 {
+//     font-family: 'Playfair Display', serif;
+//     font-size: 2.875rem;
+//     font-weight: 300;
+//     text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+//     text-rendering: optimizelegibility;
+//     letter-spacing: -0.02em;
+//     color: #3d444a;
+//     line-height: 1.2em;
+//     margin-bottom: 2.75rem;
+//   }
   
   p {
     font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;  
@@ -126,6 +126,34 @@ h1 {
     height: 6rem;
     padding-top: 2rem;
     border-top: 1px solid #777;
+  }
+
+  .tagline {
+    color: #fff;
+    text-align: center;
+    //background-color: #343434;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    padding-top: 10em;
+    padding-bottom: 11em;
+
+  }
+  
+  .main-headline-r1 {
+    color: #f95759;
+    border-bottom: 3px dotted #5d5d5d;
+    font-size: 3em;
+    font-weight: 800;
+    line-height: 1.6em;
+    //letter-spacing: 1.3em;
+    display: inline-block;
+  }
+  
+  .main-headline-r2 {
+    margin: 0;
+    font-size: 12em;
+    line-height: 1em;
+    font-weight: 100;
   }
 
   h5 {
