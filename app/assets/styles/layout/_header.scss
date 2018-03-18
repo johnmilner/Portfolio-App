@@ -45,6 +45,7 @@
 }
 
 .tagline {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -53,7 +54,12 @@
   text-align: center;
   width: 85%;
   cursor: pointer;
+  transition: opacity 2s ease-in;
 }
+
+// .tagline.fadein {
+//   opacity: 1;
+// }
 
 .composition {
   position: absolute;

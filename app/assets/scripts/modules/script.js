@@ -4,19 +4,18 @@ import Barba from "barba.js";
 import mixitup from "mixitup";
 import Waypoint from 'waypoints/lib/noframework.waypoints.min';
 
-
-$(document).ready(function() {
-  //Preloader
-  $(window).on("load", function() {
-    var preloaderFadeOutTime = 500;
-    function hidePreloader() {
-      var preloader = $(".spinner");
-      preloader.fadeOut(preloaderFadeOutTime);
-    }
-    hidePreloader();
-  });
-
+//Preloader
+$(window).on("load", function() {
+  var preloaderFadeOutTime = 1000;
+  function hidePreloader() {
+    var preloader = $(".spinner");
+    preloader.fadeOut(preloaderFadeOutTime);
+  }
+  hidePreloader();
+  $('div.tagline').fadeIn(2000);
 });
+
+$(document).ready(function () {  });
 
 $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
   if (

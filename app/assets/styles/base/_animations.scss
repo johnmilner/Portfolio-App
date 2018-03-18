@@ -208,6 +208,11 @@ animation-iteration-count: 1;
       -webkit-transform: scale(1.0);
     }
   }
+
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
   
   
   
