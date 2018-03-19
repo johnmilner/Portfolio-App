@@ -1,38 +1,38 @@
 .box1 {
-    display: flex;
-    flex: 1;
-    float: none !important;
-    // background: linear-gradient(238deg, #fd8800, #fd008f, #9700fd, #0082c8, #05c7e6, #4bd58d);
-    // background-size: 1200% 1200%;
-    // -webkit-animation: dboxRainbow 30s ease infinite;
-    // -moz-animation: dboxRainbow 30s ease infinite;
-    // -o-animation: dboxRainbow 30s ease infinite;
-    // animation: dboxRainbow 30s ease infinite;
-    // -webkit-font-smoothing: subpixel-antialiased;
-    height: 85vh;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-grey-dark-3, 0.8),
-        rgba($color-grey-dark, 0.8)),
+  display: flex;
+  flex: 1;
+  float: none !important;
+  // background: linear-gradient(238deg, #fd8800, #fd008f, #9700fd, #0082c8, #05c7e6, #4bd58d);
+  // background-size: 1200% 1200%;
+  // -webkit-animation: dboxRainbow 30s ease infinite;
+  // -moz-animation: dboxRainbow 30s ease infinite;
+  // -o-animation: dboxRainbow 30s ease infinite;
+  // animation: dboxRainbow 30s ease infinite;
+  // -webkit-font-smoothing: subpixel-antialiased;
+  height: 85vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-grey-dark-3, 0.8),
+      rgba($color-grey-dark, 0.8)
+    ),
     url(../../assets/images/programming.jpg);
-    background-size: cover;
-    background-position: center bottom;
-    position: relative;
-
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
 }
 
 .box1::before {
-  content: '';
+  content: "";
   display: block;
   height: 0;
   padding-top: 591.44px / 1127.34px * 100%; //0.52463320737
 
-  @include respond (hires-desktop) {
+  @include respond(hires-desktop) {
     padding-top: 52.462%;
   }
 
   @include respond(desktop) {
-  padding-top: 52.442%;
+    padding-top: 52.442%;
   }
 
   @include respond(tab-land) {
@@ -78,16 +78,16 @@
 .icon--angle-down {
   position: absolute;
   top: 90%;
-  left: 49.3%;
+  left: 49.5%;
   transform: translate(-50%, -50%);
 }
 
-  .hero-btn {
-    transition: color 0.5s ease;
-  }
-  
-  .hero-btn:hover {
-    color: rgba(255,255,255,0.9);
-    transition: color 0.5s ease;
-    background: none;
-  }
+.hero-btn {
+  transition: color 0.5s ease;
+}
+
+.hero-btn:hover {
+  color: rgba(255, 255, 255, 0.9);
+  transition: color 0.5s ease;
+  background: none;
+}

@@ -63,9 +63,7 @@ $(window).on("load", function() {
   }
   function fadeInTag() {
     var tagLine = $(".tagline");
-    tagLine.fadeIn(3000, function() {
-      $(".icon").fadeIn(3500);
-    });
+    tagLine.fadeIn(3000);
   };
   hidePreloader();
   fadeInTag();
