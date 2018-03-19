@@ -9979,7 +9979,7 @@ $(window).on("load", function () {
   function fadeInTag() {
     var tagLine = $(".tagline");
     tagLine.fadeIn(3000, function () {
-      $("button").fadeIn(3500);
+      $(".icon").fadeIn(3500);
     });
   };
   hidePreloader();

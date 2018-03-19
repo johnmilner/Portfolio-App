@@ -56,12 +56,12 @@
 }
 
 .spinner {
+  width: 40px;
+  height: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  //width: 85%;
   cursor: pointer;
   z-index: 1000;
 }
@@ -78,7 +78,7 @@
 .icon--angle-down {
   position: absolute;
   top: 90%;
-  left: 50%;
+  left: 49.3%;
   transform: translate(-50%, -50%);
 }
 

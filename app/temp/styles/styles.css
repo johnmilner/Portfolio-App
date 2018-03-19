@@ -410,16 +410,6 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
   }
 }
 
-.spinner {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
 .double-bounce1,
 .double-bounce2 {
   width: 100%;
@@ -2401,12 +2391,13 @@ Instead edit gulp/templates/sprite */
 }
 
 .spinner {
+  width: 40px;
+  height: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  text-align: center;
   cursor: pointer;
   z-index: 1000;
 }
@@ -2424,7 +2415,7 @@ Instead edit gulp/templates/sprite */
 .icon--angle-down {
   position: absolute;
   top: 90%;
-  left: 50%;
+  left: 49.3%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
