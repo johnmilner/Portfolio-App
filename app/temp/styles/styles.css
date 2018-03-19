@@ -418,7 +418,6 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: #333;
 }
 
 .double-bounce1,
@@ -462,24 +461,69 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
   }
 }
 
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+h1.ml8 {
+  font-weight: 900;
+  font-size: 4.5em;
+  color: #fff;
+  width: 3em;
+  height: 3em;
 }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
+.ml8 .letters-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  height: 1em;
+}
 
-  to {
-    opacity: 1;
-  }
+.ml8 .letters {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  line-height: 0.7em;
+  right: -0.12em;
+  top: -0.2em;
+}
+
+.ml8 .bang {
+  font-size: 1.4em;
+  top: auto;
+  left: -0.06em;
+}
+
+.ml8 .circle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.ml8 .circle-white {
+  width: 3em;
+  height: 3em;
+  border: 2px dashed white;
+  border-radius: 2em;
+}
+
+.ml8 .circle-dark {
+  width: 2.2em;
+  height: 2.2em;
+  background-color: #4f7b86;
+  border-radius: 3em;
+  z-index: 1;
+}
+
+.ml8 .circle-dark-dashed {
+  border-radius: 2.4em;
+  background-color: transparent;
+  border: 2px dashed #4f7b86;
+  width: 2.3em;
+  height: 2.3em;
 }
 
 @font-face {
@@ -608,6 +652,7 @@ h3.ctasp {
   font-size: 3em;
   font-weight: 800;
   line-height: 1.6em;
+  letter-spacing: 0.5em;
   display: inline-block;
 }
 
@@ -618,10 +663,18 @@ h3.ctasp {
   font-weight: 100;
 }
 
+@media (max-width: 37.5em) {
+  .main-headline-r2 {
+    font-size: 6rem;
+  }
+}
+
 h5 {
   letter-spacing: 1px;
   font-family: 'Roboto', sans-serif !important;
   text-transform: uppercase;
+  padding-top: 3px;
+  padding-top: .3rem;
   font-size: 13px !important;
   font-size: 1.3rem !important;
   font-weight: 700 !important;
@@ -1251,6 +1304,7 @@ svg:not(:root) {
 }
 
 #button-wrapper {
+  display: none;
   margin: 0 auto;
   text-align: center;
   display: block;
@@ -1278,7 +1332,7 @@ button {
   margin: 0px 0px;
   text-transform: uppercase !important;
   letter-spacing: 1px;
-  font-family: 'Roboto', sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
   text-transform: uppercase;
   font-size: 13px !important;
   font-size: 1.3rem !important;
@@ -1306,7 +1360,7 @@ button:active {
 }
 
 button:after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   -webkit-transition: all 0.3s;
@@ -2340,12 +2394,21 @@ Instead edit gulp/templates/sprite */
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
   width: 85%;
   cursor: pointer;
-  -webkit-transition: opacity 2s ease-in;
-  transition: opacity 2s ease-in;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+  z-index: 1000;
 }
 
 .composition {

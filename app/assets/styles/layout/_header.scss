@@ -49,17 +49,22 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
   width: 85%;
   cursor: pointer;
-  transition: opacity 2s ease-in;
 }
 
-// .tagline.fadein {
-//   opacity: 1;
-// }
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  //width: 85%;
+  cursor: pointer;
+  z-index: 1000;
+}
 
 .composition {
   position: absolute;

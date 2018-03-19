@@ -136,17 +136,18 @@
     text-transform: uppercase;
     padding-top: 10em;
     padding-bottom: 11em;
-
+    
   }
-  
+
   .main-headline-r1 {
     color: #f95759;
     border-bottom: 3px dotted #5d5d5d;
     font-size: 3em;
     font-weight: 800;
     line-height: 1.6em;
-    //letter-spacing: 1.3em;
+    letter-spacing: 0.5em;
     display: inline-block;
+    
   }
   
   .main-headline-r2 {
@@ -154,12 +155,17 @@
     font-size: 12em;
     line-height: 1em;
     font-weight: 100;
+
+    @include respond(phone) {
+      font-size: 6rem;
+    }
   }
 
   h5 {
     letter-spacing: 1px;
     font-family: 'Roboto', sans-serif !important;
     text-transform: uppercase;
+    padding-top: .3rem;
     font-size: 1.3rem !important;
     font-weight: 700 !important;
     color: white !important;
