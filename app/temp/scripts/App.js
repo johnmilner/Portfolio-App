@@ -9927,12 +9927,12 @@ $(window).on("load", function () {
   var preloaderFadeOutTime = 3000;
   function hidePreloader() {
     var preloader = $(".spinner");
-    preloader.show(); //show preloader see spinner css
+    preloader.show(); //show preloader - see spinner css
     preloader.delay(1500).fadeOut(preloaderFadeOutTime);
   }
   function fadeInTag() {
     var tagLine = $(".tagline");
-    tagLine.delay(5000).fadeIn(500);
+    tagLine.delay(4000).fadeIn(500);
   }
   hidePreloader();
   fadeInTag();

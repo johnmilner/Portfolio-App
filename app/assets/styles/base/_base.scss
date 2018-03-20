@@ -156,7 +156,7 @@ p {
 }
 
 .icon--angle-down {
-  width: 15.5px;
+  width: 16.5px;
   height: 24px;
 }
 
@@ -169,11 +169,16 @@ p {
   width: 27px;
   height: 24px;
   background-position: 0 0;
-  transform: scale(.6);
+  //transform: scale(.3);
   display: inline-block !important;
   position: relative !important;
   top: 8px !important;
   left: 1px !important;
+
+  &:hover {
+    -webkit-filter: drop-shadow(0px 0px 4px rgba(247, 87, 89, 0.8));
+    cursor: pointer;
+  }
 }
 
 

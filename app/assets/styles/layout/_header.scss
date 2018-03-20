@@ -59,9 +59,10 @@
 
 .icon--angle-down {
   position: absolute;
-  top: 90%;
-  left: 49.5%;
-  transform: translate(-50%, -50%) scale(.6);
+  top: 110%;
+  left: 50%;
+  //transform: translate(-50%, -50%);
+  background-size: 100px !important;
   display: inline-block;
 }
 

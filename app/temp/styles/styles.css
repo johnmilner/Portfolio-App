@@ -225,6 +225,8 @@ h5 {
   text-transform: uppercase;
   padding-top: 3px;
   padding-top: .3rem;
+  padding-left: 8px;
+  padding-left: .8rem;
   font-size: 13px !important;
   font-size: 1.3rem !important;
   font-weight: 700 !important;
@@ -389,7 +391,7 @@ svg:not(:root) {
 }
 
 .icon--angle-down {
-  width: 15.5px;
+  width: 16.5px;
   height: 24px;
 }
 
@@ -402,12 +404,15 @@ svg:not(:root) {
   width: 27px;
   height: 24px;
   background-position: 0 0;
-  -webkit-transform: scale(0.6);
-          transform: scale(0.6);
   display: inline-block !important;
   position: relative !important;
   top: 8px !important;
   left: 1px !important;
+}
+
+.icon--heart:hover {
+  -webkit-filter: drop-shadow(0px 0px 4px rgba(247, 87, 89, .8));
+  cursor: pointer;
 }
 
 .spinner {
@@ -1793,7 +1798,7 @@ body,
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: .90;
+  opacity: .35;
   overflow: hidden;
 }
 
@@ -2047,10 +2052,9 @@ Instead edit gulp/templates/sprite */
 
 .icon--angle-down {
   position: absolute;
-  top: 90%;
-  left: 49.5%;
-  -webkit-transform: translate(-50%, -50%) scale(0.6);
-          transform: translate(-50%, -50%) scale(0.6);
+  top: 110%;
+  left: 50%;
+  background-size: 100px !important;
   display: inline-block;
 }
 
