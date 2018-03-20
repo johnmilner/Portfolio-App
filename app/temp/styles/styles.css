@@ -411,8 +411,6 @@ svg:not(:root) {
 }
 
 .spinner {
-  width: 40px;
-  height: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -420,6 +418,8 @@ svg:not(:root) {
           transform: translate(-50%, -50%);
   cursor: pointer;
   z-index: 1000;
+  display: none;
+  top: 40%;
 }
 
 h1.ml8 {
@@ -448,14 +448,14 @@ h1.ml8 {
   z-index: 2;
   display: inline-block;
   line-height: 0.7em;
-  right: -0.12em;
+  right: .03em;
   top: -0.2em;
 }
 
 .ml8 .bang {
   font-size: 1.4em;
   top: auto;
-  left: -0.06em;
+  left: -0.12em;
   -webkit-transform: rotate(5deg);
           transform: rotate(5deg);
 }

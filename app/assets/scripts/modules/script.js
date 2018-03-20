@@ -3,25 +3,26 @@ import "jquery.easing";
 import Barba from "barba.js";
 import mixitup from "mixitup";
 import Waypoint from "waypoints/lib/noframework.waypoints.min";
-import anime from 'animejs';
+//import anime from 'animejs';
 
 //Preloader
 $(window).on("load", function() {
-  var preloaderFadeOutTime = 1000;
+  var preloaderFadeOutTime = 3000;
   function hidePreloader() {
     var preloader = $(".spinner");
-    preloader.fadeOut(preloaderFadeOutTime);
+    preloader.show(); //show preloader see spinner css
+    preloader.delay(1500).fadeOut(preloaderFadeOutTime);
   }
   function fadeInTag() {
     var tagLine = $(".tagline");
-    tagLine.fadeIn(3000);
+    tagLine.delay(5000).fadeIn(500);
   }
   hidePreloader();
   fadeInTag();
 });
 
 
-anime.timeline({ loop: true })
+anime.timeline({ loop: false })
       .add({
         targets: ".ml8 .circle-white",
         scale: [0, 3],
@@ -62,7 +63,7 @@ anime.timeline({ loop: true })
         opacity: 0,
         duration: 1000,
         easing: "easeOutExpo",
-        delay: 1400
+        delay: 4400
       });
 
     anime({
