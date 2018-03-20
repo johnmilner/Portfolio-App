@@ -16,6 +16,23 @@
       }
   }
 
+  .bio {
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    // font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;  
+    text-align: center;
+    width: auto;
+    max-width: 780px;
+    display: block;
+    text-rendering: optimizelegibility;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    color: #fff;
+    font-size: 1.75rem;
+    padding-bottom: 1.25rem;
+  }
+
   .profile-foto {
     //position: absolute;
     //top: 80%;

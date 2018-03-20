@@ -169,26 +169,16 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
 }
 
 p {
-  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
-  width: auto;
-  max-width: 780px;
-  display: block;
-  text-rendering: optimizelegibility;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 0;
-  padding-right: 0;
-  color: #fff;
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
   font-size: 17.5px;
   font-size: 1.75rem;
-  padding-bottom: 12.5px;
-  padding-bottom: 1.25rem;
+  text-align: left;
 }
 
 h3.cta {
-  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
   color: #fff;
-  font-weight: 300;
+  font-weight: 700;
   letter-spacing: -0.035em;
   text-rendering: optimizelegibility;
   font-size: 4vw;
@@ -443,8 +433,13 @@ svg:not(:root) {
   height: 24px;
 }
 
+.icon--linkedin-in {
+  width: 21px;
+  height: 24px;
+}
+
 .icon--github {
-  width: 24.05px;
+  width: 23.5px;
   height: 24px;
 }
 
@@ -456,6 +451,18 @@ svg:not(:root) {
 .icon--envelope {
   width: 25px;
   height: 24px;
+}
+
+.icon--heart {
+  width: 27px;
+  height: 24px;
+  background-position: 0 0;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  display: inline-block !important;
+  position: relative !important;
+  top: 8px !important;
+  left: 2px !important;
 }
 
 /* Box Hover Image Animation */
@@ -1774,41 +1781,47 @@ body,
 Instead edit gulp/templates/sprite */
 
 .icon {
-  background-image: url("../images/sprites/sprite-a7f98f91.svg");
+  background-image: url("../images/sprites/sprite-1ed97516.svg");
 }
 
 .no-svg .icon {
-  background-image: url("../images/sprites/sprite-a7f98f91.png");
+  background-image: url("../images/sprites/sprite-1ed97516.png");
 }
 
 .icon--angle-down {
   /* width: 322px;
     height: 514px; */
-  background-position: 0 0;
+  background-position: 35.99003735990038% 0;
 }
 
 .icon--envelope {
   /* width: 514px;
     height: 514px; */
-  background-position: 24.137931034482758% 0;
+  background-position: 63.64922206506365% 0;
 }
 
 .icon--github {
   /* width: 498px;
     height: 514px; */
-  background-position: 61.925925925925924% 0;
+  background-position: 0 100%;
+}
+
+.icon--heart {
+  /* width: 578px;
+    height: 514px; */
+  background-position: 0 0;
 }
 
 .icon--linkedin-in {
   /* width: 450px;
     height: 514px; */
-  background-position: 0 100%;
+  background-position: 33.69418132611637% 100%;
 }
 
 .icon--medium {
   /* width: 450px;
     height: 514px; */
-  background-position: 32.18884120171674% 100%;
+  background-position: 64.14073071718539% 100%;
 }
 
 .icon--twitter {
@@ -2059,6 +2072,24 @@ Instead edit gulp/templates/sprite */
   }
 }
 
+.bio {
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: auto;
+  max-width: 780px;
+  display: block;
+  text-rendering: optimizelegibility;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  color: #fff;
+  font-size: 17.5px;
+  font-size: 1.75rem;
+  padding-bottom: 12.5px;
+  padding-bottom: 1.25rem;
+}
+
 .profile-foto {
   margin: 0 auto;
   display: block;
@@ -2195,8 +2226,8 @@ Instead edit gulp/templates/sprite */
 
 .footer__copyright {
   border-top: 1px solid #fff;
-  padding-top: 20px;
-  padding-top: 2rem;
+  padding-top: 7.5px;
+  padding-top: .75rem;
   padding-right: 40px;
   padding-right: 4rem;
   display: inline-block;

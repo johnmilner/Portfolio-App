@@ -145,8 +145,13 @@ p {
   height: 24px; 
 }
 
+.icon--linkedin-in {
+  width: 21px;
+  height: 24px;
+}
+
 .icon--github {
-  width: 24.05px;
+  width: 23.5px;
   height: 24px; 
 }
 
@@ -158,6 +163,17 @@ p {
 .icon--envelope {
   width: 25px;
   height: 24px;
+}
+
+.icon--heart {
+  width: 27px;
+  height: 24px;
+  background-position: 0 0;
+  transform: scale(.6);
+  display: inline-block !important;
+  position: relative !important;
+  top: 8px !important;
+  left: 2px !important;
 }
 
 
