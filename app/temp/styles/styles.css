@@ -122,43 +122,40 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
 }
 
 @font-face {
-  font-family: 'Monoton';
-  src: url("https://fonts.googleapis.com/css?family=Monoton");
-}
-
-@font-face {
-  font-family: 'Playfair Display';
-  src: url("https://fonts.googleapis.com/css?family=Playfair+Display:400,900");
-}
-
-@font-face {
   font-family: 'BrandonText-Medium';
   src: url("../../../assets/fonts/BrandonText-Medium.OTF");
 }
 
-.main-headline {
-  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
-  color: white;
-  font-weight: 200;
-  letter-spacing: -0.035em;
-  text-rendering: optimizelegibility;
-  font-size: 5vw;
-  line-height: 1.3em;
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  -webkit-transform: translate3d(0, 0, 0);
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
+.tagline {
+  color: #fff;
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  padding-top: 10em;
+  padding-bottom: 11em;
 }
 
-.main-headline:hover {
-  text-shadow: 5px 10px 20px rgba(0, 0, 0, .2);
-  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, .2);
-  -webkit-transition: all .5s;
-  transition: all .5s;
-  -webkit-animation: rubberBand 1s;
-          animation: rubberBand 1s;
+.main-headline-r1 {
+  color: #f95759;
+  border-bottom: 3px dotted #5d5d5d;
+  font-size: 3em;
+  font-weight: 800;
+  line-height: 1.6em;
+  letter-spacing: 0.5em;
+  display: inline-block;
+}
+
+.main-headline-r2 {
+  margin: 0;
+  font-size: 12em;
+  line-height: 1em;
+  font-weight: 100;
+}
+
+@media (max-width: 37.5em) {
+  .main-headline-r2 {
+    font-size: 6rem;
+  }
 }
 
 .navigation__item {
@@ -222,38 +219,6 @@ h3.ctasp {
   border-top: 1px solid #777;
 }
 
-.tagline {
-  color: #fff;
-  text-align: center;
-  font-family: Raleway, sans-serif;
-  text-transform: uppercase;
-  padding-top: 10em;
-  padding-bottom: 11em;
-}
-
-.main-headline-r1 {
-  color: #f95759;
-  border-bottom: 3px dotted #5d5d5d;
-  font-size: 3em;
-  font-weight: 800;
-  line-height: 1.6em;
-  letter-spacing: 0.5em;
-  display: inline-block;
-}
-
-.main-headline-r2 {
-  margin: 0;
-  font-size: 12em;
-  line-height: 1em;
-  font-weight: 100;
-}
-
-@media (max-width: 37.5em) {
-  .main-headline-r2 {
-    font-size: 6rem;
-  }
-}
-
 h5 {
   letter-spacing: 1px;
   font-family: 'Roboto', sans-serif !important;
@@ -265,26 +230,6 @@ h5 {
   font-weight: 700 !important;
   color: white !important;
   text-align: center;
-}
-
-.surf {
-  padding-top: 15vh;
-  background: transparent;
-  color: #00a699;
-  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
-  font-size: 90px;
-  font-size: 9rem;
-  font-weight: 300;
-  text-rendering: optimizelegibility;
-  z-index: 50;
-  text-align: center;
-  position: relative;
-}
-
-@media (max-width: 37.5em) {
-  .surf {
-    font-size: 3rem;
-  }
 }
 
 /* CSS Normalize */
@@ -462,7 +407,89 @@ svg:not(:root) {
   display: inline-block !important;
   position: relative !important;
   top: 8px !important;
-  left: 2px !important;
+  left: 1px !important;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+h1.ml8 {
+  font-weight: 900;
+  font-size: 4.5em;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
+  width: 3em;
+  height: 3em;
+  position: relative;
+}
+
+.ml8 .letters-container {
+  position: absolute;
+  left: 40px;
+  left: 4rem;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  height: 1em;
+}
+
+.ml8 .letters {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  line-height: 0.7em;
+  right: -0.12em;
+  top: -0.2em;
+}
+
+.ml8 .bang {
+  font-size: 1.4em;
+  top: auto;
+  left: -0.06em;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+.ml8 .circle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.ml8 .circle-white {
+  width: 3em;
+  height: 3em;
+  border: 2px dashed white;
+  border-radius: 2em;
+}
+
+.ml8 .circle-dark {
+  width: 2.2em;
+  height: 2.2em;
+  background-color: #4f7b86;
+  border-radius: 3em;
+  z-index: 1;
+}
+
+.ml8 .circle-dark-dashed {
+  border-radius: 2.4em;
+  background-color: transparent;
+  border: 2px dashed #4f7b86;
+  width: 2.3em;
+  height: 2.3em;
 }
 
 /* Box Hover Image Animation */
@@ -1964,8 +1991,8 @@ Instead edit gulp/templates/sprite */
           flex: 1;
   float: none !important;
   height: 85vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(51, 51, 51, .8)), to(rgba(119, 119, 119, .8))), url("../images/programming.jpg");
-  background-image: linear-gradient(to right bottom, rgba(51, 51, 51, .8), rgba(119, 119, 119, .8)), url("../images/programming.jpg");
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(51, 51, 51, .8)), to(rgba(119, 119, 119, .8))), url("../images/cctv.jpg");
+  background-image: linear-gradient(to right bottom, rgba(51, 51, 51, .8), rgba(119, 119, 119, .8)), url("../images/cctv.jpg");
   background-size: cover;
   background-position: center bottom;
   position: relative;
@@ -2008,18 +2035,6 @@ Instead edit gulp/templates/sprite */
   cursor: pointer;
 }
 
-.spinner {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  cursor: pointer;
-  z-index: 1000;
-}
-
 .composition {
   position: absolute;
   top: 20%;
@@ -2034,8 +2049,9 @@ Instead edit gulp/templates/sprite */
   position: absolute;
   top: 90%;
   left: 49.5%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(0.6);
+          transform: translate(-50%, -50%) scale(0.6);
+  display: inline-block;
 }
 
 .hero-btn {
@@ -2213,6 +2229,7 @@ Instead edit gulp/templates/sprite */
   display: inline-block;
   -webkit-transition: all .2s;
   transition: all .2s;
+  cursor: pointer;
 }
 
 .footer__link:hover,
@@ -2222,6 +2239,7 @@ Instead edit gulp/templates/sprite */
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, .4);
   -webkit-transform: rotate(5deg) scale(1.3);
           transform: rotate(5deg) scale(1.3);
+  background-color: #333;
 }
 
 .footer__copyright {

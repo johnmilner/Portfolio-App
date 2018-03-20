@@ -1,58 +1,9 @@
 import jQuery from "jquery";
 import "jquery.easing";
-// import anime from 'animejs';
 import Barba from "barba.js";
 import mixitup from "mixitup";
-import Waypoint from 'waypoints/lib/noframework.waypoints.min';
-
-// Wrap every letter in a span
-// anime.timeline({loop: false})
-//   .add({
-//     targets: '.spinner .ml8 .circle-white',
-//     scale: [0, 3],
-//     opacity: [1, 0],
-//     easing: "easeInOutExpo",
-//     rotateZ: 360,
-//     duration: 1100
-//   }).add({
-//     targets: '.spinner .ml8 .circle-container',
-//     scale: [0, 1],
-//     duration: 1100,
-//     easing: "easeInOutExpo",
-//     offset: '-=1000'
-//   }).add({
-//     targets: '.spinner .ml8 .circle-dark',
-//     scale: [0, 1],
-//     duration: 1100,
-//     easing: "easeOutExpo",
-//     offset: '-=600'
-//   }).add({
-//     targets: '.spinner .ml8 .letters-left',
-//     scale: [0, 1],
-//     duration: 1200,
-//     offset: '-=550'
-//   }).add({
-//     targets: '.spinner .ml8 .bang',
-//     scale: [0, 1],
-//     rotateZ: [45, 15],
-//     duration: 1200,
-//     offset: '-=1000'
-//   }).add({
-//     targets: '.spinner .ml8',
-//     opacity: 0,
-//     duration: 1000,
-//     easing: "easeOutExpo",
-//     delay: 1400
-//   })
-
-//   anime({
-//     targets: '.spinner .ml8 .circle-dark-dashed',
-//     rotateZ: 360,
-//     duration: 8000,
-//     easing: "linear",
-//     loop: true
-//   });
-
+import Waypoint from "waypoints/lib/noframework.waypoints.min";
+import anime from 'animejs';
 
 //Preloader
 $(window).on("load", function() {
@@ -64,10 +15,65 @@ $(window).on("load", function() {
   function fadeInTag() {
     var tagLine = $(".tagline");
     tagLine.fadeIn(3000);
-  };
+  }
   hidePreloader();
   fadeInTag();
 });
+
+
+anime.timeline({ loop: true })
+      .add({
+        targets: ".ml8 .circle-white",
+        scale: [0, 3],
+        opacity: [1, 0],
+        easing: "easeInOutExpo",
+        rotateZ: 360,
+        duration: 1100
+      })
+      .add({
+        targets: ".ml8 .circle-container",
+        scale: [0, 1],
+        duration: 1100,
+        easing: "easeInOutExpo",
+        offset: "-=1000"
+      })
+      .add({
+        targets: ".ml8 .circle-dark",
+        scale: [0, 1],
+        duration: 1100,
+        easing: "easeOutExpo",
+        offset: "-=600"
+      })
+      .add({
+        targets: ".ml8 .letters-left",
+        scale: [0, 1],
+        duration: 1200,
+        offset: "-=550"
+      })
+      .add({
+        targets: ".ml8 .bang",
+        scale: [0, 1],
+        rotateZ: [45, 15],
+        duration: 1200,
+        offset: "-=1000"
+      })
+      .add({
+        targets: ".ml8",
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1400
+      });
+
+    anime({
+      targets: ".ml8 .circle-dark-dashed",
+      rotateZ: 360,
+      duration: 8000,
+      easing: "linear",
+      loop: true
+    });
+
+
 
 $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
   if (
@@ -88,7 +94,6 @@ $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     }
   }
 });
-
 
 /**
  * footer-reveal.js
@@ -314,8 +319,4 @@ $("document").ready(function() {
       }
     })();
   });
-
-  
 });
-
-
