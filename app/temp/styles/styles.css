@@ -1401,7 +1401,7 @@ button:after {
 Instead edit gulp/templates/sprite */
 
 .icon {
-  background-image: url("../../../assets/images/sprites/sprite-1ed97516.svg");
+  background-image: url("../images/sprites/sprite-1ed97516.svg");
 }
 
 .no-svg .icon {
