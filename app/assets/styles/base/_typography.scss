@@ -38,42 +38,6 @@
 
 
 
-// .main-headline {
-//   font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
-//   color: white;
-//   font-weight: 200;
-//   letter-spacing: -0.035em;
-//   text-rendering: optimizelegibility;
-//   font-size: 5vw;
-//   line-height: 1.3em; 
-
-//   -webkit-backface-visibility: hidden;
-//   -webkit-perspective: 1000;
-//   -webkit-transform: translate3d(0,0,0);
-
-//   display:inline-block;
-//   overflow:hidden;
-//   white-space:nowrap;
-
-//   &:hover {
-//     text-shadow: 0.5rem 1rem 2rem rgba(0,0,0,0.2);
-//     transition: all .5s;
-//     animation: rubberBand 1s;
-//   }
-
-//   @include respond(phone) {
-   
-//   }
-
-//   @include respond(tab-port) {
-//   }
-
-//   @include respond(phone) {
-
-//   }
-// }
-
-
 
 .navigation__item {
   font-size: 1.25rem;
@@ -82,18 +46,6 @@
  
 }
 
-
-// h1 {
-//     font-family: 'Playfair Display', serif;
-//     font-size: 2.875rem;
-//     font-weight: 300;
-//     text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-//     text-rendering: optimizelegibility;
-//     letter-spacing: -0.02em;
-//     color: #3d444a;
-//     line-height: 1.2em;
-//     margin-bottom: 2.75rem;
-//   }
   
   p {
     font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
@@ -142,7 +94,7 @@
     width: 100%;
     height: 6rem;
     padding-top: 2rem;
-    border-top: 1px solid #777;
+    //border-top: 1px solid #777;
     letter-spacing: 3.12px;
   }
 

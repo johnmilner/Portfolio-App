@@ -142,8 +142,12 @@
       border-bottom: none;
     }
     /* overlay color */
+    .inner-content a.project .overlay {
+      background:  rgba(0,0,0,0.65);
+      //box-shadow: inset 0 0 0 1vw;
+    }
     .inner-content a.project:hover .overlay {
-      background: rgba(0,0,0,0.65);
+      background: rgba(0,0,0,0.35);
       box-shadow: inset 0 0 0 1vw;
     }
     /* hover span moves text up with fading in bottom rule */
@@ -200,11 +204,11 @@
 
   /* Colours for each box */
 //.box1 { background:#1abc9c;}
-.box2 { background:#3498db;}
-.box3 { background:#9b59b6;}
+.box2 { background:#d7dcf2;}
+.box3 { background:#a8adc1;}
 .box4 { background:#34495e;}
-.box5 { background:#f1c40f;}
-.box6 { background:#e67e22;}
+.box5 { background:#606c76;}
+.box6 { background:#868a8b;}
 .box7 { background:#e74c3c;}
 .box8 { background:#bdc3c7;}
 .box9 { background:#2ecc71;}
@@ -213,7 +217,7 @@
 .box12 { background:#3498db;}
 .box13 { background:#9b59b6;}
 .box14 { background:#34495e;}
-.box15 { background:#f1c40f;}
+.box15 { background:#a8adc1;}
 
   
   /* Border Overlay Colors */
@@ -222,9 +226,9 @@
 .box2 .inner-content a.project .overlay { color:#3498db;}
 .box3 .inner-content a.project .overlay { color:#9b59b6;}
 .box4 .inner-content a.project .overlay { color:#34495e;}
-.box5 .inner-content a.project .overlay { color:#f1c40f;}
-.box6 .inner-content a.project .overlay { color:#e67e22;}
-.box7 .inner-content a.project .overlay { color:#e74c3c;}
+.box5 .inner-content a.project .overlay { color:#d7dcf2;}
+.box6 .inner-content a.project .overlay { color:#a8adc1;}
+.box7 .inner-content a.project .overlay { color:#34495e;}
 .box8 .inner-content a.project .overlay { color:#bdc3c7;}
 .box9 .inner-content a.project .overlay { color:#2ecc71;}
 .box10 .inner-content a.project .overlay { color:#16a085;}
@@ -232,13 +236,14 @@
 .box12 .inner-content a.project .overlay { color:#3498db;}
 .box13 .inner-content a.project .overlay { color:#9b59b6;}
 .box14 .inner-content a.project .overlay { color:#34495e;}
-.box15 .inner-content a.project .overlay { color:#f1c40f;}
+.box15 .inner-content a.project .overlay { color:#868a8b;}
 .box16 .inner-content a.project .overlay { color:#1abc9c;}
 .box17 .inner-content a.project .overlay { color:#3498db;}
 
 /* Grid Images */
 
 .travel {
+  
   background-image: url('../../../assets/images/hero-small.jpg');
 }
 
@@ -316,5 +321,9 @@
 
 .rob {
   background-image: url('../../../assets/images/robofriends.png');
+}
+
+.nike {
+  background-image: url('../../../assets/images/cctv.jpg');
 }
 

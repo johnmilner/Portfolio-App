@@ -8,13 +8,15 @@
     -webkit-font-smoothing: subpixel-antialiased;
     background-color: #333;
     border-top: 1px solid $color-grey-dark-3;
-    width: 100%;
+    width: 95%;
     font-size: 1.4rem;
     color: $color-grey-light-1;
-    padding: 17rem 0;
+    padding: 28rem 3rem 30rem 3rem;
+
+    //background-attachment: fixed;
   
     @include respond(tab-land) {
-      padding: 18rem 0;
+      padding: 21rem 0;
     }
   
     @include respond(ipad-port) {
@@ -48,6 +50,7 @@
         padding: 0rem 3rem 0 4rem;
         margin-left: 2rem;
         display: inline-block;
+
   
         @include respond(tab-port) {
             width: 100%;

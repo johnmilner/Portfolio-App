@@ -9930,12 +9930,12 @@ $(window).on("load", function () {
     preloader.show(); //show preloader - see spinner css
     preloader.delay(2300).fadeOut(preloaderFadeOutTime);
   }
-  // function fadeInTag() {
-  //   var tagLine = $(".tagline");
-  //   tagLine.delay(4000).fadeIn(500);
+  // function fadeInNav() {
+  //   var tagLine = $(".navigation");
+  //   tagLine.delay(400).fadeIn(500);
   // }
   hidePreloader();
-  //fadeInTag();
+  //fadeInNav();
 });
 
 anime.timeline({ loop: false }).add({
@@ -9976,10 +9976,22 @@ anime.timeline({ loop: false }).add({
   easing: "easeOutExpo",
   delay: 300
 }).add({
+  targets: ".navigation",
+  opacity: 1,
+  duration: 1000,
+  easing: "easeInExpo"
+  //delay: 500
+}).add({
   targets: ".box1",
   opacity: 1,
   duration: 1000,
   easing: "easeOutExpo"
+  //delay: 500
+}).add({
+  targets: ".footer",
+  opacity: 1,
+  duration: 1000,
+  easing: "easeInExpo"
   //delay: 500
 });
 
