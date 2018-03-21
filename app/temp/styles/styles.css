@@ -210,6 +210,7 @@ h3.ctasp {
 }
 
 .projects {
+  font-family: 'Source Sans Pro', sans-serif !important;
   margin: 0 auto;
   width: 100%;
   height: 60px;
@@ -217,11 +218,11 @@ h3.ctasp {
   padding-top: 20px;
   padding-top: 2rem;
   border-top: 1px solid #777;
+  letter-spacing: 3.12px;
 }
 
 h5 {
-  letter-spacing: 1px;
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Source Sans Pro', sans-serif !important;
   text-transform: uppercase;
   padding-top: 3px;
   padding-top: .3rem;
@@ -408,6 +409,8 @@ svg:not(:root) {
   position: relative !important;
   top: 8px !important;
   left: 1px !important;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .icon--heart:hover {
@@ -966,7 +969,7 @@ button {
   margin: 0px 0px;
   text-transform: uppercase !important;
   letter-spacing: 1px;
-  font-family: "Roboto", sans-serif !important;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   text-transform: uppercase;
   font-size: 13px !important;
   font-size: 1.3rem !important;
@@ -1995,12 +1998,13 @@ Instead edit gulp/templates/sprite */
       -ms-flex: 1;
           flex: 1;
   float: none !important;
-  height: 85vh;
+  height: 100vh;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(51, 51, 51, .8)), to(rgba(119, 119, 119, .8))), url("../images/cctv.jpg");
   background-image: linear-gradient(to right bottom, rgba(51, 51, 51, .8), rgba(119, 119, 119, .8)), url("../images/cctv.jpg");
   background-size: cover;
   background-position: center bottom;
   position: relative;
+  opacity: 0;
 }
 
 .box1::before {
@@ -2029,7 +2033,6 @@ Instead edit gulp/templates/sprite */
 }
 
 .tagline {
-  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2040,14 +2043,10 @@ Instead edit gulp/templates/sprite */
   cursor: pointer;
 }
 
-.composition {
-  position: absolute;
-  top: 20%;
-  left: 25%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  height: 50%;
-  width: 50%;
+@media (max-width: 22em) {
+  .main-headline-r1 {
+    letter-spacing: 0.2em;
+  }
 }
 
 .icon--angle-down {
@@ -2056,6 +2055,18 @@ Instead edit gulp/templates/sprite */
   left: 50%;
   background-size: 100px !important;
   display: inline-block;
+}
+
+@media (max-width: 75em) {
+  .icon--angle-down {
+    top: 95%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .icon--angle-down {
+    top: 100%;
+  }
 }
 
 .hero-btn {

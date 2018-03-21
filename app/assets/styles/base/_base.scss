@@ -174,6 +174,7 @@ p {
   position: relative !important;
   top: 8px !important;
   left: 1px !important;
+  transition: all .2s;
 
   &:hover {
     -webkit-filter: drop-shadow(0px 0px 4px rgba(247, 87, 89, 0.8));

@@ -137,17 +137,18 @@
   }
 
   .projects {
+    font-family: 'Source Sans Pro', sans-serif !important;    
     margin: 0 auto;
     width: 100%;
     height: 6rem;
     padding-top: 2rem;
     border-top: 1px solid #777;
+    letter-spacing: 3.12px;
   }
 
 
   h5 {
-    letter-spacing: 1px;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Source Sans Pro', sans-serif !important;
     text-transform: uppercase;
     padding-top: .3rem;
     padding-left: .8rem;

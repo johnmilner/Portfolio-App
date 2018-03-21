@@ -2,7 +2,7 @@
   display: flex;
   flex: 1;
   float: none !important;
-  height: 85vh;
+  height: 100vh;
   background-image: linear-gradient(
       to right bottom,
       rgba($color-grey-dark-3, 0.8),
@@ -12,6 +12,7 @@
   background-size: cover;
   background-position: center bottom;
   position: relative;
+  opacity: 0;
 }
 
 .box1::before {
@@ -38,7 +39,7 @@
 }
 
 .tagline {
-  display: none;
+  //display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -46,15 +47,13 @@
   text-align: center;
   width: 85%;
   cursor: pointer;
+
 }
 
-.composition {
-  position: absolute;
-  top: 20%;
-  left: 25%;
-  transform: translate(-50%, -50%);
-  height: 50%;
-  width: 50%;
+.main-headline-r1 {
+  @include respond(small-phone) {
+    letter-spacing: 0.2em;
+  }
 }
 
 .icon--angle-down {
@@ -64,6 +63,14 @@
   //transform: translate(-50%, -50%);
   background-size: 100px !important;
   display: inline-block;
+
+  @include respond(tab-land) {
+    top: 95%;
+  }
+
+  @include respond(phone) {
+    top: 100%;
+  }
 }
 
 .hero-btn {

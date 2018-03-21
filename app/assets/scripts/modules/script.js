@@ -7,18 +7,18 @@ import Waypoint from "waypoints/lib/noframework.waypoints.min";
 
 //Preloader
 $(window).on("load", function() {
-  var preloaderFadeOutTime = 3000;
+  var preloaderFadeOutTime = 2500;
   function hidePreloader() {
     var preloader = $(".spinner");
     preloader.show(); //show preloader - see spinner css
-    preloader.delay(1500).fadeOut(preloaderFadeOutTime);
+    preloader.delay(2300).fadeOut(preloaderFadeOutTime);
   }
-  function fadeInTag() {
-    var tagLine = $(".tagline");
-    tagLine.delay(4000).fadeIn(500);
-  }
+  // function fadeInTag() {
+  //   var tagLine = $(".tagline");
+  //   tagLine.delay(4000).fadeIn(500);
+  // }
   hidePreloader();
-  fadeInTag();
+  //fadeInTag();
 });
 
 
@@ -29,7 +29,8 @@ anime.timeline({ loop: false })
         opacity: [1, 0],
         easing: "easeInOutExpo",
         rotateZ: 360,
-        duration: 1100
+        duration: 1100,
+        delay: 1000
       })
       .add({
         targets: ".ml8 .circle-container",
@@ -61,9 +62,15 @@ anime.timeline({ loop: false })
       .add({
         targets: ".ml8",
         opacity: 0,
-        duration: 1000,
+        duration: 2000,
         easing: "easeOutExpo",
-        delay: 4400
+        delay: 300
+      }).add({
+        targets: ".box1",
+        opacity: 1,
+        duration: 1000,
+        easing: "easeOutExpo"
+        //delay: 500
       });
 
     anime({
