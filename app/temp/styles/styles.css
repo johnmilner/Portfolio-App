@@ -126,6 +126,11 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
   src: url("../../../assets/fonts/BrandonText-Medium.OTF");
 }
 
+@font-face {
+  font-family: 'BrandonText-Medium';
+  src: url("../../../assets/fonts/TheanoDidot-Regular.otf");
+}
+
 .tagline {
   color: #fff;
   text-align: center;
@@ -584,7 +589,7 @@ h1.ml8 {
   font-weight: 500;
   font-size: 2.1vw;
   opacity: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: -0.02em;
 }
 
@@ -648,7 +653,7 @@ h1.ml8 {
 .inner-content a.project em {
   opacity: 0;
   display: block;
-  font-family: "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "TheanoDidot-Regular", serif;
   font-style: italic;
   font-size: 1.1vw;
   -webkit-transform: translateY(-25px);
@@ -1565,8 +1570,8 @@ Instead edit gulp/templates/sprite */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 125em) {
   .box1 {
-    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(85, 197, 122, .8)), to(rgba(40, 180, 133, .8))), url("../../../assets/images/cctv.jpg");
-    background-image: linear-gradient(to right bottom, rgba(85, 197, 122, .8), rgba(40, 180, 133, .8)), url("../../../assets/images/cctv.jpg");
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(51, 51, 51, .8)), to(rgba(119, 119, 119, .8))), url("../../../assets/images/cctv.jpg");
+    background-image: linear-gradient(to right bottom, rgba(51, 51, 51, .8), rgba(119, 119, 119, .8)), url("../../../assets/images/cctv.jpg");
   }
 }
 
