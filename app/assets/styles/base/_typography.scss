@@ -4,15 +4,20 @@
 }
 
 @font-face {
-  font-family: 'BrandonText-Medium';
+  font-family: 'TheanoDidot-Regular';
   src: url('../../../assets/fonts/TheanoDidot-Regular.otf');
+}
+
+@font-face {
+  font-family: 'SofiaProRegular';
+  src: url('../../../assets/fonts/SofiaProRegular.otf');
 }
 
 .tagline {
   color: #fff;
   text-align: center;
   //background-color: #343434;
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   padding-top: 10em;
   padding-bottom: 11em;
@@ -41,14 +46,10 @@
   }
 }
 
-
-
-
-.navigation__item {
+.navigation__link {
   font-size: 1.25rem;
   font-family: 'BrandonText-Medium', Arial, sans-serif;
   font-weight: 700;
- 
 }
 
   
