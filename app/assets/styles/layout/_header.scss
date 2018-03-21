@@ -5,12 +5,11 @@
   height: 100vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba($color-grey-dark-3, 0.8),
-      rgba($color-grey-dark, 0.8)
-    ),
-    url(../../assets/images/cctv.jpg);
+      rgba($color-grey-dark-3, 0.1),
+      rgba($color-grey-dark, 0.1)
+    );
   background-size: cover;
-  background-position: center bottom;
+  background-position: left center;
   position: relative;
   opacity: 0;
 
@@ -27,8 +26,7 @@
       background-image: linear-gradient(
           to right bottom,
           rgba($color-grey-dark-3, 0.8),
-          rgba($color-grey-dark, 0.8)),
-      url(../../../assets/images/cctv.jpg);
+          rgba($color-grey-dark, 0.8));
   }
 
   @include respond(phone) {
@@ -83,7 +81,7 @@
   top: 110%;
   left: 50%;
   //transform: translate(-50%, -50%);
-  background-size: 100px !important;
+  background-size: 150px !important;
   display: inline-block;
 
   @include respond(tab-land) {

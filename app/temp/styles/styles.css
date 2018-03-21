@@ -160,6 +160,7 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
   font-size: 12em;
   line-height: 1em;
   font-weight: 100;
+  font-family: 'Raleway', sans-serif;
 }
 
 @media (max-width: 37.5em) {
@@ -222,9 +223,11 @@ h3.ctasp {
 .projects {
   font-family: 'Source Sans Pro', sans-serif !important;
   margin: 0 auto;
-  width: 100%;
   height: 60px;
   height: 6rem;
+  width: 60px;
+  width: 6rem;
+  text-align: center;
   padding-top: 20px;
   padding-top: 2rem;
   letter-spacing: 3.12px;
@@ -233,8 +236,8 @@ h3.ctasp {
 h5 {
   font-family: 'Source Sans Pro', sans-serif !important;
   text-transform: uppercase;
-  padding-top: 3px;
-  padding-top: .3rem;
+  padding-top: -3px;
+  padding-top: -.3rem;
   padding-left: 8px;
   padding-left: .8rem;
   font-size: 13px !important;
@@ -412,8 +415,8 @@ svg:not(:root) {
 }
 
 .icon--angle-down {
-  width: 16.5px;
-  height: 24px;
+  width: 26.5px;
+  height: 30px;
 }
 
 .icon--envelope {
@@ -1369,11 +1372,43 @@ button:after {
      object-fit: cover;
 }
 
+.scene {
+  background: #282886;
+}
+
+.scene path:first-child {
+  fill: #4f4fea;
+}
+
+.scene path:nth-child(2) {
+  fill: #0c27cf;
+}
+
+.scene path:nth-child(3) {
+  fill: #13269c;
+}
+
+.scene path:nth-child(4) {
+  fill: #242468;
+}
+
+.scene path:nth-child(5) {
+  fill: #2648e6;
+}
+
+.scene path:nth-child(6) {
+  fill: #2c31b0;
+}
+
+.scene path:nth-child(7) {
+  fill: #262689;
+}
+
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
 Instead edit gulp/templates/sprite */
 
 .icon {
-  background-image: url("../images/sprites/sprite-1ed97516.svg");
+  background-image: url("../../../assets/images/sprites/sprite-1ed97516.svg");
 }
 
 .no-svg .icon {
@@ -1556,10 +1591,10 @@ Instead edit gulp/templates/sprite */
           flex: 1;
   float: none !important;
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(51, 51, 51, .8)), to(rgba(119, 119, 119, .8))), url("../images/cctv.jpg");
-  background-image: linear-gradient(to right bottom, rgba(51, 51, 51, .8), rgba(119, 119, 119, .8)), url("../images/cctv.jpg");
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(51, 51, 51, .1)), to(rgba(119, 119, 119, .1)));
+  background-image: linear-gradient(to right bottom, rgba(51, 51, 51, .1), rgba(119, 119, 119, .1));
   background-size: cover;
-  background-position: center bottom;
+  background-position: left center;
   position: relative;
   opacity: 0;
 }
@@ -1575,8 +1610,8 @@ Instead edit gulp/templates/sprite */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 125em) {
   .box1 {
-    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(51, 51, 51, .8)), to(rgba(119, 119, 119, .8))), url("../../../assets/images/cctv.jpg");
-    background-image: linear-gradient(to right bottom, rgba(51, 51, 51, .8), rgba(119, 119, 119, .8)), url("../../../assets/images/cctv.jpg");
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(51, 51, 51, .8)), to(rgba(119, 119, 119, .8)));
+    background-image: linear-gradient(to right bottom, rgba(51, 51, 51, .8), rgba(119, 119, 119, .8));
   }
 }
 
@@ -1633,7 +1668,7 @@ Instead edit gulp/templates/sprite */
   position: absolute;
   top: 110%;
   left: 50%;
-  background-size: 100px !important;
+  background-size: 150px !important;
   display: inline-block;
 }
 

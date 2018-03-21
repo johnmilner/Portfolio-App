@@ -9900,6 +9900,8 @@ __webpack_require__(2);
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
@@ -9919,6 +9921,8 @@ var _noframeworkWaypoints = __webpack_require__(6);
 var _noframeworkWaypoints2 = _interopRequireDefault(_noframeworkWaypoints);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 //import anime from 'animejs';
 
@@ -10002,6 +10006,53 @@ anime({
   easing: "linear",
   loop: true
 });
+
+/**
+ * demo3.js
+ * http://www.codrops.com
+ *
+ * Licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * Copyright 2017, Codrops
+ * http://www.codrops.com
+ */
+{
+  var MorphingBG = function () {
+    function MorphingBG(el) {
+      _classCallCheck(this, MorphingBG);
+
+      this.DOM = {};
+      this.DOM.el = el;
+      this.DOM.paths = Array.from(this.DOM.el.querySelectorAll('path'));
+      this.animate();
+    }
+
+    _createClass(MorphingBG, [{
+      key: "animate",
+      value: function animate() {
+        this.DOM.paths.forEach(function (path) {
+          setTimeout(function () {
+            anime({
+              targets: path,
+              duration: anime.random(3000, 5000),
+              easing: [0.5, 0, 0.5, 1],
+              d: path.getAttribute('pathdata:id'),
+              loop: true,
+              direction: 'alternate'
+            });
+          }, anime.random(0, 1000));
+        });
+      }
+    }]);
+
+    return MorphingBG;
+  }();
+
+  ;
+
+  new MorphingBG(document.querySelector('svg.scene'));
+};
 
 $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
   if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
