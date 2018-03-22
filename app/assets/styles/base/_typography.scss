@@ -107,7 +107,8 @@
     //border-top: 1px solid #777;
     letter-spacing: 3.12px;
     cursor: pointer;
-    z-index: 2;
+    position: relative;
+    z-index: 10;
   }
 
 
