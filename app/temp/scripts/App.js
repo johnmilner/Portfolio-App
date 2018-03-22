@@ -10054,7 +10054,170 @@ anime({
   new MorphingBG(document.querySelector('svg.scene'));
 };
 
-$('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
+/* Menu Overlay */
+
+var ShapeOverlays = function () {
+  function ShapeOverlays(elm) {
+    _classCallCheck(this, ShapeOverlays);
+
+    this.elm = elm;
+    this.path = elm.querySelectorAll('path');
+    this.numPoints = 4;
+    this.duration = 1000;
+    this.delayPointsArray = [];
+    this.delayPointsMax = 0;
+    this.delayPerPath = 60;
+    this.timeStart = Date.now();
+    this.isOpened = false;
+    this.isAnimating = false;
+  }
+
+  _createClass(ShapeOverlays, [{
+    key: "toggle",
+    value: function toggle() {
+      this.isAnimating = true;
+      for (var i = 0; i < this.numPoints; i++) {
+        this.delayPointsArray[i] = 0;
+      }
+      if (this.isOpened === false) {
+        this.open();
+      } else {
+        this.close();
+      }
+    }
+  }, {
+    key: "open",
+    value: function open() {
+      this.isOpened = true;
+      this.elm.classList.add('is-opened');
+      this.timeStart = Date.now();
+      this.renderLoop();
+    }
+  }, {
+    key: "close",
+    value: function close() {
+      this.isOpened = false;
+      this.elm.classList.remove('is-opened');
+      this.timeStart = Date.now();
+      this.renderLoop();
+    }
+  }, {
+    key: "updatePath",
+    value: function updatePath(time) {
+      var points = [];
+      for (var i = 0; i < this.numPoints; i++) {
+        var thisEase = i % 2 === 1 ? ease.sineOut : ease.exponentialInOut;
+        points[i] = (1 - thisEase(Math.min(Math.max(time - this.delayPointsArray[i], 0) / this.duration, 1))) * 100;
+      }
+
+      var str = '';
+      str += this.isOpened ? "M 0 0 H " + points[0] : "M " + points[0] + " 0";
+      for (var i = 0; i < this.numPoints - 1; i++) {
+        var p = (i + 1) / (this.numPoints - 1) * 100;
+        var cp = p - 1 / (this.numPoints - 1) * 100 / 2;
+        str += "C " + points[i] + " " + cp + " " + points[i + 1] + " " + cp + " " + points[i + 1] + " " + p + " ";
+      }
+      str += this.isOpened ? "H 100 V 0" : "H 0 V 0";
+      return str;
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      if (this.isOpened) {
+        for (var i = 0; i < this.path.length; i++) {
+          this.path[i].setAttribute('d', this.updatePath(Date.now() - (this.timeStart + this.delayPerPath * i)));
+        }
+      } else {
+        for (var i = 0; i < this.path.length; i++) {
+          this.path[i].setAttribute('d', this.updatePath(Date.now() - (this.timeStart + this.delayPerPath * (this.path.length - i - 1))));
+        }
+      }
+    }
+  }, {
+    key: "renderLoop",
+    value: function renderLoop() {
+      var _this2 = this;
+
+      this.render();
+      if (Date.now() - this.timeStart < this.duration + this.delayPerPath * (this.path.length - 1) + this.delayPointsMax) {
+        requestAnimationFrame(function () {
+          _this2.renderLoop();
+        });
+      } else {
+        this.isAnimating = false;
+      }
+    }
+  }]);
+
+  return ShapeOverlays;
+}();
+
+(function () {
+  var elmHamburger = document.querySelector('.navigation__checkbox');
+  var gNavItems = document.querySelectorAll('.navigation__list');
+  var elmOverlay = document.querySelector('.shape-overlays');
+  var overlay = new ShapeOverlays(elmOverlay);
+
+  elmHamburger.addEventListener('click', function () {
+    if (overlay.isAnimating) {
+      return false;
+    }
+    overlay.toggle();
+    if (overlay.isOpened === true) {
+      elmHamburger.classList.add('is-opened-navi');
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.add('is-opened');
+      }
+    } else {
+      elmHamburger.classList.remove('is-opened-navi');
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.remove('is-opened');
+      }
+    }
+  });
+})();
+
+//
+// these easing functions are based on the code of glsl-easing module.
+// https://github.com/glslify/glsl-easings
+//
+
+var ease = {
+  exponentialIn: function exponentialIn(t) {
+    return t == 0.0 ? t : Math.pow(2.0, 10.0 * (t - 1.0));
+  },
+  exponentialOut: function exponentialOut(t) {
+    return t == 1.0 ? t : 1.0 - Math.pow(2.0, -10.0 * t);
+  },
+  exponentialInOut: function exponentialInOut(t) {
+    return t == 0.0 || t == 1.0 ? t : t < 0.5 ? +0.5 * Math.pow(2.0, 20.0 * t - 10.0) : -0.5 * Math.pow(2.0, 10.0 - t * 20.0) + 1.0;
+  },
+  sineOut: function sineOut(t) {
+    var HALF_PI = 1.5707963267948966;
+    return Math.sin(t * HALF_PI);
+  },
+  circularInOut: function circularInOut(t) {
+    return t < 0.5 ? 0.5 * (1.0 - Math.sqrt(1.0 - 4.0 * t * t)) : 0.5 * (Math.sqrt((3.0 - 2.0 * t) * (2.0 * t - 1.0)) + 1.0);
+  },
+  cubicIn: function cubicIn(t) {
+    return t * t * t;
+  },
+  cubicOut: function cubicOut(t) {
+    var f = t - 1.0;
+    return f * f * f + 1.0;
+  },
+  cubicInOut: function cubicInOut(t) {
+    return t < 0.5 ? 4.0 * t * t * t : 0.5 * Math.pow(2.0 * t - 2.0, 3.0) + 1.0;
+  },
+  quadraticOut: function quadraticOut(t) {
+    return -t * (t - 2.0);
+  },
+  quarticOut: function quarticOut(t) {
+    return Math.pow(t - 1.0, 3.0) * (1.0 - t) + 1.0;
+  }
+  /* Menu Overlay End */
+
+};$('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
   if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
     var target = $(this.hash);
     target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
@@ -10226,10 +10389,10 @@ $("document").ready(function () {
   _barba2.default.Pjax.start();
   var transEffect = _barba2.default.BaseTransition.extend({
     start: function start() {
-      var _this2 = this;
+      var _this3 = this;
 
       this.newContainerLoading.then(function (val) {
-        return _this2.fadeInNewcontent($(_this2.newContainer));
+        return _this3.fadeInNewcontent($(_this3.newContainer));
       });
     },
     fadeInNewcontent: function fadeInNewcontent(nc) {
