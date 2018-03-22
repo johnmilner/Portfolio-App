@@ -87,45 +87,7 @@
         transition-timing-function: ease-out;
         text-rendering: optimize-legibility;
 
-        &.is-opened {
-            transform: translateX(0) rotate(0);
-        }
         
-        &.is-opened {
-            transition-timing-function: cubic-bezier(0.230, 1.000, 0.355, 1.400);
-        }
-
-        &:nth-of-type(1) {
-            transition-delay: 0s;
-        }
-        
-        &.is-opened:nth-of-type(1) {
-            transition-delay: 0.45s;
-        }
-        
-        &:nth-of-type(2) {
-            transition-delay: 0.05s;
-        }
-        
-        &.is-opened:nth-of-type(2) {
-            transition-delay: 0.5s;
-        }
-        
-        &:nth-of-type(3) {
-            transition-delay: 0.1s;
-        }
-        
-        &.is-opened:nth-of-type(3) {
-            transition-delay: 0.55s;
-        }
-        
-        &:nth-of-type(4) {
-            transition-delay: 0.15s;
-        }
-        
-        &.is-opened:nth-of-type(4) {
-            transition-delay: 0.6s;
-        }
     }
 
     &__link {
@@ -174,6 +136,47 @@
         position: fixed;
         top: 0;
         left: 0;
+
+        &__item.is-opened {
+            transform: translateX(0) rotate(0);
+        }
+        
+        &__item.is-opened {
+            transition-timing-function: cubic-bezier(0.230, 1.000, 0.355, 1.400);
+        }
+
+        &__item:nth-of-type(1) {
+            transition-delay: 0s;
+        }
+        
+        &__item.is-opened:nth-of-type(1) {
+            transition-delay: 0.45s;
+        }
+        
+        &__item:nth-of-type(2) {
+            transition-delay: 0.05s;
+        }
+        
+        &__item.is-opened:nth-of-type(2) {
+            transition-delay: 0.5s;
+        }
+        
+        &__item:nth-of-type(3) {
+            transition-delay: 0.1s;
+        }
+        
+        &__item.is-opened:nth-of-type(3) {
+            transition-delay: 0.55s;
+        }
+        
+        &__item:nth-of-type(4) {
+            transition-delay: 0.15s;
+        }
+        
+        &__item.is-opened:nth-of-type(4) {
+            transition-delay: 0.6s;
+        }
+
 
     }
 
@@ -252,9 +255,9 @@
     
 }
 
-.shape-overlays.is-opened {
-	pointer-events: auto;
-}
+// .shape-overlays.is-opened {
+// 	pointer-events: auto;
+// }
 
 .shape-overlays__path:nth-of-type(1) {
 	fill: #241e84;

@@ -1150,56 +1150,6 @@ button:after {
   text-rendering: optimize-legibility;
 }
 
-.navigation__item.is-opened {
-  -webkit-transform: translateX(0) rotate(0);
-          transform: translateX(0) rotate(0);
-}
-
-.navigation__item.is-opened {
-  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.355, 1.4);
-          transition-timing-function: cubic-bezier(0.23, 1, 0.355, 1.4);
-}
-
-.navigation__item:nth-of-type(1) {
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-}
-
-.navigation__item.is-opened:nth-of-type(1) {
-  -webkit-transition-delay: 0.45s;
-          transition-delay: 0.45s;
-}
-
-.navigation__item:nth-of-type(2) {
-  -webkit-transition-delay: 0.05s;
-          transition-delay: 0.05s;
-}
-
-.navigation__item.is-opened:nth-of-type(2) {
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
-}
-
-.navigation__item:nth-of-type(3) {
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
-}
-
-.navigation__item.is-opened:nth-of-type(3) {
-  -webkit-transition-delay: 0.55s;
-          transition-delay: 0.55s;
-}
-
-.navigation__item:nth-of-type(4) {
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
-}
-
-.navigation__item.is-opened:nth-of-type(4) {
-  -webkit-transition-delay: 0.6s;
-          transition-delay: 0.6s;
-}
-
 .navigation__link:link,
 .navigation__link:visited {
   display: inline-block;
@@ -1246,6 +1196,56 @@ button:after {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.navigation__checkbox:checked ~ .navigation__nav__item.is-opened {
+  -webkit-transform: translateX(0) rotate(0);
+          transform: translateX(0) rotate(0);
+}
+
+.navigation__checkbox:checked ~ .navigation__nav__item.is-opened {
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.355, 1.4);
+          transition-timing-function: cubic-bezier(0.23, 1, 0.355, 1.4);
+}
+
+.navigation__checkbox:checked ~ .navigation__nav__item:nth-of-type(1) {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.navigation__checkbox:checked ~ .navigation__nav__item.is-opened:nth-of-type(1) {
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
+}
+
+.navigation__checkbox:checked ~ .navigation__nav__item:nth-of-type(2) {
+  -webkit-transition-delay: 0.05s;
+          transition-delay: 0.05s;
+}
+
+.navigation__checkbox:checked ~ .navigation__nav__item.is-opened:nth-of-type(2) {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.navigation__checkbox:checked ~ .navigation__nav__item:nth-of-type(3) {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.navigation__checkbox:checked ~ .navigation__nav__item.is-opened:nth-of-type(3) {
+  -webkit-transition-delay: 0.55s;
+          transition-delay: 0.55s;
+}
+
+.navigation__checkbox:checked ~ .navigation__nav__item:nth-of-type(4) {
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.navigation__checkbox:checked ~ .navigation__nav__item.is-opened:nth-of-type(4) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
 }
 
 .navigation__icon {
@@ -1331,10 +1331,6 @@ button:after {
   position: fixed;
   top: 0;
   left: 0;
-}
-
-.shape-overlays.is-opened {
-  pointer-events: auto;
 }
 
 .shape-overlays__path:nth-of-type(1) {
