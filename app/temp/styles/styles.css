@@ -1090,6 +1090,7 @@ button:after {
   top: 6.3rem;
   right: 62px;
   right: 6.2rem;
+  background-color: #4c688b;
   z-index: 1000;
   -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -1146,6 +1147,7 @@ button:after {
   transition: transform 0.1s, opacity 0.1s, -webkit-transform 0.1s;
   -webkit-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
+  text-rendering: optimize-legibility;
 }
 
 .navigation__item.is-opened {
