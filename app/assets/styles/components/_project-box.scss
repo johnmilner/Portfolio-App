@@ -3,15 +3,18 @@
 .project {
     background-size: 100% 100%;
     background-position: center center;
+
   }
-  
+
   .inner-content {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    overflow: hidden;
   }
+
   .inner-content a.project {
     display: block;
     width: 100%;
@@ -36,6 +39,7 @@
           -ms-flex-pack: center;
               justify-content: center;
       text-align: center;
+      transition:all 10s ease;
     }
   }
   /* sets easing for project inner border */
@@ -64,8 +68,9 @@
     display: block;
     font-weight: 700;
     font-size: 2.1vw;
+    text-transform: uppercase;
     opacity: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'FuturaStd-ExtraBold', sans-serif;
     letter-spacing: -0.02em;
   }
   @media only screen and (min-width: 1699px) {
@@ -138,8 +143,14 @@
   }
   @media only screen and (min-width: 600px) {
     .inner-content a.project:hover {
-      background-size: 110% 110%;
+      //background-size: 110% 110%;
+      // transform: scale(1.5);
+      // transition-duration: 10s;
       border-bottom: none;
+    }
+    .inner-content:hover a.project, .inner-content:focus a.project {  
+    transform:scale(1.2, 1.2);
+    
     }
     /* overlay color */
     .inner-content a.project .overlay {
@@ -243,7 +254,6 @@
 /* Grid Images */
 
 .travel {
-  
   background-image: url('../../../assets/images/hero-small.jpg');
 }
 

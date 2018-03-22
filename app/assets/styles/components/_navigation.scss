@@ -86,6 +86,7 @@
         margin: 1rem;
         -webkit-text-rendering: optimize-legibility;
         -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: grayscale;
         backface-visibility: hidden;
     }
 
