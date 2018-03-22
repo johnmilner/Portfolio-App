@@ -1138,8 +1138,8 @@ button:after {
 .navigation__item {
   margin: 10px;
   margin: 1rem;
-  -webkit-transform: translateX(-4rem);
-          transform: translateX(-4rem);
+  -webkit-transform: translateX(0rem);
+          transform: translateX(0rem);
   -webkit-transition: opacity 0.1s, -webkit-transform 0.1s;
   transition: opacity 0.1s, -webkit-transform 0.1s;
   transition: transform 0.1s, opacity 0.1s;
@@ -1499,7 +1499,7 @@ button:after {
 Instead edit gulp/templates/sprite */
 
 .icon {
-  background-image: url("../../../assets/images/sprites/sprite-1ed97516.svg");
+  background-image: url("../images/sprites/sprite-1ed97516.svg");
 }
 
 .no-svg .icon {
