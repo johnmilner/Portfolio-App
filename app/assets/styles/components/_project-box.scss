@@ -39,7 +39,7 @@
           -ms-flex-pack: center;
               justify-content: center;
       text-align: center;
-      transition:all 10s ease;
+      transition:all 500ms ease;
     }
   }
   /* sets easing for project inner border */
@@ -64,6 +64,7 @@
   .inner-content a.project .copy {
     z-index: 2;
   }
+ 
   .inner-content a.project span {
     display: block;
     font-weight: 700;
@@ -128,7 +129,7 @@
   .inner-content a.project em {
     opacity: 0;
     display: block;
-    font-family: "TheanoDidot-Regular", serif;
+    font-family: "georgia", serif;
     font-style: italic;
     font-size: 1.1vw;
     -webkit-transform: translateY(-25px);
@@ -143,13 +144,13 @@
   }
   @media only screen and (min-width: 600px) {
     .inner-content a.project:hover {
-      //background-size: 110% 110%;
-      // transform: scale(1.5);
-      // transition-duration: 10s;
+      background-size: 110% 110%;
+      //transform:scale(1.2, 1.2);
+      //transition: all 500ms ease;
       border-bottom: none;
     }
     .inner-content:hover a.project, .inner-content:focus a.project {  
-    transform:scale(1.2, 1.2);
+    
     
     }
     /* overlay color */
