@@ -10156,12 +10156,14 @@ var ShapeOverlays = function () {
   var elmHamburger = document.querySelector('.hamburger');
   var gNavItems = document.querySelectorAll('.global-menu__item');
   var elmOverlay = document.querySelector('.shape-overlays');
+  var projectsBtn = document.querySelector('.projects');
   var overlay = new ShapeOverlays(elmOverlay);
 
   function removeGlobalMenu() {
     for (var i = 0; i < gNavItems.length; i++) {
       gNavItems[i].classList.remove('is-opened');
     }
+    projectsBtn.classList.remove('is-closed');
   }
 
   elmHamburger.addEventListener('click', function () {
@@ -10171,11 +10173,13 @@ var ShapeOverlays = function () {
     overlay.toggle();
     if (overlay.isOpened === true) {
       elmHamburger.classList.add('is-opened-navi');
+      projectsBtn.classList.add('is-closed');
       for (var i = 0; i < gNavItems.length; i++) {
         gNavItems[i].classList.add('is-opened');
       }
     } else {
       elmHamburger.classList.remove('is-opened-navi');
+      projectsBtn.classList.remove('is-closed');
       for (var i = 0; i < gNavItems.length; i++) {
         gNavItems[i].classList.remove('is-opened');
       }
@@ -10183,7 +10187,6 @@ var ShapeOverlays = function () {
   });
   for (var i = 0; i < gNavItems.length; i++) {
     gNavItems[i].addEventListener('click', function () {
-      alert('I was clicked!');
       overlay.close();
       elmHamburger.classList.remove('is-opened-navi');
       removeGlobalMenu();

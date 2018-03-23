@@ -289,6 +289,7 @@ h3.ctasp {
 }
 
 .projects {
+  opacity: 1;
   font-family: 'Source Sans Pro', sans-serif !important;
   text-transform: uppercase;
   font-size: 13px !important;
@@ -304,7 +305,18 @@ h3.ctasp {
   letter-spacing: 3.12px;
   cursor: pointer;
   position: relative;
-  z-index: 10;
+  z-index: 95;
+}
+
+.projects.is-closed {
+  opacity: 0;
+  -webkit-transform: translateY(0) rotate(0);
+          transform: translateY(0) rotate(0);
+  pointer-events: auto;
+  -webkit-transition-delay: 250ms;
+          transition-delay: 250ms;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 h5 {
@@ -1129,10 +1141,10 @@ button:after {
 
 main {
   position: fixed;
-  z-index: 4999;
   width: 100%;
   min-height: 100vh;
   background-color: var(--color-main-bg);
+  z-index: 90;
 }
 
 .content {
@@ -1327,12 +1339,12 @@ main {
 }
 
 .hamburger {
+  opacity: 0;
   width: 64px;
   height: 64px;
   display: block;
   cursor: pointer;
   position: fixed;
-  z-index: 3000;
   top: 2.25em;
   right: 2.25em;
   z-index: 110;
@@ -1340,6 +1352,7 @@ main {
   background-color: var(--button-bg);
   pointer-events: auto;
   -webkit-tap-highlight-color: transparent;
+  z-index: 110;
 }
 
 .hamburger::after {

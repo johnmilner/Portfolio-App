@@ -212,12 +212,14 @@ class ShapeOverlays {
   const elmHamburger = document.querySelector('.hamburger');
   const gNavItems = document.querySelectorAll('.global-menu__item');
   const elmOverlay = document.querySelector('.shape-overlays');
+  const projectsBtn = document.querySelector('.projects');
   const overlay = new ShapeOverlays(elmOverlay);
 
   function removeGlobalMenu() {
     for (var i = 0; i < gNavItems.length; i++) {
       gNavItems[i].classList.remove('is-opened');
     }
+    projectsBtn.classList.remove('is-closed');
   }
 
   elmHamburger.addEventListener('click', () => {
@@ -227,12 +229,14 @@ class ShapeOverlays {
     overlay.toggle();
     if (overlay.isOpened === true) {
       elmHamburger.classList.add('is-opened-navi');
+      projectsBtn.classList.add('is-closed');
       for (var i = 0; i < gNavItems.length; i++) {
         gNavItems[i].classList.add('is-opened');
       }
     } 
     else {
       elmHamburger.classList.remove('is-opened-navi');
+      projectsBtn.classList.remove('is-closed');
       for (var i = 0; i < gNavItems.length; i++) {
         gNavItems[i].classList.remove('is-opened');
      }
@@ -240,7 +244,6 @@ class ShapeOverlays {
   });
   for (var i = 0; i < gNavItems.length; i++) {
   gNavItems[i].addEventListener('click', function(){
-    alert('I was clicked!');
     overlay.close();
     elmHamburger.classList.remove('is-opened-navi');
     removeGlobalMenu();

@@ -207,10 +207,10 @@
 
 main {
     position: fixed;
-    z-index: 4999;
 	width: 100%;
 	min-height: 100vh;
-	background-color: var(--color-main-bg);
+    background-color: var(--color-main-bg);
+    z-index: 90;
 }
 
 
@@ -220,7 +220,7 @@ main {
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	margin: 0 auto;
+    margin: 0 auto;
 	//pointer-events: none;
 }
 
@@ -253,7 +253,7 @@ main {
 	top: 0;
 	left: 0;
 	//pointer-events: none;
-	z-index: 100;
+    z-index: 100;
 }
 
 .demo-5 .global-menu {
@@ -387,7 +387,8 @@ main {
 	//pointer-events: none;
 	position: fixed;
 	top: 0;
-	left: 0;
+    left: 0;
+    // z-index: 5;
 }
 
 .shape-overlays.is-opened {
@@ -413,19 +414,20 @@ main {
 
 
 .hamburger {
+    opacity: 0;
 	width: 64px;
 	height: 64px;
 	display: block;
 	cursor: pointer;
     position: fixed;
-    z-index: 3000;
 	top: 2.25em;
 	right: 2.25em;
 	z-index: 110;
 	border-radius: 50%;
 	background-color: var(--button-bg);
 	pointer-events: auto;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    z-index: 110;
 }
 
 .hamburger::after {
