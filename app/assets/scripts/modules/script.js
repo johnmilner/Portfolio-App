@@ -66,7 +66,7 @@ anime.timeline({ loop: false })
         easing: "easeOutExpo",
         delay: 300
       }).add({
-        targets: ".navigation",
+        targets: ".hamburger",
         opacity: 1,
         duration: 1000,
         easing: "easeInExpo"
@@ -131,7 +131,6 @@ anime.timeline({ loop: false })
 };
 
 /* Menu Overlay */
-
 class ShapeOverlays {
   constructor(elm) {
     this.elm = elm;
@@ -210,10 +209,16 @@ class ShapeOverlays {
 }
 
 (function() {
-  const elmHamburger = document.querySelector('.navigation__checkbox');
-  const gNavItems = document.querySelectorAll('.navigation__list');
+  const elmHamburger = document.querySelector('.hamburger');
+  const gNavItems = document.querySelectorAll('.global-menu__item');
   const elmOverlay = document.querySelector('.shape-overlays');
   const overlay = new ShapeOverlays(elmOverlay);
+
+  function removeGlobalMenu() {
+    for (var i = 0; i < gNavItems.length; i++) {
+      gNavItems[i].classList.remove('is-opened');
+    }
+  }
 
   elmHamburger.addEventListener('click', () => {
     if (overlay.isAnimating) {
@@ -225,14 +230,24 @@ class ShapeOverlays {
       for (var i = 0; i < gNavItems.length; i++) {
         gNavItems[i].classList.add('is-opened');
       }
-    } else {
+    } 
+    else {
       elmHamburger.classList.remove('is-opened-navi');
       for (var i = 0; i < gNavItems.length; i++) {
         gNavItems[i].classList.remove('is-opened');
-      }
+     }
     }
   });
+  for (var i = 0; i < gNavItems.length; i++) {
+  gNavItems[i].addEventListener('click', function(){
+    alert('I was clicked!');
+    overlay.close();
+    elmHamburger.classList.remove('is-opened-navi');
+    removeGlobalMenu();
+  });
+ }
 }());
+
 
 //
 // these easing functions are based on the code of glsl-easing module.
@@ -462,12 +477,12 @@ $("document").ready(function() {
   "use strict";
 
   // cache DOM
-  var navigation = document.querySelector(".barba-container .navigation");
-  var navCheckbox = navigation.querySelector(".navigation__checkbox");
-  var navItems = navigation.querySelectorAll(".navigation__item");
-  navItems.forEach(item =>
-    item.addEventListener("click", _ => (navCheckbox.checked = false))
-  );
+  // var navigation = document.querySelector(".barba-container .navigation");
+  // var navCheckbox = navigation.querySelector(".navigation__checkbox");
+  // var navItems = navigation.querySelectorAll(".navigation__item");
+  // navItems.forEach(item =>
+  //   item.addEventListener("click", _ => (navCheckbox.checked = false))
+  // );
   // navItems.forEach(function (item) {
   //   return item.addEventListener("click", function (_) {
   //     return navCheckbox.checked = false;

@@ -9980,7 +9980,7 @@ anime.timeline({ loop: false }).add({
   easing: "easeOutExpo",
   delay: 300
 }).add({
-  targets: ".navigation",
+  targets: ".hamburger",
   opacity: 1,
   duration: 1000,
   easing: "easeInExpo"
@@ -10153,10 +10153,16 @@ var ShapeOverlays = function () {
 }();
 
 (function () {
-  var elmHamburger = document.querySelector('.navigation__checkbox');
-  var gNavItems = document.querySelectorAll('.navigation__list');
+  var elmHamburger = document.querySelector('.hamburger');
+  var gNavItems = document.querySelectorAll('.global-menu__item');
   var elmOverlay = document.querySelector('.shape-overlays');
   var overlay = new ShapeOverlays(elmOverlay);
+
+  function removeGlobalMenu() {
+    for (var i = 0; i < gNavItems.length; i++) {
+      gNavItems[i].classList.remove('is-opened');
+    }
+  }
 
   elmHamburger.addEventListener('click', function () {
     if (overlay.isAnimating) {
@@ -10175,6 +10181,14 @@ var ShapeOverlays = function () {
       }
     }
   });
+  for (var i = 0; i < gNavItems.length; i++) {
+    gNavItems[i].addEventListener('click', function () {
+      alert('I was clicked!');
+      overlay.close();
+      elmHamburger.classList.remove('is-opened-navi');
+      removeGlobalMenu();
+    });
+  }
 })();
 
 //
@@ -10372,15 +10386,12 @@ $("document").ready(function () {
   "use strict";
 
   // cache DOM
-
-  var navigation = document.querySelector(".barba-container .navigation");
-  var navCheckbox = navigation.querySelector(".navigation__checkbox");
-  var navItems = navigation.querySelectorAll(".navigation__item");
-  navItems.forEach(function (item) {
-    return item.addEventListener("click", function (_) {
-      return navCheckbox.checked = false;
-    });
-  });
+  // var navigation = document.querySelector(".barba-container .navigation");
+  // var navCheckbox = navigation.querySelector(".navigation__checkbox");
+  // var navItems = navigation.querySelectorAll(".navigation__item");
+  // navItems.forEach(item =>
+  //   item.addEventListener("click", _ => (navCheckbox.checked = false))
+  // );
   // navItems.forEach(function (item) {
   //   return item.addEventListener("click", function (_) {
   //     return navCheckbox.checked = false;

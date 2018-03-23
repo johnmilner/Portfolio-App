@@ -31,3 +31,30 @@ $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
+
+
+//HAMBURGER MENU - OVERLAY VARIABLES
+
+
+.content--demo-4 {
+	--color-text: #fff;
+	--color-bg: #333;
+	--color-link: #1b198c;
+	--color-link-hover: #d3eaa2;
+	--color-info: #fff;
+	--color-main-bg: #3735d0;
+	--path-fill-1: #241e84;
+	--path-fill-2: #d3eaa2;
+	--color-title: #fff;
+	--font-family-title: 'Pompiere', serif;
+	--font-size-title: 6vmax;
+	--font-weight-title: 300;
+	--color-menu: #3735d0;
+	--color-menu-hover: #b2dc53;
+	--font-family-menu: var(--font-family-title);
+	--font-size-menu: 4vmax;
+	--font-weight-menu: 300;
+	--button-bg: #b3dc53;
+	--button-circle: #1b198b;
+	--button-line: #fff;
+}
