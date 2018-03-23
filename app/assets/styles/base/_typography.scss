@@ -14,11 +14,6 @@
 }
 
 @font-face {
-  font-family: 'FuturaStd-Book';
-  src: url('../../../assets/fonts/FuturaStd-Book.otf');
-}
-
-@font-face {
   font-family: 'FuturaStd-ExtraBold';
   src: url('../../../assets/fonts/FuturaStd-ExtraBold.otf');
 }
@@ -51,9 +46,20 @@
   line-height: 1em;
   font-weight: 100;
   font-family: 'Raleway', sans-serif;
+
   @include respond(phone) {
     font-size: 6rem;
   }
+}
+
+.main-headline-r3 {
+  font-family: 'EB Garamond', serif;
+  font-size: 2em;
+  line-height: 1em;
+  font-weight: 100;
+  padding-top: 2rem;
+  letter-spacing: 0.5em;
+  display: inline-block; 
 }
 
 .navigation__link {
