@@ -254,11 +254,7 @@ main {
 	top: 0;
 	left: 0;
 	pointer-events: none;
-    z-index: 100;
-}
-
-.demo-5 .global-menu {
-	text-align: center;
+	z-index: 100;
 }
 
 .global-menu__item {
@@ -268,6 +264,7 @@ main {
     font-size: 3rem;
     letter-spacing: .42rem;
 	font-weight: 700;
+	text-align: center;
 	opacity: 0;
 	transform: translateY(-100%);
 	//pointer-events: none;

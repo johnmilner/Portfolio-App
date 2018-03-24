@@ -5,6 +5,7 @@
   display: block;
   z-index: 111;
   position: relative;
+  pointer-events: auto;
 }
 
 .button-bar {
@@ -18,6 +19,7 @@
 #mix-wrapper {
   z-index: 111;
   position: relative;
+  pointer-events: none;
 }
 
 /* General button style (reset) */

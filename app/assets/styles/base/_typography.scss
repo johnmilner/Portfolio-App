@@ -116,6 +116,7 @@
     cursor: pointer;
     position: relative;
     z-index: 95;
+    pointer-events: auto;
   }
 
   .projects.is-closed {

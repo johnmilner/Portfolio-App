@@ -12,11 +12,11 @@
   --font-size-title: 6vmax;
   --font-weight-title: 300;
   --color-menu: #3735d0;
-  --color-menu-hover: #b2dc53;
+  --color-menu-hover: #333;
   --font-family-menu: var(--font-family-title);
   --font-size-menu: 4vmax;
   --font-weight-menu: 300;
-  --button-bg: #b3dc53;
+  --button-bg: #777;
   --button-circle: #1b198b;
   --button-line: #fff;
 }
@@ -305,6 +305,7 @@ h3.ctasp {
   cursor: pointer;
   position: relative;
   z-index: 95;
+  pointer-events: auto;
 }
 
 .projects.is-closed {
@@ -1056,6 +1057,7 @@ h1.ml8 {
   display: block;
   z-index: 111;
   position: relative;
+  pointer-events: auto;
 }
 
 .button-bar {
@@ -1070,6 +1072,7 @@ h1.ml8 {
 #mix-wrapper {
   z-index: 111;
   position: relative;
+  pointer-events: none;
 }
 
 /* General button style (reset) */
@@ -1207,10 +1210,6 @@ main {
   z-index: 100;
 }
 
-.demo-5 .global-menu {
-  text-align: center;
-}
-
 .global-menu__item {
   color: #fff;
   font-family: 'BrandonText-Medium', sans-serif;
@@ -1220,6 +1219,7 @@ main {
   letter-spacing: 4.2px;
   letter-spacing: .42rem;
   font-weight: 700;
+  text-align: center;
   opacity: 0;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
@@ -1835,6 +1835,7 @@ Instead edit gulp/templates/sprite */
   padding: 0 0;
   margin: 0 auto;
   position: relative;
+  pointer-events: none;
 }
 
 @media (max-width: 37.5em) {
@@ -2144,7 +2145,6 @@ section {
   -webkit-font-smoothing: subpixel-antialiased;
   background-color: #333;
   border-top: 1px solid #333;
-  width: 95%;
   font-size: 14px;
   font-size: 1.4rem;
   color: #f7f7f7;
