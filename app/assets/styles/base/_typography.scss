@@ -4,11 +4,6 @@
 }
 
 @font-face {
-  font-family: 'TheanoDidot-Regular';
-  src: url('../../../assets/fonts/TheanoDidot-Regular.otf');
-}
-
-@font-face {
   font-family: 'SofiaProRegular';
   src: url('../../../assets/fonts/SofiaProRegular.otf');
 }
@@ -18,11 +13,16 @@
   src: url('../../../assets/fonts/FuturaStd-ExtraBold.otf');
 }
 
+@font-face {
+  font-family: 'FuturaStd-Book';
+  src: url('../../../assets/fonts/FuturaStd-Book.otf');
+}
+
 .tagline {
   color: #fff;
   text-align: center;
   //background-color: #343434;
-  font-family: 'BrandonText-Medium', sans-serif;
+  font-family: 'FuturaStd-Book', sans-serif;
   text-transform: uppercase;
   padding-top: 10em;
   padding-bottom: 11em;
@@ -52,13 +52,6 @@
     font-size: 6rem;
   }
 }
-
-.navigation__link {
-  font-size: 1.25rem;
-  font-family: 'BrandonText-Medium', Arial, sans-serif;
-  font-weight: 700;
-}
-
   
   p {
     font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;

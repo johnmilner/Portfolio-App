@@ -16,7 +16,7 @@
   --font-family-menu: var(--font-family-title);
   --font-size-menu: 4vmax;
   --font-weight-menu: 300;
-  --button-bg: #777;
+  --button-bg: #4f7b86;
   --button-circle: #1b198b;
   --button-line: #fff;
 }
@@ -188,11 +188,6 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
 }
 
 @font-face {
-  font-family: 'TheanoDidot-Regular';
-  src: url("../../../assets/fonts/TheanoDidot-Regular.otf");
-}
-
-@font-face {
   font-family: 'SofiaProRegular';
   src: url("../../../assets/fonts/SofiaProRegular.otf");
 }
@@ -202,10 +197,15 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
   src: url("../../../assets/fonts/FuturaStd-ExtraBold.otf");
 }
 
+@font-face {
+  font-family: 'FuturaStd-Book';
+  src: url("../../../assets/fonts/FuturaStd-Book.otf");
+}
+
 .tagline {
   color: #fff;
   text-align: center;
-  font-family: 'BrandonText-Medium', sans-serif;
+  font-family: 'FuturaStd-Book', sans-serif;
   text-transform: uppercase;
   padding-top: 10em;
   padding-bottom: 11em;
@@ -235,13 +235,6 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
   .main-headline-r2 {
     font-size: 6rem;
   }
-}
-
-.navigation__link {
-  font-size: 12.5px;
-  font-size: 1.25rem;
-  font-family: 'BrandonText-Medium', Arial, sans-serif;
-  font-weight: 700;
 }
 
 p {
