@@ -1054,7 +1054,7 @@ h1.ml8 {
   margin: 0 auto;
   text-align: center;
   display: block;
-  z-index: 95;
+  z-index: 111;
   position: relative;
 }
 
@@ -1064,11 +1064,11 @@ h1.ml8 {
   color: #fff;
   border-top: 1px solid #555;
   position: relative;
-  z-index: 95;
+  z-index: 111;
 }
 
 #mix-wrapper {
-  z-index: 95;
+  z-index: 111;
   position: relative;
 }
 
@@ -1201,6 +1201,7 @@ main {
   position: fixed;
   top: 0;
   left: 0;
+  pointer-events: none;
   z-index: 100;
 }
 

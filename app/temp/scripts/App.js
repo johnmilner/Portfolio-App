@@ -10424,7 +10424,7 @@ $("document").ready(function () {
     return transEffect;
   };
 
-  (0, _mixitup2.default)(".container", {
+  (0, _mixitup2.default)("#mix-wrapper", {
     load: {
       filter: "all"
     },

@@ -516,7 +516,7 @@ $("document").ready(function() {
     return transEffect;
   };
 
-  mixitup(".container", {
+  mixitup("#mix-wrapper", {
     load: {
       filter: "all"
     },
