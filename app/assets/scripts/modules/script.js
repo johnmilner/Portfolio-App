@@ -215,6 +215,7 @@ class ShapeOverlays {
   const projectsBtn = document.querySelector('.projects');
   const overlay = new ShapeOverlays(elmOverlay);
 
+  //remove global menu items and show projects button
   function removeGlobalMenu() {
     for (var i = 0; i < gNavItems.length; i++) {
       gNavItems[i].classList.remove('is-opened');
@@ -242,6 +243,7 @@ class ShapeOverlays {
      }
     }
   });
+  //loop thru global menu items listening for click, on click close overlay, close hamburger menu and show projects button
   for (var i = 0; i < gNavItems.length; i++) {
   gNavItems[i].addEventListener('click', function(){
     overlay.close();
