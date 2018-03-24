@@ -193,8 +193,8 @@
 
 .nav-logo {
     position: absolute;
-    top: -18%;
-    left: 35%;
+    top: -10%;
+    left: 45%;
     height: 50px;
     width: 50px;
     background: url('../../../assets/images/profile-foto.jpg') no-repeat;
@@ -268,7 +268,6 @@ main {
 	opacity: 0;
 	//transform: translateY(-100%);
 	//pointer-events: none;
-	
 	//transition: transform 0.3s, opacity 0.3s;
 	//transition-timing-function: ease-in;
 
@@ -277,7 +276,7 @@ main {
         &:visited {
 			//display: inline-block;
 			display: block;
-			margin: 1.25em 0;
+			margin: .75em 0;
             //font-size: 3rem;
             //font-weight: 300;
             padding: 1rem 2rem;
@@ -286,7 +285,7 @@ main {
             text-transform: uppercase;
             background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
             background-size: 220%;
-            transition: all .4s;
+            transition: all .3s ease;
 
             span {
                 margin-right: 1.5rem;
@@ -308,13 +307,13 @@ main {
 	//transform: translateY(0) rotate(0);
 	pointer-events: auto;
 	transition-timing-function: ease;
-	transition-delay: 0.45s;
+	transition-delay: 0.15s;
 	transform: opacity ease;
 }
 
 .global-menu__item--demo-4 {
 	transition: transform 0.1s, opacity 0.1s;
-	transition-timing-function: ease-in;
+	transition-timing-function: ease;
 }
 
 .global-menu__item--demo-4 {
