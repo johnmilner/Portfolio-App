@@ -211,6 +211,7 @@ main {
 	min-height: 100vh;
     background-color: var(--color-main-bg);
 	z-index: 110;
+	pointer-events: none;
 }
 
 
@@ -221,7 +222,7 @@ main {
 	align-items: center;
 	min-height: 100vh;
     margin: 0 auto;
-	//pointer-events: none;
+	pointer-events: none;
 }
 
 .content--fixed {
