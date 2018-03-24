@@ -1072,7 +1072,6 @@ h1.ml8 {
 #mix-wrapper {
   z-index: 111;
   position: relative;
-  pointer-events: none;
 }
 
 /* General button style (reset) */
@@ -1835,12 +1834,19 @@ Instead edit gulp/templates/sprite */
   padding: 0 0;
   margin: 0 auto;
   position: relative;
-  pointer-events: none;
 }
 
 @media (max-width: 37.5em) {
   .row {
     max-width: 100%;
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 22em) {
+  .row {
+    max-width: 100%;
+    pointer-events: none;
   }
 }
 
