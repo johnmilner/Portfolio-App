@@ -289,7 +289,6 @@ h3.ctasp {
 }
 
 .projects {
-  opacity: 1;
   font-family: 'Source Sans Pro', sans-serif !important;
   text-transform: uppercase;
   font-size: 13px !important;
@@ -612,7 +611,6 @@ h1.ml8 {
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 
 .inner-content a.project {
@@ -1056,6 +1054,8 @@ h1.ml8 {
   margin: 0 auto;
   text-align: center;
   display: block;
+  z-index: 95;
+  position: relative;
 }
 
 .button-bar {
@@ -1063,6 +1063,13 @@ h1.ml8 {
   height: 5rem;
   color: #fff;
   border-top: 1px solid #555;
+  position: relative;
+  z-index: 95;
+}
+
+#mix-wrapper {
+  z-index: 95;
+  position: relative;
 }
 
 /* General button style (reset) */
@@ -1144,7 +1151,7 @@ main {
   width: 100%;
   min-height: 100vh;
   background-color: var(--color-main-bg);
-  z-index: 90;
+  z-index: 110;
 }
 
 .content {
@@ -1347,12 +1354,11 @@ main {
   position: fixed;
   top: 2.25em;
   right: 2.25em;
-  z-index: 110;
   border-radius: 50%;
   background-color: var(--button-bg);
   pointer-events: auto;
   -webkit-tap-highlight-color: transparent;
-  z-index: 110;
+  z-index: 2000;
 }
 
 .hamburger::after {
@@ -1858,6 +1864,11 @@ Instead edit gulp/templates/sprite */
     float: left;
     width: 100%;
   }
+}
+
+section {
+  position: relative;
+  z-index: 95;
 }
 
 .box {

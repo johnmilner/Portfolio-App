@@ -3,13 +3,21 @@
   margin: 0 auto;
   text-align: center;
   display: block;
+  z-index: 95;
+  position: relative;
 }
 
 .button-bar {
   height: 5rem;
   color: #fff;
-  //border-bottom: 1px solid #777;
   border-top: 1px solid #555;
+  position: relative;
+  z-index: 95;
+}
+
+#mix-wrapper {
+  z-index: 95;
+  position: relative;
 }
 
 /* General button style (reset) */
