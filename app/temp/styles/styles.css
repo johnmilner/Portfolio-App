@@ -1213,16 +1213,39 @@ main {
   font-weight: 700;
   text-align: center;
   opacity: 0;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+}
+
+.global-menu__item__link:link,
+.global-menu__item__link:visited {
   display: block;
   margin: 1.25em 0;
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition: transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-  -webkit-transition-timing-function: ease-in;
-          transition-timing-function: ease-in;
+  padding: 10px 20px;
+  padding: 1rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 220%;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.global-menu__item__link:link span,
+.global-menu__item__link:visited span {
+  margin-right: 15px;
+  margin-right: 1.5rem;
+  display: inline-block;
+}
+
+.global-menu__item.is-opened {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
+  -webkit-transform: opacity ease;
+          transform: opacity ease;
 }
 
 .global-menu__item--demo-4 {
@@ -1230,8 +1253,8 @@ main {
   transition: opacity 0.1s, -webkit-transform 0.1s;
   transition: transform 0.1s, opacity 0.1s;
   transition: transform 0.1s, opacity 0.1s, -webkit-transform 0.1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
 }
 
 .global-menu__item--demo-4 {
@@ -1239,27 +1262,17 @@ main {
           transform: translateX(40%);
 }
 
-.global-menu__item:hover {
-  color: var(--color-menu-hover);
-}
-
-.global-menu__item.is-opened {
-  opacity: 1;
-  -webkit-transform: translateY(0) rotate(0);
-          transform: translateY(0) rotate(0);
-  pointer-events: auto;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-}
-
 .global-menu__item--demo-4.is-opened {
   -webkit-transform: translateX(0) rotate(0);
           transform: translateX(0) rotate(0);
 }
 
-.global-menu__item--demo-4.is-opened {
-  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.355, 1.4);
-          transition-timing-function: cubic-bezier(0.23, 1, 0.355, 1.4);
+.global-menu__item--demo-4.is-opened:hover,
+.global-menu__item--demo-4.is-opened:active {
+  background-position: 100%;
+  color: #333;
+  -webkit-transform: translateX(1rem);
+          transform: translateX(1rem);
 }
 
 .global-menu__item:nth-of-type(1) {
@@ -1310,6 +1323,53 @@ main {
 .global-menu__item.is-opened:nth-of-type(5) {
   -webkit-transition-delay: 0.65s;
           transition-delay: 0.65s;
+}
+
+/* demo 4 */
+
+.global-menu__item--demo-4.is-opened {
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+}
+
+.global-menu__item--demo-4:nth-of-type(1) {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.global-menu__item--demo-4.is-opened:nth-of-type(1) {
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
+}
+
+.global-menu__item--demo-4:nth-of-type(2) {
+  -webkit-transition-delay: 0.05s;
+          transition-delay: 0.05s;
+}
+
+.global-menu__item--demo-4.is-opened:nth-of-type(2) {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.global-menu__item--demo-4:nth-of-type(3) {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.global-menu__item--demo-4.is-opened:nth-of-type(3) {
+  -webkit-transition-delay: 0.55s;
+          transition-delay: 0.55s;
+}
+
+.global-menu__item--demo-4:nth-of-type(4) {
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.global-menu__item--demo-4.is-opened:nth-of-type(4) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
 }
 
 .shape-overlays {
