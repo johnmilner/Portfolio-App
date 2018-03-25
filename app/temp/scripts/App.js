@@ -9924,7 +9924,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-//import anime from 'animejs';
+//import FooterReveal from './FooterReveal';
 
 //Preloader
 $(window).on("load", function () {
@@ -9941,6 +9941,11 @@ $(window).on("load", function () {
   hidePreloader();
   //fadeInNav();
 });
+
+// $(window).on("load", function() {
+//   $("footer").footerReveal();
+// });
+
 
 anime.timeline({ loop: false }).add({
   targets: ".ml8 .circle-white",
@@ -9983,21 +9988,23 @@ anime.timeline({ loop: false }).add({
   targets: ".menu",
   opacity: 1,
   duration: 1000,
-  easing: "easeInExpo",
-  delay: 500
+  easing: "easeInExpo"
+  //delay: 500
 }).add({
   targets: ".box1",
   opacity: 1,
   duration: 1000,
   easing: "easeOutExpo"
   //delay: 500
-}).add({
-  targets: ".footer",
-  opacity: 1,
-  duration: 1000,
-  easing: "easeInExpo"
-  //delay: 500
 });
+// .add({
+//   targets: ".footer",
+//   opacity: 1,
+//   duration: 1000,
+//   easing: "easeInExpo"
+//   //delay: 500
+// });
+
 
 anime({
   targets: ".ml8 .circle-dark-dashed",
@@ -10372,12 +10379,12 @@ app.showMenuIcon = function () {
 var elmHamburger = document.querySelector('.menu');
 var navItems = document.querySelectorAll('.nav-link');
 
-//remove global menu items
-function removeGlobalMenu() {
-  for (var i = 0; i < navItems.length; i++) {
-    navItems[i].classList.remove('js-nav-animate');
-  }
-}
+// //remove global menu items
+// function removeGlobalMenu() {
+//   for (var i = 0; i < navItems.length; i++) {
+//     navItems[i].classList.remove('js-nav-animate');
+//   }
+// }
 
 //loop thru global menu items listening for click, on click close overlay, close hamburger menu
 for (var i = 0; i < navItems.length; i++) {
@@ -10403,65 +10410,6 @@ $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
       return false;
     }
   }
-});
-
-/**
- * footer-reveal.js
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- *
- * Copyright 2014 Iain Andrew
- * https://github.com/IainAndrew
- */
-
-(function ($) {
-  $.fn.footerReveal = function (options) {
-    var $this = $(this),
-        $prev = $this.prev(),
-        $win = $(window),
-        defaults = $.extend({
-      shadow: true,
-      shadowOpacity: 0.8,
-      zIndex: -100
-    }, options),
-        settings = $.extend(true, {}, defaults, options);
-
-    if ($this.outerHeight() <= $win.outerHeight() && $this.offset().top >= $win.outerHeight()) {
-      $this.css({
-        "z-index": defaults.zIndex,
-        position: "fixed",
-        bottom: 0
-      });
-
-      if (defaults.shadow) {
-        $prev.css({
-          "-moz-box-shadow": "0 20px 30px -20px rgba(0,0,0," + defaults.shadowOpacity + ")",
-          "-webkit-box-shadow": "0 20px 30px -20px rgba(0,0,0," + defaults.shadowOpacity + ")",
-          "box-shadow": "0 20px 30px -20px rgba(0,0,0," + defaults.shadowOpacity + ")"
-        });
-      }
-
-      $win.on("load resize footerRevealResize", function () {
-        $this.css({
-          width: $prev.outerWidth()
-        });
-        $prev.css({
-          "margin-bottom": $this.outerHeight()
-        });
-      });
-    }
-
-    return this;
-  };
-})(_jquery2.default);
-
-// $(".email-button").click(function() {
-//   $(".envelope").toggleClass("active");
-// });
-
-$(function () {
-  $("footer").footerReveal();
 });
 
 function createWaypoint(element, classToToggle, offset, cb) {

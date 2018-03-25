@@ -1,3 +1,3 @@
-import './modules/script'
+import './modules/script';
 
 

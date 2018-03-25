@@ -1781,32 +1781,6 @@ p {
   color: #ca6055;
 }
 
-.footer {
-  font-size: 14px;
-  line-height: 1.9em;
-  max-width: 550px;
-  padding: 130px 20px 40px;
-  margin: 0 auto;
-  background: url("/images/profile@2x.jpg") center 0/110px 110px no-repeat;
-  text-align: center;
-}
-
-@media all and (max-width: 600px) {
-  .footer {
-    font-size: 13px;
-  }
-}
-
-@media all and (max-width: 500px) {
-  .footer {
-    font-size: 12px;
-  }
-}
-
-.footer-wrapper {
-  overflow: hidden;
-}
-
 .single-page {
   text-align: center;
   font-family: EB Garamond, serif;
@@ -3175,8 +3149,8 @@ section {
   font-size: 14px;
   font-size: 1.4rem;
   color: #f7f7f7;
-  padding: 280px 30px 300px 30px;
-  padding: 28rem 3rem 30rem 3rem;
+  padding: 200px 30px 140px 30px;
+  padding: 20rem 3rem 14rem 3rem;
 }
 
 @media (max-width: 75em) {
