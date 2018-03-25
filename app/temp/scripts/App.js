@@ -10248,7 +10248,7 @@ app.handleESCKey = function () {
 };
 
 app.toggleMenuStates = function () {
-  $('body').toggleClass('no-scroll');
+  //$('body').toggleClass('no-scroll');
   $('.menu').toggleClass('menu-active');
   $('.nav').toggleClass('nav-active');
 };
@@ -10366,6 +10366,27 @@ app.hideMenuIcon = function () {
 
 app.showMenuIcon = function () {
   $(".menu").show();
+};
+
+var elmHamburger = document.querySelector('.menu');
+var navItems = document.querySelectorAll('.nav-link');
+
+//remove global menu items
+function removeGlobalMenu() {
+  for (var i = 0; i < navItems.length; i++) {
+    navItems[i].classList.remove('js-nav-animate');
+  }
+}
+
+//loop thru global menu items listening for click, on click close overlay, close hamburger menu and show projects button
+for (var i = 0; i < navItems.length; i++) {
+  navItems[i].addEventListener('click', function () {
+    console.log('clicked!!');
+    if (overlay.isAnimating) {
+      return false;
+    }
+    app.hideMenu();
+  });
 };
 
 /* TA End */
