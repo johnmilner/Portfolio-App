@@ -66,7 +66,7 @@ anime.timeline({ loop: false })
         easing: "easeOutExpo",
         delay: 300
       }).add({
-        targets: ".hamburger",
+        targets: ".menu",
         opacity: 1,
         duration: 1000,
         easing: "easeInExpo"
@@ -445,10 +445,10 @@ app.showMenuIcon = function() {
       }
     }
 
-    //loop thru global menu items listening for click, on click close overlay, close hamburger menu and show projects button
+    //loop thru global menu items listening for click, on click close overlay, close hamburger menu
   for (var i = 0; i < navItems.length; i++) {
     navItems[i].addEventListener('click', function(){
-      console.log('clicked!!');
+      //console.log('clicked!!');
       if (overlay.isAnimating) {
         return false;
       }

@@ -1336,13 +1336,15 @@ p {
 .menu {
   position: absolute;
   top: 15px;
-  left: 15px;
+  right: 15px;
   z-index: 1003;
   outline: none;
   -webkit-tap-highlight-color: transparent;
   width: 40px;
   width: 4rem;
   padding: 10px 10px;
+  cursor: pointer;
+  pointer-events: auto;
 }
 
 .menu-icon-line {
@@ -1992,7 +1994,7 @@ body {
   min-height: 100vh;
   background-color: var(--color-main-bg);
   z-index: 110;
-  pointer-events: auto;
+  pointer-events: none;
 }
 
 .wrapper {
