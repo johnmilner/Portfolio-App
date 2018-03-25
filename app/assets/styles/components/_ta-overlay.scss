@@ -124,28 +124,28 @@ p{
 .text-highlighted{
     color:#ca6055
 }
-.footer{
-    font-size:14px;
-    line-height:1.9em;
-    max-width:550px;
-    padding:130px 20px 40px;
-    margin:0 auto;
-    background:url(/images/profile@2x.jpg) center 0/110px 110px no-repeat;
-    text-align:center
-}
-@media all and (max-width: 600px){
-    .footer{
-        font-size:13px
-    }
-}
-@media all and (max-width: 500px){
-    .footer{
-        font-size:12px
-    }
-}
-.footer-wrapper{
-    overflow:hidden
-}
+// .footer{
+//     font-size:14px;
+//     line-height:1.9em;
+//     max-width:550px;
+//     padding:130px 20px 40px;
+//     margin:0 auto;
+//     background:url(/images/profile@2x.jpg) center 0/110px 110px no-repeat;
+//     text-align:center
+// }
+// @media all and (max-width: 600px){
+//     .footer{
+//         font-size:13px
+//     }
+// }
+// @media all and (max-width: 500px){
+//     .footer{
+//         font-size:12px
+//     }
+// }
+// .footer-wrapper{
+//     overflow:hidden
+// }
 @-webkit-keyframes rotateplane{
     0%{
         -webkit-transform:perspective(120px)
@@ -193,6 +193,7 @@ p{
     padding:10px 10px;
     cursor: pointer;
     pointer-events: auto;
+    opacity: 0;
 }
 .menu-icon-line{
     display:block;
@@ -255,7 +256,7 @@ p{
     top:0;
     pointer-events:none
 }
-.nav{
+.nav {
     position:fixed;
     top:0;
     left:0;
@@ -271,11 +272,16 @@ p{
     pointer-events:none;
     background-color:transparent;
     overflow:hidden;
-    text-rendering: optimise-legibility;
-    backface-visibility: hidden;
+    text-rendering: optimise-legibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    -webkit-backface-visibility: hidden !important;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0) !important;
+    transform: translateZ(0) !important;
+    -webkit-transform-style: preserve-3d;
+
 
 }
-.nav-active{
+.nav-active {
     pointer-events:initial
 }
 .nav-content{

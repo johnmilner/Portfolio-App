@@ -9983,8 +9983,8 @@ anime.timeline({ loop: false }).add({
   targets: ".menu",
   opacity: 1,
   duration: 1000,
-  easing: "easeInExpo"
-  //delay: 500
+  easing: "easeInExpo",
+  delay: 500
 }).add({
   targets: ".box1",
   opacity: 1,
@@ -10299,7 +10299,8 @@ app.revealMenu = function () {
   $(".js-nav-animate").each(function (i) {
     $(this).css({
       "opacity": "0",
-      "transform": "scale(0.9)"
+      "transform": "scale(0.9)",
+      "padding-left": "1px"
     });
   });
 
