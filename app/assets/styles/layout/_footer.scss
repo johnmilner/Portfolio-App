@@ -1,4 +1,8 @@
-.footer {
+footer{
+    position:relative;
+    z-index:0;
+    height:300px;
+    text-align:center;
     background: linear-gradient(238deg, #fd8800, #fd008f, #9700fd, #0082c8, #05c7e6, #4bd58d);
     background-size: 1200% 1200%;
     -webkit-animation: dboxRainbow 30s ease infinite;
@@ -7,55 +11,55 @@
     animation: dboxRainbow 30s ease infinite;
     -webkit-font-smoothing: subpixel-antialiased;
     background-color: #333;
+    background-attachment:fixed;
+}
+footer .footer{
+    position:absolute;
+    -webkit-transform-style:preserve-3d;
+    transform-style:preserve-3d;
+    left:50%;
+    -webkit-transform:translateX(-50%);
+    -ms-transform:translateX(-50%);
+    transform:translateX(-50%);
+    position:fixed;
+    bottom:0px;
+    width: 95%;
+    height:300px;
+    padding-top: 8rem;
+    text-align:center;
+
+    
     border-top: 1px solid $color-grey-dark-3;
     font-size: 1.4rem;
     color: $color-grey-light-1;
-    padding: 20rem 3rem 14rem 3rem;
-    //opacity: 0;
-
-    //background-attachment: fixed;
+    //padding: 20rem 3rem 14rem 3rem;
   
-    @include respond(tab-land) {
-      padding: 21rem 0;
-    }
+    // @include respond(tab-land) {
+    //   padding: 21rem 0;
+    // }
   
-    @include respond(ipad-port) {
-      padding: 35rem 0 18rem 0;
-    }
+    // @include respond(ipad-port) {
+    //   padding: 35rem 0 18rem 0;
+    // }
   
-    @include respond(phone) {
-      padding-top: 30rem;
-    }
+    // @include respond(phone) {
+    //   padding-top: 30rem;
+    // }
   
-    @include respond(small-phone) {
-      padding-top: 20rem;
-    }
-  
-    &__logo-box {
-        text-align: center;
-        margin-top: 1rem;
-  
-        @include respond(tab-port) {
-            margin-bottom: 6rem;
-        }
-    }
-  
-    &__logo {
-        width: 15rem;
-        height: auto;
-    }
+    // @include respond(small-phone) {
+    //   padding-top: 20rem;
+    // }
   
     &__navigation {
         border-top: 1px solid $color-white;
-        padding: 0rem 3rem 0 4rem;
-        margin-left: 2rem;
+        padding: 2rem 3rem 0 2rem;
         display: inline-block;
 
-  
         @include respond(tab-port) {
             width: 100%;
             text-align: center;
         }
+
         @include respond(ipad-port) {
           width: 88%;
           text-align: center;
@@ -98,13 +102,10 @@
   
     &__copyright {
         border-top: 1px solid $color-white;
-        padding-top: .75rem;
-        padding-right: 4rem;
-        display: inline-block;
-        margin-right: 2rem;
+        padding-top: 2rem;
         width: 80%;
         float: right;
-  
+
         @include respond(tab-port) {
             width: 100%;
             float: none;
@@ -115,5 +116,6 @@
           float: none;
       }
     }
-  }
+}
+
   
