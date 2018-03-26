@@ -22,7 +22,7 @@
   color: #fff;
   text-align: center;
   //background-color: #343434;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'FuturaStd-Book', sans-serif;
   text-transform: uppercase;
   padding-top: 10em;
   padding-bottom: 11em;
@@ -32,7 +32,7 @@
 .main-headline-r1 {
   color: #f95759;
   border-bottom: 3px dotted #5d5d5d;
-  font-size: 3em;
+  font-size: 3.2em;
   font-weight: 800;
   line-height: 1.6em;
   letter-spacing: 0.5em;
@@ -55,14 +55,16 @@
   
   p {
     font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    //font-family: 'EB Garamond', serif;
     font-size: 1.75rem;
     text-align: left;
   }
 
 
   h3.cta {
-    font-family: 'EB Garamond', serif;
-    //font-family: 'FuturaStd-Book', Arial, Helvetica, sans-serif;
+    //font-family: 'EB Garamond', serif;
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    //text-transform: uppercase;
     // font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;  
     color: #fff;
     font-weight: 700;

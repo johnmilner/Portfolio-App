@@ -205,7 +205,7 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
 .tagline {
   color: #fff;
   text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'FuturaStd-Book', sans-serif;
   text-transform: uppercase;
   padding-top: 10em;
   padding-bottom: 11em;
@@ -214,7 +214,7 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
 .main-headline-r1 {
   color: #f95759;
   border-bottom: 3px dotted #5d5d5d;
-  font-size: 3em;
+  font-size: 3.2em;
   font-weight: 800;
   line-height: 1.6em;
   letter-spacing: 0.5em;
@@ -245,7 +245,7 @@ p {
 }
 
 h3.cta {
-  font-family: 'EB Garamond', serif;
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
   color: #fff;
   font-weight: 700;
   letter-spacing: 0.015em;
@@ -501,9 +501,10 @@ svg:not(:root) {
   display: inline-block !important;
   position: relative !important;
   top: 8px !important;
-  left: 1px !important;
+  left: 0px !important;
   -webkit-transition: all .2s;
   transition: all .2s;
+  -webkit-filter: drop-shadow(0px 0px 4px rgba(247, 87, 89, .8));
 }
 
 .icon--heart:hover {
@@ -3087,8 +3088,9 @@ section {
 }
 
 .bio {
-  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  font-family: 'Georgia', serif;
   text-align: center;
+  line-height: 1.3em;
   width: auto;
   max-width: 780px;
   display: block;
@@ -3130,11 +3132,6 @@ footer {
   z-index: 0;
   height: 400px;
   text-align: center;
-  background: linear-gradient(238deg, #fd8800, #fd008f, #9700fd, #0082c8, #05c7e6, #4bd58d);
-  background-size: 1200% 1200%;
-  -webkit-animation: dboxRainbow 30s ease infinite;
-  animation: dboxRainbow 30s ease infinite;
-  -webkit-font-smoothing: subpixel-antialiased;
   background-color: #333;
   background-attachment: fixed;
 }
