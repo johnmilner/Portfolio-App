@@ -18,12 +18,12 @@
 //     margin:0;
 //     padding:0
 // }
-a{
-    color:#c44736
-}
-a:hover{
-    color:#b84336
-}
+// a {
+//     color:#f95759;
+// }
+// a:hover {
+//     color:#b84336;
+// }
 .clear{
     color:inherit;
     text-decoration:inherit
@@ -185,7 +185,7 @@ p{
 .menu{
     position:absolute;
     top:15px;
-    left:15px;
+    right:15px;
     z-index:1003;
     outline:none;
     -webkit-tap-highlight-color:transparent;
@@ -476,12 +476,12 @@ h1{
     margin:0;
     padding:0
 }
-a{
-    color:#c44736
-}
-a:hover{
-    color:#b84336
-}
+// a{
+//     color:#c44736
+// }
+// a:hover{
+//     color:#b84336
+// }
 .clear{
     color:inherit;
     text-decoration:inherit
