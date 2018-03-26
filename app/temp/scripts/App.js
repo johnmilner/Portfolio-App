@@ -9924,8 +9924,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-//import FooterReveal from './FooterReveal';
-
 //Preloader
 $(window).on("load", function () {
   var preloaderFadeOutTime = 2500;
@@ -9941,11 +9939,6 @@ $(window).on("load", function () {
   hidePreloader();
   //fadeInNav();
 });
-
-// $(window).on("load", function() {
-//   $("footer").footerReveal();
-// });
-
 
 anime.timeline({ loop: false }).add({
   targets: ".ml8 .circle-white",
