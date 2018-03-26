@@ -54,6 +54,7 @@ footer .footer{
         border-top: 1px solid $color-white;
         padding: 2rem 3rem 0 2rem;
         display: inline-block;
+        width: 80%;
 
         @include respond(tab-port) {
             width: 100%;

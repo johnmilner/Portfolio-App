@@ -3,7 +3,6 @@ import "jquery.easing";
 import Barba from "barba.js";
 import mixitup from "mixitup";
 import Waypoint from "waypoints/lib/noframework.waypoints.min";
-//import FooterReveal from './FooterReveal';
 
 //Preloader
 $(window).on("load", function() {
@@ -21,10 +20,6 @@ $(window).on("load", function() {
   //fadeInNav();
   
 });
-
-// $(window).on("load", function() {
-//   $("footer").footerReveal();
-// });
 
 
 anime.timeline({ loop: false })
