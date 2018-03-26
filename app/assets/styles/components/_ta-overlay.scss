@@ -185,15 +185,16 @@ p{
 .menu{
     position:absolute;
     top:15px;
-    right:15px;
+    left:15px;
     z-index:1003;
     outline:none;
     -webkit-tap-highlight-color:transparent;
-    width:4rem;
+    width: 5rem;
     padding:10px 10px;
     cursor: pointer;
     pointer-events: auto;
     opacity: 0;
+    
 }
 .menu-icon-line{
     display:block;
@@ -202,6 +203,8 @@ p{
     background-color:#a5acbc;
     margin-bottom:4px;
     border-radius:2px;
+    color: #fff;
+	//box-shadow: -.1px .1px .1px #ffc, .1px -.1px .1px #fff;
     -webkit-transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.1s,opacity 0.1s ease-in-out 0.1s;
     transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.1s,opacity 0.1s ease-in-out 0.1s;
     transform:translateZ(0)
