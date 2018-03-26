@@ -33,6 +33,11 @@ footer .footer{
     font-size: 1.4rem;
     color: $color-grey-light-1;
     //padding: 20rem 3rem 14rem 3rem;
+
+    @include respond(tab-land) {
+        margin-left: 2.6rem;
+
+    }
   
     // @include respond(tab-land) {
     //   padding: 21rem 0;
@@ -56,6 +61,7 @@ footer .footer{
         display: inline-block;
         width: 80%;
 
+
         @include respond(tab-port) {
             width: 100%;
             text-align: center;
@@ -64,7 +70,8 @@ footer .footer{
         @include respond(ipad-port) {
           width: 88%;
           text-align: center;
-      }
+       }
+
     }
   
     &__list {

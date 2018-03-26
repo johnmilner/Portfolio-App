@@ -9924,7 +9924,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-//Preloader
+/*
+ Preloader
+*/
 $(window).on("load", function () {
   var preloaderFadeOutTime = 2500;
   function hidePreloader() {
@@ -9932,12 +9934,7 @@ $(window).on("load", function () {
     preloader.show(); //show preloader - see spinner css
     preloader.delay(2300).fadeOut(preloaderFadeOutTime);
   }
-  // function fadeInNav() {
-  //   var tagLine = $(".navigation");
-  //   tagLine.delay(400).fadeIn(500);
-  // }
   hidePreloader();
-  //fadeInNav();
 });
 
 anime.timeline({ loop: false }).add({
@@ -9980,24 +9977,16 @@ anime.timeline({ loop: false }).add({
 }).add({
   targets: ".menu",
   opacity: 1,
-  duration: 1000,
+  duration: 500,
   easing: "easeInExpo"
   //delay: 500
 }).add({
   targets: ".box1",
   opacity: 1,
-  duration: 1000,
+  duration: 500,
   easing: "easeOutExpo"
   //delay: 500
 });
-// .add({
-//   targets: ".footer",
-//   opacity: 1,
-//   duration: 1000,
-//   easing: "easeInExpo"
-//   //delay: 500
-// });
-
 
 anime({
   targets: ".ml8 .circle-dark-dashed",
@@ -10007,16 +9996,13 @@ anime({
   loop: true
 });
 
-/**
- * demo3.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2017, Codrops
- * http://www.codrops.com
- */
+/*
+ Preloader End
+*/
+
+/*
+ Morphing Header Background
+*/
 {
   var MorphingBG = function () {
     function MorphingBG(el) {
@@ -10054,7 +10040,9 @@ anime({
   new MorphingBG(document.querySelector('svg.scene'));
 };
 
-/* Menu Overlay */
+/* 
+Menu Overlay 
+*/
 
 var ShapeOverlays = function () {
   function ShapeOverlays(elm) {
@@ -10189,8 +10177,9 @@ var ease = {
     return Math.pow(t - 1.0, 3.0) * (1.0 - t) + 1.0;
   }
 
-  /* TA Begin */
-
+  /* 
+  Menu Overlay
+  */
 };var app = {};
 app.menuVisible = false;
 app.keyCodeESC = 27;
@@ -10379,7 +10368,7 @@ var navItems = document.querySelectorAll('.nav-link');
 //   }
 // }
 
-//loop thru global menu items listening for click, on click close overlay, close hamburger menu
+//loop thru nav_sublinks listening for click, onclick close overlay, close hamburger menu
 for (var i = 0; i < navItems.length; i++) {
   navItems[i].addEventListener('click', function () {
     //console.log('clicked!!');
@@ -10390,7 +10379,9 @@ for (var i = 0; i < navItems.length; i++) {
   });
 };
 
-/* TA End */
+/* 
+Menu Overlay End 
+*/
 
 $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
   if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
@@ -10486,18 +10477,6 @@ function createProjectGrid() {
 
 $("document").ready(function () {
   "use strict";
-
-  // cache DOM
-  // var navigation = document.querySelector(".barba-container .navigation");
-  // var navCheckbox = navigation.querySelector(".navigation__checkbox");
-  // var navItems = navigation.querySelectorAll(".navigation__item");
-  // navItems.forEach(item =>
-  //   item.addEventListener("click", _ => (navCheckbox.checked = false))
-  // );
-  // navItems.forEach(function (item) {
-  //   return item.addEventListener("click", function (_) {
-  //     return navCheckbox.checked = false;
-  //   });
 
   _barba2.default.Pjax.start();
   var transEffect = _barba2.default.BaseTransition.extend({

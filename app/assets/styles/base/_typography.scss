@@ -113,6 +113,14 @@
     position: relative;
     z-index: 95;
     pointer-events: auto;
+
+    @include respond(tab-land) {
+      padding-top: 2.6rem;
+
+    }
+    @include respond(ipad-port) {
+      padding-top: 2.6rem;
+    }
   }
 
   .projects.is-closed {

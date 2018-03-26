@@ -4,7 +4,9 @@ import Barba from "barba.js";
 import mixitup from "mixitup";
 import Waypoint from "waypoints/lib/noframework.waypoints.min";
 
-//Preloader
+/*
+ Preloader
+*/
 $(window).on("load", function() {
   var preloaderFadeOutTime = 2500;
   function hidePreloader() {
@@ -12,13 +14,7 @@ $(window).on("load", function() {
     preloader.show(); //show preloader - see spinner css
     preloader.delay(2300).fadeOut(preloaderFadeOutTime);
   }
-  // function fadeInNav() {
-  //   var tagLine = $(".navigation");
-  //   tagLine.delay(400).fadeIn(500);
-  // }
-  hidePreloader();
-  //fadeInNav();
-  
+  hidePreloader();  
 });
 
 
@@ -68,24 +64,16 @@ anime.timeline({ loop: false })
       }).add({
         targets: ".menu",
         opacity: 1,
-        duration: 1000,
+        duration: 500,
         easing: "easeInExpo"
         //delay: 500
       }).add({
         targets: ".box1",
         opacity: 1,
-        duration: 1000,
+        duration: 500,
         easing: "easeOutExpo"
         //delay: 500
       });
-      // .add({
-      //   targets: ".footer",
-      //   opacity: 1,
-      //   duration: 1000,
-      //   easing: "easeInExpo"
-      //   //delay: 500
-      // });
-
 
     anime({
       targets: ".ml8 .circle-dark-dashed",
@@ -95,16 +83,13 @@ anime.timeline({ loop: false })
       loop: true
     });
 
-/**
- * demo3.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2017, Codrops
- * http://www.codrops.com
- */
+/*
+ Preloader End
+*/
+
+/*
+ Morphing Header Background
+*/
 {
 	class MorphingBG {
 		constructor(el) {
@@ -132,7 +117,9 @@ anime.timeline({ loop: false })
 	new MorphingBG(document.querySelector('svg.scene'));
 };
 
-/* Menu Overlay */
+/* 
+Menu Overlay 
+*/
 class ShapeOverlays {
   constructor(elm) {
     this.elm = elm;
@@ -257,9 +244,9 @@ const ease = {
 }
 
 
-/* TA Begin */
-
-
+/* 
+Menu Overlay
+*/
 var app = {};
 app.menuVisible = false;
 app.keyCodeESC = 27;
@@ -291,7 +278,6 @@ $(function() {
 
   
 });
-
 
 
 app.loadAndFadeInCaseImages = function() {
@@ -443,29 +429,31 @@ app.showMenuIcon = function() {
 }
 
 
-  const elmHamburger = document.querySelector('.menu');
-  const navItems = document.querySelectorAll('.nav-link');
+const elmHamburger = document.querySelector('.menu');
+const navItems = document.querySelectorAll('.nav-link');
 
-    // //remove global menu items
-    // function removeGlobalMenu() {
-    //   for (var i = 0; i < navItems.length; i++) {
-    //     navItems[i].classList.remove('js-nav-animate');
-    //   }
-    // }
+  // //remove global menu items
+  // function removeGlobalMenu() {
+  //   for (var i = 0; i < navItems.length; i++) {
+  //     navItems[i].classList.remove('js-nav-animate');
+  //   }
+  // }
 
-    //loop thru global menu items listening for click, on click close overlay, close hamburger menu
-  for (var i = 0; i < navItems.length; i++) {
-    navItems[i].addEventListener('click', function(){
-      //console.log('clicked!!');
-      if (overlay.isAnimating) {
-        return false;
-      }
-      app.hideMenu();   
-    });
-    
+//loop thru nav_sublinks listening for click, onclick close overlay, close hamburger menu
+for (var i = 0; i < navItems.length; i++) {
+  navItems[i].addEventListener('click', function(){
+    //console.log('clicked!!');
+    if (overlay.isAnimating) {
+      return false;
+    }
+    app.hideMenu();   
+  });
+  
 };
 
-/* TA End */
+/* 
+Menu Overlay End 
+*/
 
 $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
   if (
@@ -576,19 +564,6 @@ function createProjectGrid() {
 
 $("document").ready(function() {
   "use strict";
-
-  
-  // cache DOM
-  // var navigation = document.querySelector(".barba-container .navigation");
-  // var navCheckbox = navigation.querySelector(".navigation__checkbox");
-  // var navItems = navigation.querySelectorAll(".navigation__item");
-  // navItems.forEach(item =>
-  //   item.addEventListener("click", _ => (navCheckbox.checked = false))
-  // );
-  // navItems.forEach(function (item) {
-  //   return item.addEventListener("click", function (_) {
-  //     return navCheckbox.checked = false;
-  //   });
 
   Barba.Pjax.start();
   var transEffect = Barba.BaseTransition.extend({
