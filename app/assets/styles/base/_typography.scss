@@ -121,6 +121,9 @@
     @include respond(ipad-port) {
       padding-top: 2.6rem;
     }
+    @include respond(phone) {
+      padding-top: 2.2rem;
+    }
   }
 
   .projects.is-closed {

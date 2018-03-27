@@ -313,6 +313,12 @@ h3.ctasp {
   }
 }
 
+@media (max-width: 37.5em) {
+  .projects {
+    padding-top: 2.2rem;
+  }
+}
+
 .projects.is-closed {
   opacity: 0;
   -webkit-transform: translateY(0) rotate(0);
@@ -3099,7 +3105,7 @@ section {
 
 @media (max-width: 37.5em) {
   .about {
-    padding: .5rem .5rem;
+    padding: 3rem 2rem;
   }
 }
 
@@ -3152,6 +3158,12 @@ footer {
   background-attachment: fixed;
 }
 
+@media (max-width: 37.5em) {
+  footer {
+    height: 500px;
+  }
+}
+
 footer .footer {
   position: absolute;
   -webkit-transform-style: preserve-3d;
@@ -3175,6 +3187,13 @@ footer .footer {
 @media (max-width: 75em) {
   footer .footer {
     margin-left: 2.6rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  footer .footer {
+    height: 500px;
+    padding-top: .2rem;
   }
 }
 
