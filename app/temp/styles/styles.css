@@ -108,6 +108,7 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
   text-transform: uppercase;
   padding-top: 10em;
   padding-bottom: 11em;
+  text-rendering: optimizeLegibility;
 }
 
 .main-headline-r1 {
@@ -128,6 +129,7 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
   letter-spacing: 4.2px;
   letter-spacing: .42rem;
   font-family: 'FuturaStd-ExtraBold', sans-serif;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, .1);
 }
 
 @media (max-width: 37.5em) {
@@ -545,7 +547,7 @@ header i {
   margin: 40px;
   padding: 10px;
   float: left;
-  background: orange;
+  background: #ffb900;
   border-radius: 6px;
   opacity: 1;
   border-bottom: 2px solid #8d8d8d;
@@ -2582,7 +2584,7 @@ a.underlined:hover {
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: .75;
+  opacity: .65;
   overflow: hidden;
 }
 
@@ -2939,7 +2941,7 @@ section {
   padding: 42.5px 80px;
   padding: 4.25rem 8rem;
   z-index: 2;
-  background-color: transparent !important;
+  background-color: #fff;
   margin-top: -1px;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .2);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .2);
