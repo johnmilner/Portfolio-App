@@ -3,7 +3,7 @@ footer{
     z-index:0;
     height:500px;
     text-align:center;
-    background-color: #fff;
+    background-color:#a8d0e6;
     background-attachment:fixed;
 
     @include respond(phone) {
@@ -20,7 +20,7 @@ footer .footer {
     transform:translateX(-50%);
     position:fixed;
     bottom:0px;
-    width: 95%;
+    width: 96.0665%;
     height:500px;
     padding-top: 15rem;
     text-align:center;
@@ -89,7 +89,7 @@ footer .footer {
             color: $color-grey-light-1;
             box-shadow: 0 1rem 2rem rgba($color-black, .4);
             transform: rotate(5deg) scale(1.3);
-            background-color: $color-grey-dark-3;
+            background-color: $color-tertiary-light;
         }
     }
   
@@ -119,7 +119,7 @@ footer .footer {
 }
 
 #pull-down {
-    padding-top: 15rem;
+    padding-top: 18rem;
 }
 
   

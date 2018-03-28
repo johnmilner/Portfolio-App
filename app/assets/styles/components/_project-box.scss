@@ -155,11 +155,11 @@
     }
     /* overlay color */
     .inner-content a.project .overlay {
-      background:  rgba(0,0,0,0.65);
+      background:  rgba(0,0,0,0.15);
       //box-shadow: inset 0 0 0 1vw;
     }
     .inner-content a.project:hover .overlay {
-      background: rgba(0,0,0,0.35);
+      background: rgba(0,0,0,0.25);
       box-shadow: inset 0 0 0 1vw;
     }
     /* hover span moves text up with fading in bottom rule */
@@ -234,10 +234,10 @@
   
   /* Border Overlay Colors */
 
-.box1 .inner-content a.project .overlay { color:#1abc9c;}
-.box2 .inner-content a.project .overlay { color:#3498db;}
-.box3 .inner-content a.project .overlay { color:#9b59b6;}
-.box4 .inner-content a.project .overlay { color:#34495e;}
+.box1 .inner-content a.project .overlay { color:$color-primary}
+.box2 .inner-content a.project .overlay { color:$color-tertiary-dark}
+.box3 .inner-content a.project .overlay { color:$color-primary-light}
+.box4 .inner-content a.project .overlay { color:$color-tertiary-light}
 .box5 .inner-content a.project .overlay { color:#d7dcf2;}
 .box6 .inner-content a.project .overlay { color:#a8adc1;}
 .box7 .inner-content a.project .overlay { color:#34495e;}

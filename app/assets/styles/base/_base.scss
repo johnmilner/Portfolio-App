@@ -47,7 +47,7 @@ li {
   html {
     //This defines what 1rem is
     font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
-    
+    overflow-x: hidden;
     // @include respond(tab-land) { // width < 1200?
     //   font-size: 56.25%;
     // }
@@ -63,8 +63,8 @@ li {
   }
 
  .barba-container {
-    background:#fff;
-    overflow-x: hidden;
+    background:#fef8f3;
+    
     padding: 3rem 3rem 0rem 3rem;
   }
 
@@ -160,12 +160,12 @@ p {
 }
 
 .icon--linkedin-in {
-  width: 21px;
+  width: 20.85px;
   height: 24px;
 }
 
 .icon--github {
-  width: 23px;
+  width: 23.75px;
   height: 24px; 
 }
 

@@ -5,8 +5,8 @@
   height: 100vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba($color-grey-dark-3, 0.8),
-      rgba($color-grey-dark, 0.8)
+      rgba($color-tertiary-light, .6),
+      rgba($color-white, 0.6)
     );
   background-size: cover;
   background-position: left center;
@@ -16,7 +16,7 @@
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    height: 95vh;
+    height: 94vh;
     z-index: 1;
 }
 
