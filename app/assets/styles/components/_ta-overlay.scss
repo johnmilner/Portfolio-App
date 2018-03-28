@@ -184,8 +184,8 @@ p{
 
 .menu{
     position:absolute;
-    top:15px;
-    right:15px;
+    top: 1rem;
+    right: 8rem;
     z-index:1003;
     outline:none;
     -webkit-tap-highlight-color:transparent;
@@ -733,9 +733,9 @@ a.underlined:hover{
 .underlined-short{
     background-image:url(/images/underline-short.png)
 }
-html,body{
-    height:100%
-}
+// html,body{
+//     height:100%
+// }
 .portfolio {
     text-align:center;
     font-size:16px;
@@ -1262,21 +1262,21 @@ html,body{
 pointer-events: auto;
  }
 
-.shape-overlays__path:nth-of-type(1) {
-	fill: #241e84;
-}
+// .shape-overlays__path:nth-of-type(1) {
+// 	fill: #241e84;
+// }
 
-.shape-overlays__path:nth-of-type(2) {
-	fill: #d3eaa2;
-}
+// .shape-overlays__path:nth-of-type(2) {
+// 	fill: #d3eaa2;
+// }
 
-.shape-overlays__path:nth-of-type(3) {
-	fill: #241e84;
-}
+// .shape-overlays__path:nth-of-type(3) {
+// 	fill: #241e84;
+// }
 
-.shape-overlays__path:nth-of-type(4) {
-	fill: #241e84;
-}
+// .shape-overlays__path:nth-of-type(4) {
+// 	fill: #241e84;
+// }
 
 .shape-overlays path:nth-of-type(1) { fill: #c4dbea; }
 .shape-overlays path:nth-of-type(2) { fill: #4c688b; }
