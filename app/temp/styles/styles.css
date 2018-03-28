@@ -238,6 +238,8 @@ h5 {
 
 body {
   background-color: #333333;
+  overflow-y: hidden;
+  /* prevent body overflow with when mixitup targets are filtered */
 }
 
 a {
