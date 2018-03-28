@@ -24,6 +24,58 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
 
 /* Animations */
 
+@-webkit-keyframes cascade {
+  0% {
+    -webkit-transform: rotateX(50deg) rotateZ(45deg) translateY(1400px) scale(1.2) translateX(0);
+    transform: rotateX(50deg) rotateZ(45deg) translateY(1400px) scale(1.2) translateX(0);
+    opacity: 0;
+  }
+
+  0.1% {
+    opacity: 0;
+  }
+
+  0.2% {
+    opacity: 1;
+  }
+
+  99.9% {
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: rotateX(50deg) rotateZ(45deg) translateY(1400px) scale(1.2) translateX(-4000px);
+    transform: rotateX(50deg) rotateZ(45deg) translateY(1400px) scale(1.2) translateX(-4000px);
+    opacity: 0;
+  }
+}
+
+@keyframes cascade {
+  0% {
+    -webkit-transform: rotateX(50deg) rotateZ(45deg) translateY(1400px) scale(1.2) translateX(0);
+    transform: rotateX(50deg) rotateZ(45deg) translateY(1400px) scale(1.2) translateX(0);
+    opacity: 0;
+  }
+
+  0.1% {
+    opacity: 0;
+  }
+
+  0.2% {
+    opacity: 1;
+  }
+
+  99.9% {
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: rotateX(50deg) rotateZ(45deg) translateY(1400px) scale(1.2) translateX(-4000px);
+    transform: rotateX(50deg) rotateZ(45deg) translateY(1400px) scale(1.2) translateX(-4000px);
+    opacity: 0;
+  }
+}
+
 @font-face {
   font-family: 'BrandonText-Medium';
   src: url("../../../assets/fonts/BrandonText-Medium.OTF");
@@ -443,6 +495,62 @@ h1.ml8 {
   border: 2px dashed #4f7b86;
   width: 2.3em;
   height: 2.3em;
+}
+
+.page-content {
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(51, 51, 51, .8)), to(rgba(255, 255, 255, .8)));
+  background-image: linear-gradient(to right bottom, rgba(51, 51, 51, .8), rgba(255, 255, 255, .8));
+  background-size: cover;
+  background-position: top;
+}
+
+.header-container {
+  position: relative;
+  opacity: 0.2;
+}
+
+.header-icons {
+  width: 100%;
+  float: right;
+  position: absolute;
+  height: 100%;
+  left: 0;
+}
+
+header .devicons-list-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  overflow: hidden;
+  height: 1200px;
+  width: 6000px;
+  -webkit-animation: cascade 500s linear infinite;
+  animation: cascade 500s linear infinite;
+}
+
+.devicon {
+  font-size: 250px;
+  font-size: 25rem;
+}
+
+header i {
+  margin: 40px;
+  padding: 10px;
+  float: left;
+  background: orange;
+  border-radius: 6px;
+  opacity: 1;
+  border-bottom: 2px solid #8d8d8d;
+  border-right: 2px solid white;
+  pointer-events: all;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Box Hover Image Animation */
@@ -2729,8 +2837,8 @@ section {
           flex: 1;
   float: none !important;
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(51, 51, 51, .1)), to(rgba(119, 119, 119, .1)));
-  background-image: linear-gradient(to right bottom, rgba(51, 51, 51, .1), rgba(119, 119, 119, .1));
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(51, 51, 51, .8)), to(rgba(119, 119, 119, .8)));
+  background-image: linear-gradient(to right bottom, rgba(51, 51, 51, .8), rgba(119, 119, 119, .8));
   background-size: cover;
   background-position: left center;
   position: relative;

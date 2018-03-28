@@ -10003,42 +10003,32 @@ anime({
 /*
  Morphing Header Background
 */
-{
-  var MorphingBG = function () {
-    function MorphingBG(el) {
-      _classCallCheck(this, MorphingBG);
+// {
+// 	class MorphingBG {
+// 		constructor(el) {
+// 			this.DOM = {};
+// 			this.DOM.el = el;
+// 			this.DOM.paths = Array.from(this.DOM.el.querySelectorAll('path'));
+// 			this.animate();
+// 		}
+// 		animate() {
+// 			this.DOM.paths.forEach((path) => {
+// 				setTimeout(() => {
+// 					anime({
+// 						targets: path,
+// 						duration: anime.random(3000,5000),
+// 						easing: [0.5,0,0.5,1],
+// 						d: path.getAttribute('pathdata:id'),
+// 						loop: true,
+// 						direction: 'alternate'
+// 					});
+// 				}, anime.random(0,1000));
+// 			});
+// 		}
+// 	};
 
-      this.DOM = {};
-      this.DOM.el = el;
-      this.DOM.paths = Array.from(this.DOM.el.querySelectorAll('path'));
-      this.animate();
-    }
-
-    _createClass(MorphingBG, [{
-      key: "animate",
-      value: function animate() {
-        this.DOM.paths.forEach(function (path) {
-          setTimeout(function () {
-            anime({
-              targets: path,
-              duration: anime.random(3000, 5000),
-              easing: [0.5, 0, 0.5, 1],
-              d: path.getAttribute('pathdata:id'),
-              loop: true,
-              direction: 'alternate'
-            });
-          }, anime.random(0, 1000));
-        });
-      }
-    }]);
-
-    return MorphingBG;
-  }();
-
-  ;
-
-  new MorphingBG(document.querySelector('svg.scene'));
-};
+// 	new MorphingBG(document.querySelector('svg.scene'));
+// };
 
 /* 
 Menu Overlay 
