@@ -3062,8 +3062,13 @@ section {
 footer {
   position: relative;
   z-index: 0;
-  height: 500px;
+  height: 600px;
+  width: 100%;
   text-align: center;
+  background-image: url("../../../assets/images/waves.svg");
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
   background-attachment: fixed;
 }
 
@@ -3082,6 +3087,7 @@ footer .footer {
   transform: translateX(-50%);
   position: fixed;
   bottom: 0px;
+  bottom: 0rem;
   width: 96.0665%;
   height: 500px;
   text-align: center;
@@ -3181,17 +3187,9 @@ footer .footer__copyright {
   }
 }
 
-#footer__vector {
-  position: absolute;
-  top: -430px;
-  top: -43rem;
-  left: 0;
-  z-index: -5;
-}
-
 #pull-down {
-  padding-top: 330px;
-  padding-top: 33rem;
+  padding-top: 250px;
+  padding-top: 25rem;
 }
 
 /*!
