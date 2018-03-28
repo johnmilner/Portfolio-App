@@ -743,7 +743,7 @@ html,body{
     position: fixed;
 	width: 100%;
 	min-height: 100vh;
-    background-color: var(--color-main-bg);
+    //background-color: transparent;
 	z-index: 110;
 	pointer-events: none;
 }

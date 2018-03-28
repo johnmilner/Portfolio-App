@@ -112,7 +112,7 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
 
 .main-headline-r1 {
   color: #f95759;
-  border-bottom: 3px dotted #5d5d5d;
+  border-bottom: 3px dotted rgba(255, 255, 255, .3);
   font-size: 3.2em;
   font-weight: 800;
   line-height: 1.6em;
@@ -293,6 +293,7 @@ svg:not(:root) {
   -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, .8);
           box-shadow: 0px 0px 40px rgba(0, 0, 0, .8);
   background: #333;
+  overflow-x: hidden;
 }
 
 .icon {
@@ -509,7 +510,7 @@ h1.ml8 {
 
 .header-container {
   position: relative;
-  opacity: 0.2;
+  opacity: 0.35;
 }
 
 .header-icons {
@@ -1893,7 +1894,6 @@ body {
   position: fixed;
   width: 100%;
   min-height: 100vh;
-  background-color: var(--color-main-bg);
   z-index: 110;
   pointer-events: none;
 }
@@ -2640,7 +2640,7 @@ body {
 Instead edit gulp/templates/sprite */
 
 .icon {
-  background-image: url("../../../assets/images/sprites/sprite-1ed97516.svg");
+  background-image: url("../images/sprites/sprite-1ed97516.svg");
 }
 
 .no-svg .icon {
