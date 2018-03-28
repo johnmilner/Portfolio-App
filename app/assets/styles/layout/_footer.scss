@@ -3,7 +3,7 @@ footer{
     z-index:0;
     height:500px;
     text-align:center;
-    background-color:#a8d0e6;
+    //background-color:#a8d0e6;
     background-attachment:fixed;
 
     @include respond(phone) {
@@ -22,7 +22,7 @@ footer .footer {
     bottom:0px;
     width: 96.0665%;
     height:500px;
-    padding-top: 15rem;
+    //padding-top: 15rem;
     text-align:center;
 
     
@@ -113,13 +113,14 @@ footer .footer {
 
 #footer__vector {
     position: absolute;
-    top: -40rem;
+    top: -43rem;
     left: 0;
     z-index: -5;
+
 }
 
 #pull-down {
-    padding-top: 18rem;
+    padding-top: 33rem;
 }
 
   

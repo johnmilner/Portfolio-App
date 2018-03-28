@@ -276,15 +276,15 @@ html {
 }
 
 .barba-container {
-  background: #fef8f3;
-  padding: 30px 30px 0px 30px;
-  padding: 3rem 3rem 0rem 3rem;
+  background: #fff;
+  padding: 30px;
+  padding: 3rem;
 }
 
 #body-content-wrapper {
   z-index: 1;
   position: relative;
-  background-color: #fef8f3;
+  background-color: #f7f7f7;
 }
 
 p {
@@ -2630,7 +2630,7 @@ a.underlined:hover {
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: .65;
+  opacity: .45;
   overflow: hidden;
 }
 
@@ -3064,7 +3064,6 @@ footer {
   z-index: 0;
   height: 500px;
   text-align: center;
-  background-color: #a8d0e6;
   background-attachment: fixed;
 }
 
@@ -3085,8 +3084,6 @@ footer .footer {
   bottom: 0px;
   width: 96.0665%;
   height: 500px;
-  padding-top: 150px;
-  padding-top: 15rem;
   text-align: center;
   font-size: 14px;
   font-size: 1.4rem;
@@ -3186,15 +3183,15 @@ footer .footer__copyright {
 
 #footer__vector {
   position: absolute;
-  top: -400px;
-  top: -40rem;
+  top: -430px;
+  top: -43rem;
   left: 0;
   z-index: -5;
 }
 
 #pull-down {
-  padding-top: 180px;
-  padding-top: 18rem;
+  padding-top: 330px;
+  padding-top: 33rem;
 }
 
 /*!
