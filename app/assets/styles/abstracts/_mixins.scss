@@ -46,6 +46,9 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
     @if $breakpoint == phone {
         @media (max-width: 37.5em) { @content };    //600px
     }
+    @if $breakpoint == phone-land {
+        @media (max-width: 40em) { @content };    //640px
+    }
     @if $breakpoint == ipad-port {
         @media (max-width: 48em) { @content };    //768px
     }

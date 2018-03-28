@@ -14,6 +14,12 @@
 }
 
 @font-face {
+  font-family: 'FuturaStd-Bold';
+  src: url('../../../assets/fonts/FuturaStd-Bold.otf');
+}
+
+
+@font-face {
   font-family: 'FuturaStd-Book';
   src: url('../../../assets/fonts/FuturaStd-Book.otf');
 }
@@ -63,33 +69,15 @@
 
   h3.cta {
     //font-family: 'EB Garamond', serif;
-    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
-    //text-transform: uppercase;
-    // font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;  
+    font-family: 'FuturaStd-Bold', sans-serif;
+    text-transform: uppercase; 
     color: #fff;
     font-weight: 700;
     letter-spacing: 0.015em;
     text-rendering: optimizelegibility;
-    font-size: 4vw;
+    font-size: 2vw;
     line-height: 1.3em;
     margin: 1rem;
-
-    @include respond(phone) {
-      font-size: 8vw;
-
-    }
-  }
-
-  h3.ctasp {
-    font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;  
-    color: #333;
-    font-weight: 300;
-    letter-spacing: -0.035em;
-    text-rendering: optimizelegibility;
-    font-size: 4vw;
-    line-height: 1.3em;
-    margin-top: 7rem;
-    text-align: center;
 
     @include respond(phone) {
       font-size: 8vw;

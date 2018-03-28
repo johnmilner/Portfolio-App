@@ -8,8 +8,12 @@
     border-bottom: 1px solid #333;
     z-index: 2;
     background-color: transparent !important;
-    margin-top: -1px;
+    //margin-top: -1px;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+
+    @include respond(phone-land) {
+      padding: .1rem 2rem;
+      }
 
       @include respond(phone) {
         padding: 3rem 2rem;
@@ -18,7 +22,7 @@
 
   .bio {
     font-family: 'Georgia', serif;
-    //font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    //font-family: 'FuturaStd-Book', sans-serif;
     // font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;  
     text-align: center;
     line-height: 1.3em;
@@ -33,6 +37,19 @@
     color: #fff;
     font-size: 1.75rem;
     padding-bottom: 1.25rem;
+  }
+
+  .coding {
+    margin: 0 auto;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-image: url('../../../assets/images/coding.svg');
+    background-repeat: no-repeat;
+    margin-bottom: 2.75rem;
   }
 
   .profile-foto {

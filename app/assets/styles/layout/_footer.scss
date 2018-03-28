@@ -3,13 +3,6 @@ footer{
     z-index:0;
     height:400px;
     text-align:center;
-    // background: linear-gradient(238deg, #fd8800, #fd008f, #9700fd, #0082c8, #05c7e6, #4bd58d);
-    // background-size: 1200% 1200%;
-    // -webkit-animation: dboxRainbow 30s ease infinite;
-    // -moz-animation: dboxRainbow 30s ease infinite;
-    // -o-animation: dboxRainbow 30s ease infinite;
-    // animation: dboxRainbow 30s ease infinite;
-    // -webkit-font-smoothing: subpixel-antialiased;
     background-color: #333;
     background-attachment:fixed;
 
@@ -46,22 +39,6 @@ footer .footer{
         height: 500px;
         padding-top: .2rem;
     }
-  
-    // @include respond(tab-land) {
-    //   padding: 21rem 0;
-    // }
-  
-    // @include respond(ipad-port) {
-    //   padding: 35rem 0 18rem 0;
-    // }
-  
-    // @include respond(phone) {
-    //   padding-top: 30rem;
-    // }
-  
-    // @include respond(small-phone) {
-    //   padding-top: 20rem;
-    // }
   
     &__navigation {
         border-top: 1px solid $color-white;

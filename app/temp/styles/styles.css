@@ -1,26 +1,3 @@
-.content--demo-4 {
-  --color-text: #fff;
-  --color-bg: #333;
-  --color-link: #1b198c;
-  --color-link-hover: #d3eaa2;
-  --color-info: #fff;
-  --color-main-bg: #3735d0;
-  --path-fill-1: #241e84;
-  --path-fill-2: #d3eaa2;
-  --color-title: #fff;
-  --font-family-title: 'Pompiere', serif;
-  --font-size-title: 6vmax;
-  --font-weight-title: 300;
-  --color-menu: #3735d0;
-  --color-menu-hover: #333;
-  --font-family-menu: var(--font-family-title);
-  --font-size-menu: 4vmax;
-  --font-weight-menu: 300;
-  --button-bg: #4f7b86;
-  --button-circle: #1b198b;
-  --button-line: #fff;
-}
-
 /*
 
 0 - 600px:      Phone
@@ -47,146 +24,6 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
 
 /* Animations */
 
-@-webkit-keyframes intervalHamburgerBorder {
-  0% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-
-  80% {
-    -webkit-transform: scale(1.6);
-    transform: scale(1.6);
-  }
-
-  100% {
-    opacity: 0;
-    -webkit-transform: scale(1.6);
-    transform: scale(1.6);
-  }
-}
-
-@keyframes intervalHamburgerBorder {
-  0% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-
-  80% {
-    -webkit-transform: scale(1.6);
-    transform: scale(1.6);
-  }
-
-  100% {
-    opacity: 0;
-    -webkit-transform: scale(1.6);
-    transform: scale(1.6);
-  }
-}
-
-@-webkit-keyframes dboxRainbow {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes dboxRainbow {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.fade-in-up {
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
-  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.fade-in-up {
-  -webkit-animation-name: fade-in-up;
-  animation-name: fade-in-up;
-}
-
-@-webkit-keyframes fade-in-up {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(60px);
-    transform: translateY(60px);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
-.bounceUp {
-  -webkit-animation: 1s fade-in-up;
-          animation: 1s fade-in-up;
-}
-
-.double-bounce1,
-.double-bounce2 {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: #fff;
-  opacity: 0.6;
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
-  animation: sk-bounce 2.0s infinite ease-in-out;
-}
-
-.double-bounce2 {
-  -webkit-animation-delay: -1.0s;
-  animation-delay: -1.0s;
-}
-
-@-webkit-keyframes sk-bounce {
-  0%, 100% {
-    -webkit-transform: scale(0);
-  }
-
-  50% {
-    -webkit-transform: scale(1);
-  }
-}
-
-@keyframes sk-bounce {
-  0%, 100% {
-    transform: scale(0);
-    -webkit-transform: scale(0);
-  }
-
-  50% {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-  }
-}
-
 @font-face {
   font-family: 'BrandonText-Medium';
   src: url("../../../assets/fonts/BrandonText-Medium.OTF");
@@ -200,6 +37,11 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
 @font-face {
   font-family: 'FuturaStd-ExtraBold';
   src: url("../../../assets/fonts/FuturaStd-ExtraBold.otf");
+}
+
+@font-face {
+  font-family: 'FuturaStd-Bold';
+  src: url("../../../assets/fonts/FuturaStd-Bold.otf");
 }
 
 @font-face {
@@ -250,12 +92,13 @@ p {
 }
 
 h3.cta {
-  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  font-family: 'FuturaStd-Bold', sans-serif;
+  text-transform: uppercase;
   color: #fff;
   font-weight: 700;
   letter-spacing: 0.015em;
   text-rendering: optimizelegibility;
-  font-size: 4vw;
+  font-size: 2vw;
   line-height: 1.3em;
   margin: 10px;
   margin: 1rem;
@@ -263,25 +106,6 @@ h3.cta {
 
 @media (max-width: 37.5em) {
   h3.cta {
-    font-size: 8vw;
-  }
-}
-
-h3.ctasp {
-  font-family: "Whitney SSm A","Whitney SSm B","Lucida Grande","Lucida Sans",Verdana,Helvetica,Arial,sans-serif;
-  color: #333;
-  font-weight: 300;
-  letter-spacing: -0.035em;
-  text-rendering: optimizelegibility;
-  font-size: 4vw;
-  line-height: 1.3em;
-  margin-top: 70px;
-  margin-top: 7rem;
-  text-align: center;
-}
-
-@media (max-width: 37.5em) {
-  h3.ctasp {
     font-size: 8vw;
   }
 }
@@ -2654,88 +2478,6 @@ body {
   fill: #2e496a;
 }
 
-.composition__photo {
-  width: 55%;
-  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .4);
-          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .4);
-  border-radius: 2px;
-  position: absolute;
-  z-index: 10;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  outline-offset: 20px;
-  outline-offset: 2rem;
-}
-
-@media (max-width: 56.25em) {
-  .composition__photo {
-    float: left;
-    position: relative;
-    width: 100%;
-    -webkit-box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .2);
-            box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .2);
-  }
-}
-
-.composition__photo--p1 {
-  left: 0;
-  top: -20px;
-  top: -2rem;
-}
-
-@media (max-width: 56.25em) {
-  .composition__photo--p1 {
-    top: 0;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-}
-
-.composition__photo--p2 {
-  right: 0;
-  top: 20px;
-  top: 2rem;
-}
-
-@media (max-width: 56.25em) {
-  .composition__photo--p2 {
-    top: -1rem;
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
-    z-index: 100;
-  }
-}
-
-.composition__photo--p3 {
-  left: 20%;
-  top: 100px;
-  top: 10rem;
-}
-
-@media (max-width: 56.25em) {
-  .composition__photo--p3 {
-    top: 1rem;
-    left: 0;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-}
-
-.composition__photo:hover {
-  outline: 15px solid #5643fa;
-  outline: 1.5rem solid #5643fa;
-  -webkit-transform: scale(1.05) translateY(-0.5rem);
-          transform: scale(1.05) translateY(-0.5rem);
-  -webkit-box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, .5);
-          box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, .5);
-  z-index: 20;
-}
-
-.composition:hover .composition__photo:not(:hover) {
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
-}
-
 .bg-video {
   position: absolute;
   top: 0;
@@ -2790,7 +2532,7 @@ body {
 Instead edit gulp/templates/sprite */
 
 .icon {
-  background-image: url("../images/sprites/sprite-1ed97516.svg");
+  background-image: url("../../../assets/images/sprites/sprite-1ed97516.svg");
 }
 
 .no-svg .icon {
@@ -3103,9 +2845,14 @@ section {
   border-bottom: 1px solid #333;
   z-index: 2;
   background-color: transparent !important;
-  margin-top: -1px;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .2);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .2);
+}
+
+@media (max-width: 40em) {
+  .about {
+    padding: .1rem 2rem;
+  }
 }
 
 @media (max-width: 37.5em) {
@@ -3131,6 +2878,20 @@ section {
   font-size: 1.75rem;
   padding-bottom: 12.5px;
   padding-bottom: 1.25rem;
+}
+
+.coding {
+  margin: 0 auto;
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+  background-image: url("../../../assets/images/coding.svg");
+  background-repeat: no-repeat;
+  margin-bottom: 27.5px;
+  margin-bottom: 2.75rem;
 }
 
 .profile-foto {
