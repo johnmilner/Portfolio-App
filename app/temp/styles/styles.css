@@ -1277,58 +1277,104 @@ p {
   height: 7rem;
   width: 70px;
   width: 7rem;
+  top: 20px;
+  top: 2rem;
+  right: 20px;
+  right: 2rem;
+}
+
+.menu__button {
+  background-color: #fff;
+  height: 70px;
+  height: 7rem;
+  width: 70px;
+  width: 7rem;
+  position: fixed;
+  top: 35px;
+  top: 3.5rem;
+  right: 35px;
+  right: 3.5rem;
+  border-radius: 50%;
+  z-index: 2000;
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .1);
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, .1);
+  text-align: center;
+  cursor: pointer;
+}
+
+@media (max-width: 56.25em) {
+  .menu__button {
+    top: 4rem;
+    right: 4rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .menu__button {
+    top: 3rem;
+    right: 3rem;
+  }
+}
+
+.menu__icon {
+  position: relative;
+  margin-top: 35px;
+  margin-top: 3.5rem;
+}
+
+.menu__icon,
+.menu__icon::before,
+.menu__icon::after {
+  width: 30px;
+  width: 3rem;
+  height: 2px;
+  background-color: #333;
+  display: inline-block;
+}
+
+.menu__icon::before,
+.menu__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.menu__icon::before {
+  top: -8px;
+  top: -.8rem;
+}
+
+.menu__icon::after {
+  top: 8px;
+  top: .8rem;
+}
+
+.menu__button:hover .menu__icon::before {
+  top: -10px;
+  top: -1rem;
+}
+
+.menu__button:hover .menu__icon::after {
   top: 10px;
   top: 1rem;
-  right: 70px;
-  right: 7rem;
 }
 
-.menu-icon-line {
-  position: relative;
-  top: 14px;
-  top: 1.4rem;
-  left: 8px;
-  left: .8rem;
-  display: block;
-  height: 2px;
-  width: 70%;
-  background-color: #333;
-  margin-bottom: 8px;
-  border-radius: 2px;
-  color: #fff;
-  -webkit-transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.1s, opacity 0.1s ease-in-out 0.1s;
-  -webkit-transition: opacity 0.1s ease-in-out 0.1s, -webkit-transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.1s;
-  transition: opacity 0.1s ease-in-out 0.1s, -webkit-transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.1s;
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.1s, opacity 0.1s ease-in-out 0.1s;
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.1s, opacity 0.1s ease-in-out 0.1s, -webkit-transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.1s;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+.menu.menu-active > .menu__button .menu__icon {
+  background-color: transparent;
 }
 
-.menu:hover > .menu-icon-line {
-  background-color: #333;
-  -webkit-transform: scaleX(1.1);
-  transform: scaleX(1.1);
+.menu.menu-active > .menu__button .menu__icon::before {
+  top: 0;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 
-.menu-active > .menu-icon-line-1,
-.menu-active:hover > .menu-icon-line-1 {
-  -webkit-transform: translateY(7px) rotateZ(-135deg);
-  transform: translateY(7px) rotateZ(-135deg);
-  background-color: #fff;
-}
-
-.menu-active > .menu-icon-line-2,
-.menu-active:hover > .menu-icon-line-2 {
-  opacity: 0;
-  background-color: #fff;
-}
-
-.menu-active > .menu-icon-line-3,
-.menu-active:hover > .menu-icon-line-3 {
-  -webkit-transform: translateY(-13px) rotateZ(135deg);
-  transform: translateY(-13px) rotateZ(135deg);
-  background-color: #fff;
+.menu.menu-active > .menu__button .menu__icon::after {
+  top: 0;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
 }
 
 .blog-header > .menu {
