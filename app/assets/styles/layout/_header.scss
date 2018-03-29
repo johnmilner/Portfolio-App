@@ -12,6 +12,7 @@
   background-position: left center;
   position: relative;
   opacity: 0;
+  overflow: hidden;
 
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);

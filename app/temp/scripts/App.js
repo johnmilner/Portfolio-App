@@ -9920,8 +9920,6 @@ var _noframeworkWaypoints2 = _interopRequireDefault(_noframeworkWaypoints);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 /*
@@ -10365,9 +10363,10 @@ for (var i = 0; i < navItems.length; i++) {
     if (overlay.isAnimating) {
       return false;
     }
-    $(".box1").css(_defineProperty({
+    $(".box1").css({
+      "overflow-x": "hidden",
       "overflow-y": "hidden"
-    }, "overflow-y", "hidden"));
+    });
     $("#body-content-wrapper").css({
       "overflow-y": "hidden"
     });
