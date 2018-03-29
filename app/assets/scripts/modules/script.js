@@ -68,7 +68,7 @@ anime.timeline({ loop: false })
         easing: "easeInExpo"
         //delay: 500
       }).add({
-        targets: ".box1",
+        targets: ".header",
         opacity: 1,
         duration: 500,
         easing: "easeOutExpo"
@@ -385,6 +385,14 @@ app.hideMenu = function() {
   overlay.toggle();
   $(document).trigger("app:menuWillHide");
 
+  $(".header").css({
+    "overflow-x": "hidden",
+    "overflow-y": "hidden"
+  });
+  $("#body-content-wrapper").css({
+    "overflow": "hidden"
+  });
+
   var containerDelay = 200;
   anime({
     targets: '.menu-animated-background',
@@ -446,13 +454,6 @@ for (var i = 0; i < navItems.length; i++) {
     if (overlay.isAnimating) {
       return false;
     }
-    $(".box1").css({
-      "overflow-x": "hidden",
-      "overflow-y": "hidden"
-    });
-    $("#body-content-wrapper").css({
-      "overflow-y": "hidden"
-    });
     app.hideMenu();   
   });
   

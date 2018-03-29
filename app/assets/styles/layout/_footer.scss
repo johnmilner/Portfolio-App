@@ -4,12 +4,12 @@ footer {
     height:600px;
     width: 100%;
     text-align:center;
-    //background-color:#a8d0e6;
+    background-color:#a8d0e6;
     background-image: url('../../../assets/images/waves.svg');
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: contain;
-    background-attachment:fixed;
+    //background-attachment:fixed;
 
 
     @include respond(phone) {
@@ -28,7 +28,6 @@ footer .footer {
     transform:translateX(-50%);
     position:fixed;
     bottom: 0rem;
-    width: 96.0665%;
     height:500px;
     //padding-top: 15rem;
     text-align:center;
@@ -123,8 +122,8 @@ footer .footer {
 //     transform: scale(.7);
 // }
 
-#pull-down {
-    padding-top: 25rem;
-}
+// #pull-down {
+//     padding-top: 25rem;
+// }
 
   

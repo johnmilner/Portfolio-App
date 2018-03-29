@@ -1,9 +1,18 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
+@import "pages/home.scss";
+
 @import "base/animations";
 @import "base/typography";
 @import "base/base";
+
+@import "modules/sprite";
+
+@import "layout/grid.scss";
+@import "layout/header.scss";
+@import "layout/about.scss";
+@import "layout/footer.scss";
 
 @import "components/loading-animation";
 @import "components/header-bg";
@@ -13,10 +22,7 @@
 @import "components/bg-video";
 //@import "components/svg-scene";
 
-@import "modules/sprite";
 
-@import "layout/grid.scss";
-@import "layout/header.scss";
-@import "layout/about.scss";
-@import "layout/footer.scss";
+
+
 
