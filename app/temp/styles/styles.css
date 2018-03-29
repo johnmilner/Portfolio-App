@@ -237,9 +237,17 @@ h5 {
 }
 
 body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #333333;
   overflow-y: hidden;
   /* prevent body overflow with when mixitup targets are filtered */
+}
+
+.container {
+  padding: 30px;
+  padding: 3rem;
+  background: #f7f7f7;
 }
 
 a {
@@ -287,6 +295,7 @@ html {
   z-index: 1;
   position: relative;
   background-color: #f7f7f7;
+  height: 100%;
 }
 
 p {
@@ -3187,6 +3196,11 @@ footer .footer__copyright {
     width: 95%;
     float: none;
   }
+}
+
+#footer__vector {
+  width: 100%;
+  height: 500px;
 }
 
 #pull-down {
