@@ -2,98 +2,91 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 /* Box-sizing border-box */
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  //This defines what 1rem is
+  font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
+  overflow-x: hidden;
+
+  // @include respond(tab-land) { // width < 1200?
+  //   font-size: 56.25%;
+  // }
+
+  // @include respond(tab-port) { // width < 900?
+  //   font-size: 50%;
+  // }
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
+}
 
 body {
   box-sizing: border-box;
-  background-color: rgb(51, 51, 51);
-
+  //background-color: rgb(51, 51, 51);
 }
 
 .container {
   padding: 3rem;
   background: #f7f7f7;
-  overflow-y: hidden; /* prevent body overflow with when mixitup targets are filtered */
+  overflow-y: hidden; /* prevent body overflow when mixitup targets are filtered */
+}
 
+#body-content-wrapper {
+  z-index: 1;
+  position: relative;
+  //box-shadow:0px 0px 40px rgba(0,0,0,0.8);
+  background-color: #f7f7f7;
+  height: 100%;
+}
+
+section {
+  position: relative;
+  z-index: 95;
+  //pointer-events: none;
 }
 
 a {
-    text-decoration: none;
-    //color: rgba(255,255,255,0.5);
-    color: #f95759;
-    outline: 0;
-    text-decoration: none !important;
-  }
-  
-a:hover {
-    color: rgba(249, 87, 89, .5);
-    outline: 0;
-    text-decoration: none !important;
-    transition: all 150ms ease;
-  }
+  text-decoration: none;
+  //color: rgba(255,255,255,0.5);
+  color: #f95759;
+  outline: 0;
+  text-decoration: none !important;
+}
 
-  // a:active, a:focus {
-  //   color: rgba(255,255,255,0.5);
-  // }
-  
+a:hover, a:active, a:focus {
+  color: rgba(249, 87, 89, 0.5);
+  outline: 0;
+  text-decoration: none !important;
+  transition: all 150ms ease;
+}
+
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-    list-style: none;
-  }
-
-  html {
-    //This defines what 1rem is
-    font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
-    overflow-x: hidden;
-
-    // @include respond(tab-land) { // width < 1200?
-    //   font-size: 56.25%;
-    // }
-  
-    // @include respond(tab-port) { // width < 900?
-    //   font-size: 50%;
-    // }
-  
-    @include respond(big-desktop) {
-      font-size: 75%;
-    }
-  
-  }
-
- .barba-container {
-    background:#fff;
-    padding: 3rem;
-    
-  }
-
-  #body-content-wrapper {
-    z-index:1;
-    position:relative;
-    //box-shadow:0px 0px 40px rgba(0,0,0,0.8);
-    background-color: #f7f7f7; 
-    height: 100%;
-  }
-
+  list-style: none;
+}
 
 p {
   margin: 0 auto;
 }
 
-/**
- * Hide the overflow in IE.
- */
-
- svg:not(:root) {
+/* Hide the overflow in IE. */
+svg:not(:root) {
   overflow: hidden;
 }
 
@@ -102,9 +95,7 @@ p {
   width: 21.5px;
   height: 24px;
   background-repeat: no-repeat;
-
 }
-
 
 .social-icons {
   text-align: center;
@@ -126,17 +117,15 @@ p {
 
   @include respond(big-desktop) {
     margin: 0 60px 5px 5px !important;
-}
+  }
 
   @include respond(tab-land) {
-  width: 70px;
-}
+    width: 70px;
+  }
 
-@include respond(ipad-port) {
-  width: 32px;
-}
-
-
+  @include respond(ipad-port) {
+    width: 32px;
+  }
 }
 
 .social-icons__icon .icon {
@@ -145,26 +134,25 @@ p {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-
+  transform: translate(-50%, -50%);
 }
 
-.icon--twitter, 
-.icon--linkedin-in, 
+.icon--twitter,
+.icon--linkedin-in,
 .icon--medium,
 .icon--github,
 .icon--envelope {
-  transition: all .2s;
+  transition: all 0.2s;
 
   &:hover,
   &:active {
-    opacity:0.6;
+    opacity: 0.6;
   }
 }
 
 .icon--twitter {
   width: 24px;
-  height: 24px; 
+  height: 24px;
 }
 
 .icon--linkedin-in {
@@ -174,7 +162,7 @@ p {
 
 .icon--github {
   width: 23.75px;
-  height: 24px; 
+  height: 24px;
 }
 
 .icon--angle-down {
@@ -196,7 +184,7 @@ p {
   position: relative !important;
   top: 8px !important;
   left: 0px !important;
-  transition: all .2s;
+  transition: all 0.2s;
   -webkit-filter: drop-shadow(0px 0px 4px rgba(247, 87, 89, 0.8));
 
   &:hover {
@@ -204,86 +192,5 @@ p {
     cursor: pointer;
   }
 }
-
-
-.spinner {
-  //width: 40px;
-  //height: 40px;
-  @include absCenter;
-  cursor: pointer;
-  z-index: 1000;
-  display: none; //script.js calls jquery fade-in for intro animation
-  top: 40%;
-}
-
-h1.ml8 {
-  font-weight: 900;
-  font-size: 4.5em;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #fff;
-  width: 3em;
-  height: 3em;
-  position: relative;
-}
-
-.ml8 .letters-container {
-  position: absolute;
-  left: 4rem;
-  right: 0;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  height: 1em;
-}
-
-.ml8 .letters {
-  position: relative;
-  z-index: 2;
-  display: inline-block;
-  line-height: 0.7em;
-  right: .03em;
-  top: -0.2em;
-}
-
-.ml8 .bang {
-  font-size: 1.4em;
-  top: auto;
-  left: -0.12em;
-  transform: rotate(5deg);
-}
-
-.ml8 .circle {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-}
-
-.ml8 .circle-white {
-  width: 3em;
-  height: 3em;
-  border: 2px dashed white;
-  border-radius: 2em;
-}
-
-.ml8 .circle-dark {
-  width: 2.2em;
-  height: 2.2em;
-  background-color: #4f7b86;
-  border-radius: 3em;
-  z-index: 1;
-}
-
-.ml8 .circle-dark-dashed {
-  border-radius: 2.4em;
-  background-color: transparent;
-  border: 2px dashed #4f7b86;
-  width: 2.3em;
-  height: 2.3em;
-}
-
-
 
 

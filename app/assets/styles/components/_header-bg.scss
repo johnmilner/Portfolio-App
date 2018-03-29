@@ -1,69 +1,63 @@
 .page-content {
-    position: relative;
-    height: 100%;
-    min-height: 100vh;
-    background-image:
-    linear-gradient(
-        to right bottom,
-        rgba(51,51,51, 0.8),
-        rgba(255,255,255, 0.8)
-    );
-    background-size: cover;
-    background-position: top;
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(51, 51, 51, 0.8),
+    rgba(255, 255, 255, 0.8)
+  );
+  background-size: cover;
+  background-position: top;
 }
 .header-container {
-    position: relative;
-    //z-index: -5;
-    opacity: 0.35;
+  position: relative;
+  //z-index: -5;
+  opacity: 0.35;
 }
 
 .header-icons {
-	width: 100%;
-	float: right;
-	position: absolute;
-	height: 100%;
-	left: 0
+  width: 100%;
+  float: right;
+  position: absolute;
+  height: 100%;
+  left: 0;
 }
 
 header .devicons-list-container {
-		position: absolute;
-		top: 0;
-        left: 50%; 
-		bottom: 0;
-		right: 0;
-		z-index: 0;
-		overflow: hidden;
-		height: 1200px;
-		width: 6000px;
-		-webkit-animation: cascade 500s linear infinite;
-		animation: cascade 500s linear infinite
-    }
-    
-    .devicon {
-        font-size: 25rem;
-        // speak: none;
-        // font-style: normal;
-        // font-weight: normal;
-        // font-variant: normal;
-        // text-transform: none;
-        // line-height: 1;
-      }
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  overflow: hidden;
+  height: 1200px;
+  width: 6000px;
+  -webkit-animation: cascade 500s linear infinite;
+  animation: cascade 500s linear infinite;
+}
 
-	header i {
-		
-		margin: 40px;
-		padding: 10px;
-		float: left;
-		background: $color-secondary-light;
-		border-radius: 6px;
-		opacity: 1;
-		border-bottom: 2px solid #8d8d8d;
-		border-right: 2px solid white;
-        pointer-events: all;
-        -webkit-font-smoothing: antialiased;
-	    -moz-osx-font-smoothing: grayscale;
-    }
-    
+.devicon {
+  font-size: 25rem;
+  // speak: none;
+  // font-style: normal;
+  // font-weight: normal;
+  // font-variant: normal;
+  // text-transform: none;
+  // line-height: 1;
+}
 
-
-
+header i {
+  margin: 40px;
+  padding: 10px;
+  float: left;
+  background: $color-secondary-light;
+  border-radius: 6px;
+  opacity: 1;
+  border-bottom: 2px solid #8d8d8d;
+  border-right: 2px solid white;
+  pointer-events: all;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

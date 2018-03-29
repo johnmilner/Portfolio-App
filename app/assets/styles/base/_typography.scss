@@ -1,50 +1,47 @@
 @font-face {
-  font-family: 'BrandonText-Medium';
-  src: url('../../../assets/fonts/BrandonText-Medium.OTF');
+  font-family: "BrandonText-Medium";
+  src: url("../../../assets/fonts/BrandonText-Medium.OTF");
 }
 
 @font-face {
-  font-family: 'SofiaProRegular';
-  src: url('../../../assets/fonts/SofiaProRegular.otf');
+  font-family: "SofiaProRegular";
+  src: url("../../../assets/fonts/SofiaProRegular.otf");
 }
 
 @font-face {
-  font-family: 'FuturaStd-ExtraBold';
-  src: url('../../../assets/fonts/FuturaStd-ExtraBold.otf');
+  font-family: "FuturaStd-ExtraBold";
+  src: url("../../../assets/fonts/FuturaStd-ExtraBold.otf");
 }
 
 @font-face {
-  font-family: 'FuturaStd-Bold';
-  src: url('../../../assets/fonts/FuturaStd-Bold.otf');
+  font-family: "FuturaStd-Bold";
+  src: url("../../../assets/fonts/FuturaStd-Bold.otf");
 }
 
-
 @font-face {
-  font-family: 'FuturaStd-Book';
-  src: url('../../../assets/fonts/FuturaStd-Book.otf');
+  font-family: "FuturaStd-Book";
+  src: url("../../../assets/fonts/FuturaStd-Book.otf");
 }
 
 .tagline {
   color: #fff;
   text-align: center;
   //background-color: #343434;
-  font-family: 'FuturaStd-Book', sans-serif;
+  font-family: "FuturaStd-Book", sans-serif;
   text-transform: uppercase;
   padding-top: 10em;
   padding-bottom: 11em;
   text-rendering: optimizeLegibility;
-  
 }
 
 .main-headline-r1 {
   color: #f95759;
-  border-bottom: 3px dotted rgba(255,255,255, 0.3);
+  border-bottom: 3px dotted rgba(255, 255, 255, 0.3);
   font-size: 3.2em;
   font-weight: 800;
   line-height: 1.6em;
   letter-spacing: 0.5em;
   display: inline-block;
-  
 }
 
 .main-headline-r2 {
@@ -52,81 +49,77 @@
   font-size: 9em;
   line-height: 1em;
   font-weight: 100;
-  letter-spacing: .42rem;
-  font-family: 'FuturaStd-ExtraBold', sans-serif;
-  text-shadow: 0px 0px 8px rgba(0,0,0,.1);
+  letter-spacing: 0.42rem;
+  font-family: "FuturaStd-ExtraBold", sans-serif;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 
   @include respond(phone) {
     font-size: 6rem;
   }
 }
-  
-  p {
-    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
-    //font-family: 'EB Garamond', serif;
-    font-size: 1.75rem;
-    text-align: left;
-    color: $color-white;
+
+p {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  //font-family: 'EB Garamond', serif;
+  font-size: 1.75rem;
+  text-align: left;
+  color: $color-white;
+}
+
+h3.cta {
+  //font-family: 'EB Garamond', serif;
+  font-family: "FuturaStd-Bold", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  text-rendering: optimizelegibility;
+  font-size: 2vw;
+  line-height: 1.3em;
+  margin: 1rem;
+
+  @include respond(phone) {
+    font-size: 8vw;
   }
+}
 
+.projects {
+  font-family: "Source Sans Pro", sans-serif !important;
+  text-transform: uppercase;
+  font-size: 1.6rem !important;
+  font-weight: 700 !important;
+  color: #f95759 !important;
+  width: 25%;
+  margin: 0 auto;
+  height: 6rem;
+  margin-top: -0.56rem;
+  //padding-top: 2rem;
+  //border-top: 1px solid #777;
+  letter-spacing: 3.12px;
+  cursor: pointer;
+  position: relative;
+  z-index: 95;
+  pointer-events: auto;
 
-  h3.cta {
-    //font-family: 'EB Garamond', serif;
-    font-family: 'FuturaStd-Bold', sans-serif;
-    text-transform: uppercase; 
-    color: #fff;
-    font-weight: 700;
-    letter-spacing: 0.015em;
-    text-rendering: optimizelegibility;
-    font-size: 2vw;
-    line-height: 1.3em;
-    margin: 1rem;
-
-    @include respond(phone) {
-      font-size: 8vw;
-
-    }
+  @include respond(tab-land) {
+    padding-top: 2.6rem;
   }
-
-  .projects {
-    font-family: 'Source Sans Pro', sans-serif !important; 
-    text-transform: uppercase;
-    font-size: 1.6rem !important;
-    font-weight: 700 !important;
-    color: #f95759 !important;   
-    width: 25%;
-    margin: 0 auto;
-    height: 6rem;
-    margin-top: -.56rem;
-    //padding-top: 2rem;
-    //border-top: 1px solid #777;
-    letter-spacing: 3.12px;
-    cursor: pointer;
-    position: relative;
-    z-index: 95;
-    pointer-events: auto;
-
-    @include respond(tab-land) {
-      padding-top: 2.6rem;
-
-    }
-    @include respond(ipad-port) {
-      padding-top: 2.6rem;
-    }
-    @include respond(phone) {
-      padding-top: 2.2rem;
-    }
+  @include respond(ipad-port) {
+    padding-top: 2.6rem;
   }
-
-  .projects.is-closed {
-    opacity: 0;
-    transform: translateY(0) rotate(0);
-    pointer-events: auto;
-    transition-delay: 250ms;
-    transition-timing-function: ease;
+  @include respond(phone) {
+    padding-top: 2.2rem;
   }
+}
 
+.projects.is-closed {
+  opacity: 0;
+  transform: translateY(0) rotate(0);
+  pointer-events: auto;
+  transition-delay: 250ms;
+  transition-timing-function: ease;
+}
 
-  h5 {
-    text-align: center
-  }
+h5 {
+  text-align: center;
+}

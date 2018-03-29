@@ -5,12 +5,13 @@
 @import "base/typography";
 @import "base/base";
 
-@import "components/_header-bg";
+@import "components/loading-animation";
+@import "components/header-bg";
 @import "components/project-box";
 @import "components/mixitup-button";
 @import "components/ta-overlay";
 @import "components/bg-video";
-@import "components/svg-scene";
+//@import "components/svg-scene";
 
 @import "modules/sprite";
 

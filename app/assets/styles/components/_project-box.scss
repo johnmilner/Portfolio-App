@@ -1,5 +1,28 @@
 /* Box Hover Image Animation */
 
+/* preserve aspect ratio box for project box grid */
+.box {
+  position: relative;
+  color: white;
+  margin: 0;
+  padding: 0;
+
+  &::before {
+    content: "";
+    width: 1px;
+    margin-left: -1px;
+    float: left;
+    height: 0;
+    padding-top: 591.44px / 1127.34px * 100%;
+  }
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
 .project {
     background-size: 100% 100%;
     background-position: center center;
@@ -337,4 +360,62 @@
 .nike {
   background-image: url('../../../assets/images/cctv.jpg');
 }
+
+.visible-grid-item:nth-child(2) div {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.visible-grid-item:nth-child(3) div {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+.visible-grid-item:nth-child(4) div {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+.visible-grid-item:nth-child(5) div {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.visible-grid-item:nth-child(6) div {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+.visible-grid-item:nth-child(7) div {
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+.visible-grid-item:nth-child(8) div {
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+.visible-grid-item:nth-child(9) div {
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+.visible-grid-item:nth-child(10) div {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.visible-grid-item:nth-child(11) div {
+  -webkit-animation-delay: 2.2s;
+  animation-delay: 2.2s;
+}
+.visible-grid-item:nth-child(12) div {
+  -webkit-animation-delay: 2.4s;
+  animation-delay: 2.4s;
+}
+.visible-grid-item:nth-child(13) div {
+  -webkit-animation-delay: 2.6s;
+  animation-delay: 2.6s;
+}
+.visible-grid-item:nth-child(14) div {
+  -webkit-animation-delay: 2.8s;
+  animation-delay: 2.8s;
+}
+
+
+// .empty .inner-content {
+//   display: none;
+// }
 

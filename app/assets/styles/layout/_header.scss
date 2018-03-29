@@ -60,16 +60,14 @@
 }
 
 .tagline {
-  //display: none;
   position: absolute;
   top: 50%;
   left: 50%;
-  //background: rgba($color-white, .1);
   transform: translate(-50%, -50%);
   text-align: center;
   width: 85%;
   cursor: pointer;
-  // z-index: 15;
+
 }
 
 .main-headline-r1 {
@@ -78,29 +76,19 @@
   }
 }
 
-.icon--angle-down {
-  position: absolute;
-  top: 110%;
-  left: 50%;
-  //transform: translate(-50%, -50%);
-  background-size: 150px !important;
-  display: inline-block;
+// .icon--angle-down {
+//   position: absolute;
+//   top: 110%;
+//   left: 50%;
+//   background-size: 150px !important;
+//   display: inline-block;
 
-  @include respond(tab-land) {
-    top: 95%;
-  }
+//   @include respond(tab-land) {
+//     top: 95%;
+//   }
 
-  @include respond(phone) {
-    top: 100%;
-  }
-}
+//   @include respond(phone) {
+//     top: 100%;
+//   }
+// }
 
-.hero-btn {
-  transition: color 0.5s ease;
-}
-
-.hero-btn:hover {
-  color: rgba(255, 255, 255, 0.9);
-  transition: color 0.5s ease;
-  background: none;
-}
