@@ -13,13 +13,14 @@
 body {
   box-sizing: border-box;
   background-color: rgb(51, 51, 51);
-  overflow-y: hidden; /* prevent body overflow with when mixitup targets are filtered */
 
 }
 
 .container {
   padding: 3rem;
   background: #f7f7f7;
+  overflow-y: hidden; /* prevent body overflow with when mixitup targets are filtered */
+
 }
 
 a {

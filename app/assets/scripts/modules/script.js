@@ -446,6 +446,13 @@ for (var i = 0; i < navItems.length; i++) {
     if (overlay.isAnimating) {
       return false;
     }
+    $(".box1").css({
+      "overflow-x": "hidden",
+      "overflow-y": "hidden"
+    });
+    $("#body-content-wrapper").css({
+      "overflow-y": "hidden"
+    });
     app.hideMenu();   
   });
   

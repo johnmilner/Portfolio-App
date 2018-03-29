@@ -240,14 +240,14 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #333333;
-  overflow-y: hidden;
-  /* prevent body overflow with when mixitup targets are filtered */
 }
 
 .container {
   padding: 30px;
   padding: 3rem;
   background: #f7f7f7;
+  overflow-y: hidden;
+  /* prevent body overflow with when mixitup targets are filtered */
 }
 
 a {
