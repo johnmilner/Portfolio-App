@@ -160,6 +160,11 @@ p {
     box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
     text-align: center;
     cursor: pointer;
+    transition: all .2s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
 
     @include respond(tab-port) {
       top: 4rem;
