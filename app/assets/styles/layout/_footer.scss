@@ -9,7 +9,7 @@ footer {
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: contain;
-    //background-attachment:fixed;
+    background-attachment:fixed;
 
 
     @include respond(phone) {
