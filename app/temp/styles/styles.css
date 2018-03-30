@@ -1703,7 +1703,7 @@ button:after {
 .button-bar button.button-bar-toggle-btn-active,
 .button-bar button.button-bar-sort-btn-active {
   color: #0e83cd;
-  background: rgba(85, 197, 122, .5);
+  background: #91e6c7;
 }
 
 .shape-overlays {
@@ -3199,8 +3199,19 @@ a.underlined:hover {
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: .45;
+  opacity: 1;
   overflow: hidden;
+}
+
+.bg-video::before {
+  content: '';
+  position: absolute;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(123, 190, 253, .8)), to(rgba(255, 255, 255, .6)));
+  background-image: linear-gradient(to right bottom, rgba(123, 190, 253, .8), rgba(255, 255, 255, .6));
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .bg-video__content {
@@ -3208,6 +3219,7 @@ a.underlined:hover {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: -1;
 }
 
 /*
