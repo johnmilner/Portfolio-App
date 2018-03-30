@@ -76,7 +76,7 @@ h3.cta {
   font-weight: 700;
   letter-spacing: 0.015em;
   text-rendering: optimizelegibility;
-  font-size: 2vw;
+  font-size: 2.5vw;
   line-height: 1.3em;
   margin: 1rem;
 
@@ -102,6 +102,7 @@ h3.cta {
   position: relative;
   z-index: 95;
   pointer-events: auto;
+  text-rendering: optimizeLegibility;
 
   @include respond(tab-land) {
     padding-top: 2.6rem;
