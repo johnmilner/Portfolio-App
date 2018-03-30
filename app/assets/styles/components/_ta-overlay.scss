@@ -299,7 +299,7 @@ p {
   z-index: 1002;
   text-align: center;
   font-size: 42px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "FuturaStd-Book", sans-serif;
   font-weight: bold;
   opacity: 0;
   color: #fff;
@@ -364,7 +364,7 @@ p {
   z-index: -1;
   background-color: #fff;
   position: absolute;
-  top: 6px;
+  top: 3px;
   -webkit-transform: scaleX(0.3);
   transform: scaleX(0.3);
 }
@@ -492,20 +492,20 @@ p {
 .menu-white:hover .menu-icon-line {
   background-color: #fff;
 }
-body {
-  position: relative;
-  //font:normal 15px/1.9em 'Merriweather', Georgia, serif;
-  margin: 0;
-  padding: 0;
-}
-h1 {
-  font-style: normal;
-  font-size: 45px;
-  font-weight: normal;
-  vertical-align: baseline;
-  margin: 0;
-  padding: 0;
-}
+// body {
+//   position: relative;
+//   //font:normal 15px/1.9em 'Merriweather', Georgia, serif;
+//   margin: 0;
+//   padding: 0;
+// }
+// h1 {
+//   font-style: normal;
+//   font-size: 45px;
+//   font-weight: normal;
+//   vertical-align: baseline;
+//   margin: 0;
+//   padding: 0;
+// }
 // a{
 //     color:#c44736
 // }
@@ -519,9 +519,9 @@ h1 {
 .clear:hover {
   color: inherit;
 }
-p {
-  margin-bottom: 2em;
-}
+// p {
+//   margin-bottom: 2em;
+// }
 .site-name {
   font-size: 12px;
   text-transform: uppercase;

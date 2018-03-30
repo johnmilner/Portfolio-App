@@ -706,7 +706,7 @@ footer {
   height: 60rem;
   width: 100%;
   text-align: center;
-  background-color: #303f80;
+  background-color: #7cccbe;
   background-image: url("../../../assets/images/waves.svg");
   background-position: 0% 100%;
   background-repeat: no-repeat;
@@ -1932,7 +1932,7 @@ p {
   z-index: 1002;
   text-align: center;
   font-size: 42px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "FuturaStd-Book", sans-serif;
   font-weight: bold;
   opacity: 0;
   color: #fff;
@@ -2007,7 +2007,7 @@ p {
   z-index: -1;
   background-color: #fff;
   position: absolute;
-  top: 6px;
+  top: 3px;
   -webkit-transform: scaleX(0.3);
   transform: scaleX(0.3);
 }
@@ -2155,21 +2155,6 @@ p {
   background-color: #fff;
 }
 
-body {
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-  font-style: normal;
-  font-size: 45px;
-  font-weight: normal;
-  vertical-align: baseline;
-  margin: 0;
-  padding: 0;
-}
-
 .clear {
   color: inherit;
   text-decoration: inherit;
@@ -2177,10 +2162,6 @@ h1 {
 
 .clear:hover {
   color: inherit;
-}
-
-p {
-  margin-bottom: 2em;
 }
 
 .site-name {

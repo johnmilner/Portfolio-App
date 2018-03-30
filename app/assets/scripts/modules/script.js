@@ -71,8 +71,8 @@ anime.timeline({ loop: false })
         targets: ".header",
         opacity: 1,
         duration: 500,
-        easing: "easeOutExpo"
-        //delay: 500
+        easing: "easeInExpo",
+        delay: 250
       });
 
     anime({
@@ -86,20 +86,6 @@ anime.timeline({ loop: false })
 /*
  Preloader End
 */
-
-/*
- Footer Animation
-*/
-
-// anime({
-//   targets: [document.getElementsByTagName("path")[0]],
-//   d: "M1082.3,481.7C930,489,778,495,625,481c-32-3-63.5-7.5-95-11.8C310,442,86,450-134,479c2-119,14-237,10-356&#10;  C46,81,223-12,399,48c79,27,148,73,224.3,106c19.1,8,38.6,15.2,58.7,21.2c20.1,6,40.7,10.7,62,13.9c117,17,231-1,344-24&#10;  c-1,89-3,178-5,266.7C1082.5,461.4,1082.3,481.7,1082.3,481.7z",
-//   duration: 1000,
-//   loop: true,
-//   direction: "alternate",
-//   easing: "linear"
-// });
-
 
 /* 
 Menu Overlay 
@@ -343,7 +329,7 @@ app.revealMenu = function() {
     $(this).css({
       "opacity": "0",
       "transform" : "scale(0.9)",
-      "padding-left" : "1px"
+      "padding-left" : "1.2px"
     });
   });
 
@@ -587,6 +573,10 @@ $("document").ready(function() {
     },
     controls: {
       toggleLogic: "and"
+    },
+    animation: {
+      effects: 'rotateY(-25deg)',
+      perspectiveDistance: '2000px'
     },
     classNames: {
       block: "button-bar",
