@@ -1,11 +1,14 @@
 .spinner {
-    //width: 40px;
-    //height: 40px;
-    @include absCenter;
-    cursor: pointer;
-    z-index: 1000;
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    top: 10%;
+    left: calc(50% - 3rem);
+    transform: translate(-50%, -50%);
+    z-index: 5000;
     display: none; //script.js calls jquery fade-in for intro animation
-    top: 40%;
+    pointer-events: none;
+    
   }
   
   h1.ml8 {
@@ -56,7 +59,7 @@
   .ml8 .circle-white {
     width: 3em;
     height: 3em;
-    border: 2px dashed white;
+    border: 2px dashed #4f7b86;
     border-radius: 2em;
   }
   

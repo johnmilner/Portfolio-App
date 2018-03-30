@@ -9979,7 +9979,7 @@ anime.timeline({ loop: false }).add({
   easing: "easeInExpo"
   //delay: 500
 }).add({
-  targets: ".box1",
+  targets: ".header",
   opacity: 1,
   duration: 500,
   easing: "easeOutExpo"
@@ -9999,34 +9999,18 @@ anime({
 */
 
 /*
- Morphing Header Background
+ Footer Animation
 */
-// {
-// 	class MorphingBG {
-// 		constructor(el) {
-// 			this.DOM = {};
-// 			this.DOM.el = el;
-// 			this.DOM.paths = Array.from(this.DOM.el.querySelectorAll('path'));
-// 			this.animate();
-// 		}
-// 		animate() {
-// 			this.DOM.paths.forEach((path) => {
-// 				setTimeout(() => {
-// 					anime({
-// 						targets: path,
-// 						duration: anime.random(3000,5000),
-// 						easing: [0.5,0,0.5,1],
-// 						d: path.getAttribute('pathdata:id'),
-// 						loop: true,
-// 						direction: 'alternate'
-// 					});
-// 				}, anime.random(0,1000));
-// 			});
-// 		}
-// 	};
 
-// 	new MorphingBG(document.querySelector('svg.scene'));
-// };
+// anime({
+//   targets: [document.getElementsByTagName("path")[0]],
+//   d: "M1082.3,481.7C930,489,778,495,625,481c-32-3-63.5-7.5-95-11.8C310,442,86,450-134,479c2-119,14-237,10-356&#10;  C46,81,223-12,399,48c79,27,148,73,224.3,106c19.1,8,38.6,15.2,58.7,21.2c20.1,6,40.7,10.7,62,13.9c117,17,231-1,344-24&#10;  c-1,89-3,178-5,266.7C1082.5,461.4,1082.3,481.7,1082.3,481.7z",
+//   duration: 1000,
+//   loop: true,
+//   direction: "alternate",
+//   easing: "linear"
+// });
+
 
 /* 
 Menu Overlay 
@@ -10303,6 +10287,13 @@ app.hideMenu = function () {
   overlay.toggle();
   $(document).trigger("app:menuWillHide");
 
+  $(".header").css({
+    "overflow": "hidden"
+  });
+  $("#body-content-wrapper").css({
+    "overflow": "hidden"
+  });
+
   var containerDelay = 200;
   anime({
     targets: '.menu-animated-background',
@@ -10363,13 +10354,6 @@ for (var i = 0; i < navItems.length; i++) {
     if (overlay.isAnimating) {
       return false;
     }
-    $(".box1").css({
-      "overflow-x": "hidden",
-      "overflow-y": "hidden"
-    });
-    $("#body-content-wrapper").css({
-      "overflow-y": "hidden"
-    });
     app.hideMenu();
   });
 };

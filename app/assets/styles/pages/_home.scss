@@ -1,0 +1,161 @@
+.container {
+    padding: 3rem;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    //overflow: hidden; /* prevent body overflow when mixitup targets are filtered */
+
+  }
+  
+  #body-content-wrapper {
+    position: relative;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,0.2);
+    background-color: #f7f7f7;
+    height: 100%;
+    max-width: 100%;
+    z-index: 1;
+    overflow-y: hidden;
+  }
+  
+  section {
+    position: relative;
+    z-index: 95;
+    //max-width: 100% !important; //for mixitup section width
+    //pointer-events: none;
+  }
+  
+  a {
+    text-decoration: none;
+    //color: rgba(255,255,255,0.5);
+    color: #5f7683;
+    outline: 0;
+    text-decoration: none !important;
+  }
+  
+  a:hover {
+    color: rgba(249, 87, 89, 0.5);
+    outline: 0;
+    text-decoration: none !important;
+    transition: all 100ms ease;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  p {
+    margin: 0 auto;
+  }
+  
+  /* Hide the overflow in IE. */
+  svg:not(:root) {
+    overflow: hidden;
+  }
+  
+  .icon {
+    background-size: 90px;
+    width: 21.5px;
+    height: 24px;
+    background-repeat: no-repeat;
+  }
+  
+  .social-icons {
+    text-align: center;
+    transform: scale(1.3);
+    position: relative;
+    //padding-top: 4rem;
+  
+    @include respond(phone) {
+      padding-top: 4rem;
+    }
+  }
+  
+  .social-icons__icon {
+    display: inline-block;
+    margin: 0 5px 5px 5px !important;
+    width: 72px;
+    height: 72px;
+    position: relative;
+  
+    @include respond(big-desktop) {
+      margin: 0 60px 5px 5px !important;
+    }
+  
+    @include respond(tab-land) {
+      width: 70px;
+    }
+  
+    @include respond(ipad-port) {
+      width: 32px;
+    }
+  }
+  
+  .social-icons__icon .icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .icon--twitter,
+  .icon--linkedin-in,
+  .icon--medium,
+  .icon--github,
+  .icon--envelope {
+    transition: all 0.2s;
+  
+    &:hover,
+    &:active {
+      opacity: 0.6;
+    }
+  }
+  
+  .icon--twitter {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .icon--linkedin-in {
+    width: 20.85px;
+    height: 24px;
+  }
+  
+  .icon--github {
+    width: 23.75px;
+    height: 24px;
+  }
+  
+  .icon--angle-down {
+    width: 26.5px;
+    height: 30px;
+  }
+  
+  .icon--envelope {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .icon--heart {
+    width: 27px;
+    height: 24px;
+    background-position: 0 0;
+    //transform: scale(.3);
+    display: inline-block !important;
+    position: relative !important;
+    top: 8px !important;
+    left: 0px !important;
+    transition: all 0.2s;
+    -webkit-filter: drop-shadow(0px 0px 4px rgba(247, 87, 89, 0.8));
+  
+    &:hover {
+      -webkit-filter: drop-shadow(0px 0px 4px rgba(247, 87, 89, 0.8));
+      cursor: pointer;
+    }
+  }
