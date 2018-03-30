@@ -10325,6 +10325,7 @@ app.showMenuIcon = function () {
 
 var elmHamburger = document.querySelector('.menu');
 var navItems = document.querySelectorAll('.nav-link');
+var subNavItems = document.querySelectorAll('.nav-sublink');
 
 // //remove global menu items
 // function removeGlobalMenu() {
@@ -10336,6 +10337,16 @@ var navItems = document.querySelectorAll('.nav-link');
 //loop thru nav_sublinks listening for click, onclick close overlay, close hamburger menu
 for (var i = 0; i < navItems.length; i++) {
   navItems[i].addEventListener('click', function () {
+    //console.log('clicked!!');
+    if (overlay.isAnimating) {
+      return false;
+    }
+    app.hideMenu();
+  });
+};
+
+for (var i = 0; i < subNavItems.length; i++) {
+  subNavItems[i].addEventListener('click', function () {
     //console.log('clicked!!');
     if (overlay.isAnimating) {
       return false;
