@@ -76,35 +76,66 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
   }
 }
 
+@-webkit-keyframes rotateplane {
+  0% {
+    -webkit-transform: perspective(120px);
+  }
+
+  50% {
+    -webkit-transform: perspective(120px) rotateY(180deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
+  }
+}
+
+@keyframes rotateplane {
+  0% {
+    -webkit-transform: perspective(120px) rotateX(0) rotateY(0);
+    transform: perspective(120px) rotateX(0) rotateY(0);
+  }
+
+  50% {
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0);
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0);
+  }
+
+  100% {
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
 @font-face {
-  font-family: 'BrandonText-Medium';
+  font-family: "BrandonText-Medium";
   src: url("../../../assets/fonts/BrandonText-Medium.OTF");
 }
 
 @font-face {
-  font-family: 'SofiaProRegular';
+  font-family: "SofiaProRegular";
   src: url("../../../assets/fonts/SofiaProRegular.otf");
 }
 
 @font-face {
-  font-family: 'FuturaStd-ExtraBold';
+  font-family: "FuturaStd-ExtraBold";
   src: url("../../../assets/fonts/FuturaStd-ExtraBold.otf");
 }
 
 @font-face {
-  font-family: 'FuturaStd-Bold';
+  font-family: "FuturaStd-Bold";
   src: url("../../../assets/fonts/FuturaStd-Bold.otf");
 }
 
 @font-face {
-  font-family: 'FuturaStd-Book';
+  font-family: "FuturaStd-Book";
   src: url("../../../assets/fonts/FuturaStd-Book.otf");
 }
 
 .tagline {
   color: #fff;
   text-align: center;
-  font-family: 'FuturaStd-Book', sans-serif;
+  font-family: "FuturaStd-Book", sans-serif;
   text-transform: uppercase;
   padding-top: 10em;
   padding-bottom: 11em;
@@ -127,8 +158,8 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
   line-height: 1em;
   font-weight: 100;
   letter-spacing: 4.2px;
-  letter-spacing: .42rem;
-  font-family: 'FuturaStd-ExtraBold', sans-serif;
+  letter-spacing: 0.42rem;
+  font-family: "FuturaStd-ExtraBold", sans-serif;
   text-shadow: 0px 0px 8px rgba(0, 0, 0, .1);
 }
 
@@ -139,7 +170,7 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
 }
 
 p {
-  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   font-size: 17.5px;
   font-size: 1.75rem;
   text-align: left;
@@ -147,7 +178,7 @@ p {
 }
 
 h3.cta {
-  font-family: 'FuturaStd-Bold', sans-serif;
+  font-family: "FuturaStd-Bold", sans-serif;
   text-transform: uppercase;
   color: #fff;
   font-weight: 700;
@@ -166,7 +197,7 @@ h3.cta {
 }
 
 .projects {
-  font-family: 'Source Sans Pro', sans-serif !important;
+  font-family: "Source Sans Pro", sans-serif !important;
   text-transform: uppercase;
   font-size: 16px !important;
   font-size: 1.6rem !important;
@@ -177,7 +208,7 @@ h3.cta {
   height: 60px;
   height: 6rem;
   margin-top: -5.6px;
-  margin-top: -.56rem;
+  margin-top: -0.56rem;
   letter-spacing: 3.12px;
   cursor: pointer;
   position: relative;
@@ -236,10 +267,20 @@ h5 {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #333333;
 }
 
 .container {
@@ -247,7 +288,19 @@ body {
   padding: 3rem;
   background: #f7f7f7;
   overflow-y: hidden;
-  /* prevent body overflow with when mixitup targets are filtered */
+  /* prevent body overflow when mixitup targets are filtered */
+}
+
+#body-content-wrapper {
+  z-index: 1;
+  position: relative;
+  background-color: #f7f7f7;
+  height: 100%;
+}
+
+section {
+  position: relative;
+  z-index: 95;
 }
 
 a {
@@ -257,7 +310,9 @@ a {
   text-decoration: none !important;
 }
 
-a:hover {
+a:hover,
+a:active,
+a:focus {
   color: rgba(249, 87, 89, .5);
   outline: 0;
   text-decoration: none !important;
@@ -274,37 +329,11 @@ li {
   list-style: none;
 }
 
-html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-}
-
-@media (min-width: 112.5em) {
-  html {
-    font-size: 75%;
-  }
-}
-
-.barba-container {
-  background: #fff;
-  padding: 30px;
-  padding: 3rem;
-}
-
-#body-content-wrapper {
-  z-index: 1;
-  position: relative;
-  background-color: #f7f7f7;
-  height: 100%;
-}
-
 p {
   margin: 0 auto;
 }
 
-/**
- * Hide the overflow in IE.
- */
+/* Hide the overflow in IE. */
 
 svg:not(:root) {
   overflow: hidden;
@@ -370,8 +399,8 @@ svg:not(:root) {
 .icon--medium,
 .icon--github,
 .icon--envelope {
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .icon--twitter:hover,
@@ -420,8 +449,8 @@ svg:not(:root) {
   position: relative !important;
   top: 8px !important;
   left: 0px !important;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   -webkit-filter: drop-shadow(0px 0px 4px rgba(247, 87, 89, .8));
 }
 
@@ -445,7 +474,7 @@ svg:not(:root) {
 h1.ml8 {
   font-weight: 900;
   font-size: 4.5em;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   color: #fff;
   width: 3em;
   height: 3em;
@@ -468,7 +497,7 @@ h1.ml8 {
   z-index: 2;
   display: inline-block;
   line-height: 0.7em;
-  right: .03em;
+  right: 0.03em;
   top: -0.2em;
 }
 
@@ -569,6 +598,30 @@ header i {
 }
 
 /* Box Hover Image Animation */
+
+/* preserve aspect ratio box for project box grid */
+
+.box {
+  position: relative;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.box::before {
+  content: "";
+  width: 1px;
+  margin-left: -1px;
+  float: left;
+  height: 0;
+  padding-top: 52.46332%;
+}
+
+.box::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .project {
   background-size: 100% 100%;
@@ -1019,6 +1072,71 @@ header i {
   background-image: url("../../../assets/images/cctv.jpg");
 }
 
+.visible-grid-item:nth-child(2) div {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.visible-grid-item:nth-child(3) div {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.visible-grid-item:nth-child(4) div {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.visible-grid-item:nth-child(5) div {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.visible-grid-item:nth-child(6) div {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+.visible-grid-item:nth-child(7) div {
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+
+.visible-grid-item:nth-child(8) div {
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+
+.visible-grid-item:nth-child(9) div {
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+
+.visible-grid-item:nth-child(10) div {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.visible-grid-item:nth-child(11) div {
+  -webkit-animation-delay: 2.2s;
+  animation-delay: 2.2s;
+}
+
+.visible-grid-item:nth-child(12) div {
+  -webkit-animation-delay: 2.4s;
+  animation-delay: 2.4s;
+}
+
+.visible-grid-item:nth-child(13) div {
+  -webkit-animation-delay: 2.6s;
+  animation-delay: 2.6s;
+}
+
+.visible-grid-item:nth-child(14) div {
+  -webkit-animation-delay: 2.8s;
+  animation-delay: 2.8s;
+}
+
 #button-wrapper {
   display: none;
   margin: 0 auto;
@@ -1098,6 +1216,31 @@ button:after {
   background: #eee;
 }
 
+.shape-overlays {
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.shape-overlays.is-opened {
+  pointer-events: auto;
+}
+
+.shape-overlays path:nth-of-type(1) {
+  fill: #c4dbea;
+}
+
+.shape-overlays path:nth-of-type(2) {
+  fill: #4c688b;
+}
+
+.shape-overlays path:nth-of-type(3) {
+  fill: #2e496a;
+}
+
 .clear {
   color: inherit;
   text-decoration: inherit;
@@ -1118,7 +1261,7 @@ p {
   font-weight: 700;
   padding-top: 20px;
   text-align: center;
-  font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+  font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
 }
 
 @media all and (max-width: 480px) {
@@ -1219,42 +1362,11 @@ p {
   transition: -webkit-transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-  font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+  font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
 }
 
 .text-highlighted {
   color: #ca6055;
-}
-
-@-webkit-keyframes rotateplane {
-  0% {
-    -webkit-transform: perspective(120px);
-  }
-
-  50% {
-    -webkit-transform: perspective(120px) rotateY(180deg);
-  }
-
-  100% {
-    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
-  }
-}
-
-@keyframes rotateplane {
-  0% {
-    -webkit-transform: perspective(120px) rotateX(0) rotateY(0);
-    transform: perspective(120px) rotateX(0) rotateY(0);
-  }
-
-  50% {
-    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0);
-    transform: perspective(120px) rotateX(-180.1deg) rotateY(0);
-  }
-
-  100% {
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-  }
 }
 
 .content {
@@ -1348,18 +1460,18 @@ p {
   content: "";
   position: absolute;
   left: 0;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .menu__icon::before {
   top: -8px;
-  top: -.8rem;
+  top: -0.8rem;
 }
 
 .menu__icon::after {
   top: 8px;
-  top: .8rem;
+  top: 0.8rem;
 }
 
 .menu__button:hover .menu__icon::before {
@@ -1432,7 +1544,7 @@ p {
   z-index: 1002;
   text-align: center;
   font-size: 42px;
-  font-family: 'Source Sans Pro',sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: bold;
   opacity: 0;
   color: #fff;
@@ -1690,7 +1802,7 @@ p {
   font-weight: 700;
   padding-top: 20px;
   text-align: center;
-  font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+  font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
 }
 
 @media all and (max-width: 480px) {
@@ -1791,7 +1903,7 @@ p {
   transition: -webkit-transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-  font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+  font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
 }
 
 .text-highlighted {
@@ -1816,7 +1928,7 @@ p {
 }
 
 .single-page-header {
-  font-family: "EB Garamond",serif;
+  font-family: "EB Garamond", serif;
   font-size: 42px;
   font-weight: 400;
   line-height: 1.3em;
@@ -1861,7 +1973,7 @@ p {
   text-align: center;
   margin-top: 4em;
   margin-bottom: 4em;
-  font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+  font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
 }
 
 .centered-item {
@@ -1954,7 +2066,7 @@ a.underlined:hover {
 .portfolio {
   text-align: center;
   font-size: 16px;
-  font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+  font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
   position: fixed;
   width: 100%;
   min-height: 100vh;
@@ -1987,7 +2099,7 @@ a.underlined:hover {
 }
 
 .section-header {
-  font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+  font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
   font-size: 176px;
   font-weight: 700;
   text-align: left;
@@ -2190,7 +2302,7 @@ a.underlined:hover {
 
 .case-item-wide .case-item-header {
   margin-top: 0.9em;
-  margin-bottom: 0.70em;
+  margin-bottom: 0.7em;
   min-height: 0;
   min-height: initial;
 }
@@ -2243,7 +2355,7 @@ a.underlined:hover {
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
-  font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+  font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
 }
 
 .case-item-text::before {
@@ -2609,31 +2721,6 @@ a.underlined:hover {
   height: 30px;
 }
 
-.shape-overlays {
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-.shape-overlays.is-opened {
-  pointer-events: auto;
-}
-
-.shape-overlays path:nth-of-type(1) {
-  fill: #c4dbea;
-}
-
-.shape-overlays path:nth-of-type(2) {
-  fill: #4c688b;
-}
-
-.shape-overlays path:nth-of-type(3) {
-  fill: #2e496a;
-}
-
 .bg-video {
   position: absolute;
   top: 0;
@@ -2650,38 +2737,6 @@ a.underlined:hover {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.scene {
-  background: #282886;
-}
-
-.scene path:first-child {
-  fill: #4f4fea;
-}
-
-.scene path:nth-child(2) {
-  fill: #0c27cf;
-}
-
-.scene path:nth-child(3) {
-  fill: #13269c;
-}
-
-.scene path:nth-child(4) {
-  fill: #242468;
-}
-
-.scene path:nth-child(5) {
-  fill: #2648e6;
-}
-
-.scene path:nth-child(6) {
-  fill: #2c31b0;
-}
-
-.scene path:nth-child(7) {
-  fill: #262689;
 }
 
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
@@ -2784,98 +2839,6 @@ Instead edit gulp/templates/sprite */
   }
 }
 
-section {
-  position: relative;
-  z-index: 95;
-}
-
-.box {
-  position: relative;
-  color: white;
-  margin: 0;
-  padding: 0;
-}
-
-.box::before {
-  content: "";
-  width: 1px;
-  margin-left: -1px;
-  float: left;
-  height: 0;
-  padding-top: 52.46332%;
-}
-
-.box::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.visible-grid-item:nth-child(2) div {
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
-}
-
-.visible-grid-item:nth-child(3) div {
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s;
-}
-
-.visible-grid-item:nth-child(4) div {
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-}
-
-.visible-grid-item:nth-child(5) div {
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-}
-
-.visible-grid-item:nth-child(6) div {
-  -webkit-animation-delay: 1.2s;
-  animation-delay: 1.2s;
-}
-
-.visible-grid-item:nth-child(7) div {
-  -webkit-animation-delay: 1.4s;
-  animation-delay: 1.4s;
-}
-
-.visible-grid-item:nth-child(8) div {
-  -webkit-animation-delay: 1.6s;
-  animation-delay: 1.6s;
-}
-
-.visible-grid-item:nth-child(9) div {
-  -webkit-animation-delay: 1.8s;
-  animation-delay: 1.8s;
-}
-
-.visible-grid-item:nth-child(10) div {
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-}
-
-.visible-grid-item:nth-child(11) div {
-  -webkit-animation-delay: 2.2s;
-  animation-delay: 2.2s;
-}
-
-.visible-grid-item:nth-child(12) div {
-  -webkit-animation-delay: 2.4s;
-  animation-delay: 2.4s;
-}
-
-.visible-grid-item:nth-child(13) div {
-  -webkit-animation-delay: 2.6s;
-  animation-delay: 2.6s;
-}
-
-.visible-grid-item:nth-child(14) div {
-  -webkit-animation-delay: 2.8s;
-  animation-delay: 2.8s;
-}
-
 .box1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2959,38 +2922,6 @@ section {
   }
 }
 
-.icon--angle-down {
-  position: absolute;
-  top: 110%;
-  left: 50%;
-  background-size: 150px !important;
-  display: inline-block;
-}
-
-@media (max-width: 75em) {
-  .icon--angle-down {
-    top: 95%;
-  }
-}
-
-@media (max-width: 37.5em) {
-  .icon--angle-down {
-    top: 100%;
-  }
-}
-
-.hero-btn {
-  -webkit-transition: color 0.5s ease;
-  transition: color 0.5s ease;
-}
-
-.hero-btn:hover {
-  color: rgba(255, 255, 255, .9);
-  -webkit-transition: color 0.5s ease;
-  transition: color 0.5s ease;
-  background: none;
-}
-
 /* About Section */
 
 .about {
@@ -3007,7 +2938,7 @@ section {
 
 @media (max-width: 40em) {
   .about {
-    padding: .1rem 2rem;
+    padding: 0.1rem 2rem;
   }
 }
 
@@ -3018,7 +2949,7 @@ section {
 }
 
 .bio {
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   text-align: center;
   line-height: 1.3em;
   width: auto;
@@ -3067,9 +2998,6 @@ section {
   -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .06), 0 4px 5px 0 rgba(0, 0, 0, .06), 0 1px 10px 0 rgba(0, 0, 0, .08);
           box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .06), 0 4px 5px 0 rgba(0, 0, 0, .06), 0 1px 10px 0 rgba(0, 0, 0, .08);
 }
-
-/*#about {display: block; position: relative; top: 60px;}
-  */
 
 footer {
   position: relative;
@@ -3197,11 +3125,6 @@ footer .footer__copyright {
     width: 95%;
     float: none;
   }
-}
-
-#footer__vector {
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
 }
 
 #pull-down {
