@@ -36,6 +36,7 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
   height: 100%;
   max-width: 100%;
   z-index: 1;
+  overflow-y: hidden;
 }
 
 section {
@@ -45,19 +46,17 @@ section {
 
 a {
   text-decoration: none;
-  color: #f95759;
+  color: #5f7683;
   outline: 0;
   text-decoration: none !important;
 }
 
-a:hover,
-a:active,
-a:focus {
+a:hover {
   color: rgba(249, 87, 89, .5);
   outline: 0;
   text-decoration: none !important;
-  -webkit-transition: all 150ms ease;
-  transition: all 150ms ease;
+  -webkit-transition: all 100ms ease;
+  transition: all 100ms ease;
 }
 
 ul {
@@ -484,7 +483,7 @@ body {
 Instead edit gulp/templates/sprite */
 
 .icon {
-  background-image: url("../images/sprites/sprite-1ed97516.svg");
+  background-image: url("../../../assets/images/sprites/sprite-1ed97516.svg");
 }
 
 .no-svg .icon {
@@ -702,13 +701,14 @@ footer {
   position: relative;
   z-index: 0;
   height: 600px;
+  height: 60rem;
   width: 100%;
   text-align: center;
   background-color: #a8d0e6;
   background-image: url("../../../assets/images/waves.svg");
   background-position: 0% 100%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% 80%;
   background-attachment: fixed;
 }
 
@@ -723,12 +723,15 @@ footer .footer {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   left: 50%;
+  top: 65%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   position: fixed;
   bottom: 0px;
   bottom: 0rem;
   height: 500px;
+  height: 50rem;
+  width: 100%;
   text-align: center;
   font-size: 14px;
   font-size: 1.4rem;

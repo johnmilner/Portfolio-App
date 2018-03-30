@@ -386,8 +386,7 @@ app.hideMenu = function() {
   $(document).trigger("app:menuWillHide");
 
   $(".header").css({
-    "overflow-x": "hidden",
-    "overflow-y": "hidden"
+    "overflow": "hidden"
   });
   $("#body-content-wrapper").css({
     "overflow": "hidden"
