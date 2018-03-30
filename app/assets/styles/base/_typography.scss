@@ -85,19 +85,18 @@ h3.cta {
   }
 }
 
+
 .projects {
   font-family: "Source Sans Pro", sans-serif !important;
   text-transform: uppercase;
   font-size: 1.6rem !important;
   font-weight: 700 !important;
-  color: #f95759 !important;
+  color: rgba($color-tertiary-light, .3) !important;
   width: 25%;
   margin: 0 auto;
   height: 6rem;
   margin-top: -0.56rem;
-  //padding-top: 2rem;
-  //border-top: 1px solid #777;
-  letter-spacing: 3.12px;
+  letter-spacing: 1px;
   cursor: pointer;
   position: relative;
   z-index: 95;
