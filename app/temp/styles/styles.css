@@ -906,7 +906,6 @@ footer .footer__navigation {
 @media (max-width: 56.25em) {
   footer .footer__navigation {
     width: 100%;
-    text-align: center;
   }
 }
 
@@ -914,7 +913,6 @@ footer .footer__navigation {
   footer .footer__navigation {
     padding: 1rem 3rem 0 2rem;
     width: 91%;
-    text-align: center;
   }
 }
 
@@ -1105,7 +1103,10 @@ header .devicons-list-container {
 
 @media (max-width: 48em) {
   header .devicons-list-container {
+    height: 2000px;
     width: 3000px;
+    -webkit-animation: cascade 500s linear infinite;
+    animation: cascade 500s linear infinite;
   }
 }
 

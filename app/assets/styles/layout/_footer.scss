@@ -62,13 +62,11 @@ footer .footer {
 
         @include respond(tab-port) {
             width: 100%;
-            text-align: center;
         }
 
         @include respond(ipad-port) {
           padding: 1rem 3rem 0 2rem;
           width: 91%;
-          text-align: center;
        }
 
     }
