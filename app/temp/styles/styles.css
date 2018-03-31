@@ -842,12 +842,7 @@ footer {
   height: 60rem;
   width: 100%;
   text-align: center;
-  background-color: #7cccbe;
-  background-image: url("../../../assets/images/waves.svg");
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 100% 80%;
-  background-attachment: fixed;
+  background-color: #f76c6c;
 }
 
 @media (max-width: 37.5em) {
@@ -865,10 +860,12 @@ footer .footer {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   position: fixed;
+  padding-top: 30px;
+  padding-top: 3rem;
   bottom: 0px;
   bottom: 0rem;
-  height: 500px;
-  height: 50rem;
+  height: 630px;
+  height: 63rem;
   width: 100%;
   text-align: center;
   font-size: 14px;
@@ -977,6 +974,30 @@ footer .footer__copyright {
     width: 95%;
     float: none;
   }
+}
+
+/* ---- reset ---- */
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+.we-create {
+  position: relative;
+  padding-top: 0;
+}
+
+.we-create-particles {
+  position: absolute;
+  padding: 0 30px 30px 30px;
+  padding: 0 3rem 3rem 3rem;
+  left: 50%;
+  margin-left: -50vw;
+  z-index: -1;
+  width: 100%;
+  top: -358px;
+  height: 100%;
 }
 
 .spinner {

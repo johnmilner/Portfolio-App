@@ -4,13 +4,11 @@ footer {
     height: 60rem;
     width: 100%;
     text-align:center;
-    background-color:rgba(124,204,190,1);
-    background-image: url('../../../assets/images/waves.svg');
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 100% 80%;
-    background-attachment:fixed;
-
+    background-color: #f76c6c;
+    // background-image: url('../../../assets/images/waves.svg');
+    // background-position: 0% 100%;
+    // background-repeat: no-repeat;
+    // background-size: 100% 80%;
 
     @include respond(phone) {
         height: 500px;
@@ -28,17 +26,16 @@ footer .footer {
     -ms-transform:translateX(-50%);
     transform:translateX(-50%);
     position:fixed;
+    padding-top: 3rem;
     bottom: 0rem;
-    height: 50rem;
+    height: 63rem;
     width: 100%;
     //padding-top: 15rem;
     text-align:center;
-
-    
-    //border-top: 1px solid $color-grey-dark-3;
     font-size: 1.4rem;
     color: $color-grey-light-1;
-    //padding: 20rem 3rem 14rem 3rem;
+    
+    
 
     @include respond(tab-land) {
         margin-left: 2.6rem;
@@ -128,12 +125,35 @@ footer .footer {
     }
 }
 
-// #footer__vector {
-//     transform: scale(.7);
+/* ---- reset ---- */
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+// #particles-js {
+//     position: absolute;
+//     left: 50%;
+//     top: -307%;
+//     margin-left: -50vw;
+//     z-index: -1;
+//     width: 100vw;
 // }
 
-// #pull-down {
-//     padding-top: 25rem;
-// }
+.we-create {
+  position: relative;
+  padding-top: 0; 
+}
+
+.we-create-particles {
+    position: absolute;
+    padding: 0 3rem 3rem 3rem;
+    left: 50%;
+    margin-left: -50vw;
+    z-index: -1;
+    width: 100%;
+    top: -358px;
+    height: 100%; 
+}
 
   
