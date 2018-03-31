@@ -496,6 +496,12 @@ h3.cta {
   margin: 1rem;
 }
 
+@media (max-width: 75em) {
+  h3.cta {
+    font-size: 3.5vw;
+  }
+}
+
 @media (max-width: 48em) {
   h3.cta {
     font-size: 3.25vw;

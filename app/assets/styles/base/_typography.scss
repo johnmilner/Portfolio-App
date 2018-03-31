@@ -84,6 +84,10 @@ h3.cta {
   line-height: 1.3em;
   margin: 1rem;
 
+  @include respond(tab-land) {
+    font-size: 3.5vw;
+  }
+
   @include respond(ipad-port) {
     font-size: 3.25vw;
   }
