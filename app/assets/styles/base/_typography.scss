@@ -44,6 +44,10 @@
   display: inline-block;
   text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 
+  @include respond(ipad-port) {
+    font-size: 4.2vw;
+  }
+
 }
 
 .main-headline-r2 {
@@ -79,6 +83,10 @@ h3.cta {
   font-size: 2.5vw;
   line-height: 1.3em;
   margin: 1rem;
+
+  @include respond(ipad-port) {
+    font-size: 3.25vw;
+  }
 
   @include respond(phone) {
     font-size: 8vw;

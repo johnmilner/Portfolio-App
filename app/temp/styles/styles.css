@@ -117,13 +117,13 @@ svg:not(:root) {
 
 @media (max-width: 75em) {
   .social-icons__icon {
-    width: 70px;
+    width: 54px;
   }
 }
 
 @media (max-width: 48em) {
   .social-icons__icon {
-    width: 32px;
+    width: 40px;
   }
 }
 
@@ -452,6 +452,12 @@ svg:not(:root) {
   text-shadow: 0px 0px 8px rgba(0, 0, 0, .1);
 }
 
+@media (max-width: 48em) {
+  .main-headline-r1 {
+    font-size: 4.2vw;
+  }
+}
+
 .main-headline-r2 {
   margin: 0;
   font-size: 9em;
@@ -488,6 +494,12 @@ h3.cta {
   line-height: 1.3em;
   margin: 10px;
   margin: 1rem;
+}
+
+@media (max-width: 48em) {
+  h3.cta {
+    font-size: 3.25vw;
+  }
 }
 
 @media (max-width: 37.5em) {
@@ -808,8 +820,10 @@ Instead edit gulp/templates/sprite */
   display: block;
   padding-left: 0;
   padding-right: 0;
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  height: 25rem;
+  width: 250px;
+  width: 25rem;
   border: 10px solid white;
   border-radius: 50%;
   background-size: cover;
@@ -883,6 +897,12 @@ footer .footer__navigation {
   width: 80%;
 }
 
+@media (max-width: 75em) {
+  footer .footer__navigation {
+    padding: 1rem 3rem 0 2rem;
+  }
+}
+
 @media (max-width: 56.25em) {
   footer .footer__navigation {
     width: 100%;
@@ -892,7 +912,8 @@ footer .footer__navigation {
 
 @media (max-width: 48em) {
   footer .footer__navigation {
-    width: 88%;
+    padding: 1rem 3rem 0 2rem;
+    width: 91%;
     text-align: center;
   }
 }
@@ -939,6 +960,12 @@ footer .footer__copyright {
   float: right;
 }
 
+@media (max-width: 75em) {
+  footer .footer__copyright {
+    margin-right: 5rem;
+  }
+}
+
 @media (max-width: 56.25em) {
   footer .footer__copyright {
     width: 100%;
@@ -948,6 +975,7 @@ footer .footer__copyright {
 
 @media (max-width: 48em) {
   footer .footer__copyright {
+    margin-right: 1.5rem;
     width: 95%;
     float: none;
   }
@@ -1073,6 +1101,12 @@ header .devicons-list-container {
   width: 4500px;
   -webkit-animation: cascade 500s linear infinite;
   animation: cascade 500s linear infinite;
+}
+
+@media (max-width: 48em) {
+  header .devicons-list-container {
+    width: 3000px;
+  }
 }
 
 .devicon {

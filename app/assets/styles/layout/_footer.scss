@@ -55,6 +55,10 @@ footer .footer {
         display: inline-block;
         width: 80%;
 
+        @include respond(tab-land) {
+            padding: 1rem 3rem 0 2rem;
+        
+        }
 
         @include respond(tab-port) {
             width: 100%;
@@ -62,7 +66,8 @@ footer .footer {
         }
 
         @include respond(ipad-port) {
-          width: 88%;
+          padding: 1rem 3rem 0 2rem;
+          width: 91%;
           text-align: center;
        }
 
@@ -108,12 +113,17 @@ footer .footer {
         width: 80%;
         float: right;
 
+        @include respond(tab-land) {
+            margin-right: 5rem;
+          }
+
         @include respond(tab-port) {
             width: 100%;
             float: none;
         }
   
         @include respond(ipad-port) {
+          margin-right: 1.5rem;
           width: 95%;
           float: none;
       }

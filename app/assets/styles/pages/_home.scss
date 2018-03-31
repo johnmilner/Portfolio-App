@@ -87,11 +87,11 @@
     }
   
     @include respond(tab-land) {
-      width: 70px;
+      width: 54px;
     }
   
     @include respond(ipad-port) {
-      width: 32px;
+      width: 40px;
     }
   }
   

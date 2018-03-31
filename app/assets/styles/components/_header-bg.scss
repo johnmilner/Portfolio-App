@@ -36,6 +36,10 @@ header .devicons-list-container {
   width: 4500px;
   -webkit-animation: cascade 500s linear infinite;
   animation: cascade 500s linear infinite;
+
+  @include respond(ipad-port) {
+    width: 3000px;
+  }
 }
 
 .devicon {
