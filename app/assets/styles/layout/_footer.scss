@@ -43,7 +43,7 @@ footer .footer {
     }
 
     @include respond(phone) {
-        top: 46.5%;
+        top: 17.5%;
         margin-left: 3rem;
     }
 
@@ -170,8 +170,8 @@ canvas {
     }
 
     @include respond(phone) {
-        top: -27.3%;
-        left: -23.5px;
+        top: 4.7%;
+        left: -25.5px;
     }
 
     @include respond(small-phone) {
