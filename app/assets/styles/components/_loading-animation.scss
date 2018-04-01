@@ -59,14 +59,16 @@
   .ml8 .circle-white {
     width: 3em;
     height: 3em;
-    border: 2px dashed #4f7b86;
+    border: 2px dashed $color-tertiary-light;
     border-radius: 2em;
   }
   
   .ml8 .circle-dark {
     width: 2.2em;
     height: 2.2em;
-    background-color: #4f7b86;
+    left: -0.01em;
+    bottom: -0.02em;
+    background-color: #f76c6c;
     border-radius: 3em;
     z-index: 1;
   }
@@ -74,7 +76,7 @@
   .ml8 .circle-dark-dashed {
     border-radius: 2.4em;
     background-color: transparent;
-    border: 2px dashed #4f7b86;
+    border: 2px dashed $color-tertiary-light;
     width: 2.3em;
     height: 2.3em;
   }
