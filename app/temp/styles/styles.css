@@ -848,12 +848,7 @@ footer {
   height: 60rem;
   width: 100%;
   text-align: center;
-  background-color: #7cccbe;
-  background-image: url("../../../assets/images/waves.svg");
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 100% 80%;
-  background-attachment: fixed;
+  background-color: #f76c6c;
 }
 
 @media (max-width: 37.5em) {
@@ -871,10 +866,12 @@ footer .footer {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   position: fixed;
+  padding-top: 30px;
+  padding-top: 3rem;
   bottom: 0px;
   bottom: 0rem;
-  height: 500px;
-  height: 50rem;
+  height: 630px;
+  height: 63rem;
   width: 100%;
   text-align: center;
   font-size: 14px;
@@ -890,8 +887,15 @@ footer .footer {
 
 @media (max-width: 37.5em) {
   footer .footer {
-    height: 500px;
-    padding-top: .2rem;
+    top: 46.5%;
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 22em) {
+  footer .footer {
+    top: 23%;
+    margin-left: 3rem;
   }
 }
 
@@ -982,6 +986,66 @@ footer .footer__copyright {
     margin-right: 1.5rem;
     width: 95%;
     float: none;
+  }
+}
+
+/* ---- reset ---- */
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+.create-particles {
+  position: relative;
+  padding-top: 0;
+}
+
+.we-create-particles {
+  position: absolute;
+  top: -52.3%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  padding: 0 30px 30px 30px;
+  padding: 0 3rem 3rem 3rem;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 112.5em) {
+  .we-create-particles {
+    top: -29%;
+    left: 0;
+  }
+}
+
+@media (max-width: 75em) {
+  .we-create-particles {
+    top: -57.5%;
+    left: -25.5px;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .we-create-particles {
+    top: -52.5%;
+    left: -21.5px;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .we-create-particles {
+    top: -27.3%;
+    left: -23.5px;
+  }
+}
+
+@media (max-width: 22em) {
+  .we-create-particles {
+    top: 4.7%;
+    left: -24.5px;
   }
 }
 
