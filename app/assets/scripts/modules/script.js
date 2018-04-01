@@ -619,7 +619,7 @@ $("document").ready(function() {
 
 function createBg() {
 
-var $weCreate = $('.we-create');
+var $weCreate = $('.create-particles');
 
         if ($weCreate.length > 0) {
 
@@ -630,7 +630,7 @@ var $weCreate = $('.we-create');
             var particleSize = 70;
             var particleAmount = 18;
             if ($(window).width() > 768) {
-                particleSize = 160;
+                particleSize = 100;
                 particleAmount = 12;
             }
 

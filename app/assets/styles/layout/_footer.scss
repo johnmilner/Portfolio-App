@@ -41,10 +41,17 @@ footer .footer {
         margin-left: 2.6rem;
 
     }
+
     @include respond(phone) {
-        height: 500px;
-        padding-top: .2rem;
+        top: 46.5%;
+        margin-left: 3rem;
     }
+
+    @include respond(small-phone) {
+        top: 23%;
+        margin-left: 3rem;
+    }
+    
   
     &__navigation {
         border-top: 1px solid $color-white;
@@ -131,29 +138,47 @@ canvas {
     vertical-align: bottom;
 }
 
-// #particles-js {
-//     position: absolute;
-//     left: 50%;
-//     top: -307%;
-//     margin-left: -50vw;
-//     z-index: -1;
-//     width: 100vw;
-// }
-
-.we-create {
+.create-particles {
   position: relative;
   padding-top: 0; 
 }
 
 .we-create-particles {
     position: absolute;
-    padding: 0 3rem 3rem 3rem;
-    left: 50%;
-    margin-left: -50vw;
+    top: -52.3%;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: -1;
+    padding: 0 3rem 3rem 3rem;
     width: 100%;
-    top: -358px;
     height: 100%; 
+
+    @include respond(big-desktop) {
+        top: -29%;
+        left: 0;
+    }
+
+    @include respond(tab-land) {
+        top: -57.5%;
+        left: -25.5px;
+    }
+
+    @include respond(tab-port) {
+        top: -52.5%;
+        left: -21.5px;
+    }
+
+    @include respond(phone) {
+        top: -27.3%;
+        left: -23.5px;
+    }
+
+    @include respond(small-phone) {
+        top: 4.7%;
+        left: -24.5px;
+    }
+
 }
 
   

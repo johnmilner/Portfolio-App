@@ -881,8 +881,15 @@ footer .footer {
 
 @media (max-width: 37.5em) {
   footer .footer {
-    height: 500px;
-    padding-top: .2rem;
+    top: 46.5%;
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 22em) {
+  footer .footer {
+    top: 23%;
+    margin-left: 3rem;
   }
 }
 
@@ -983,21 +990,57 @@ canvas {
   vertical-align: bottom;
 }
 
-.we-create {
+.create-particles {
   position: relative;
   padding-top: 0;
 }
 
 .we-create-particles {
   position: absolute;
+  top: -52.3%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
   padding: 0 30px 30px 30px;
   padding: 0 3rem 3rem 3rem;
-  left: 50%;
-  margin-left: -50vw;
-  z-index: -1;
   width: 100%;
-  top: -358px;
   height: 100%;
+}
+
+@media (min-width: 112.5em) {
+  .we-create-particles {
+    top: -29%;
+    left: 0;
+  }
+}
+
+@media (max-width: 75em) {
+  .we-create-particles {
+    top: -57.5%;
+    left: -25.5px;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .we-create-particles {
+    top: -52.5%;
+    left: -21.5px;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .we-create-particles {
+    top: -27.3%;
+    left: -23.5px;
+  }
+}
+
+@media (max-width: 22em) {
+  .we-create-particles {
+    top: 4.7%;
+    left: -24.5px;
+  }
 }
 
 .spinner {
