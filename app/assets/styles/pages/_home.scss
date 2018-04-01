@@ -3,6 +3,7 @@
     background: #fff;
     position: relative;
     z-index: 1;
+    pointer-events: auto;
     //overflow: hidden; /* prevent body overflow when mixitup targets are filtered */
 
   }
