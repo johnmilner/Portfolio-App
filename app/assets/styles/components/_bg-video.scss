@@ -12,9 +12,9 @@
         content: '';
         position: absolute;
         background-image: linear-gradient(
-        to left bottom,
-        rgba(221,240,243, 1),
-        rgba(221,240,243, .6)
+        to right bottom,
+        rgba($color-tertiary-light, .6),
+        rgba($color-white, .8)
         );
         top: 0;
         right: 0;
