@@ -39,7 +39,7 @@ Implementing ORDER: Base + Typography > General Layout + Grid > Page Layout + Co
   height: 100%;
   max-width: 100%;
   z-index: 1;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 section {
@@ -645,7 +645,7 @@ body {
 Instead edit gulp/templates/sprite */
 
 .icon {
-  background-image: url("../../../assets/images/sprites/sprite-1ed97516.svg");
+  background-image: url("../images/sprites/sprite-1ed97516.svg");
 }
 
 .no-svg .icon {
