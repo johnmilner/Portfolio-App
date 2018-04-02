@@ -858,6 +858,7 @@ footer {
   width: 100%;
   text-align: center;
   background-color: #f76c6c;
+  opacity: 0;
 }
 
 footer .footer {
@@ -1172,7 +1173,7 @@ header .devicons-list-container {
   right: 0;
   z-index: 0;
   overflow: hidden;
-  height: 2700px;
+  height: 2200px;
   width: 4500px;
   -webkit-animation: cascade 500s linear infinite;
   animation: cascade 500s linear infinite;

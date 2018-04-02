@@ -73,6 +73,12 @@ anime.timeline({ loop: false })
         duration: 500,
         easing: "easeInExpo",
         delay: 250
+      }).add({
+        targets: "footer",
+        opacity: 1,
+        duration: 500,
+        easing: "easeInExpo",
+        delay: 250
       });
 
     anime({
