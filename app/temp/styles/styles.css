@@ -645,7 +645,7 @@ body {
 Instead edit gulp/templates/sprite */
 
 .icon {
-  background-image: url("../images/sprites/sprite-1ed97516.svg");
+  background-image: url("../../../assets/images/sprites/sprite-1ed97516.svg");
 }
 
 .no-svg .icon {
@@ -869,12 +869,8 @@ footer .footer {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   position: fixed;
-  padding-top: 30px;
-  padding-top: 3rem;
-  bottom: 0px;
-  bottom: 0rem;
-  height: 630px;
-  height: 63rem;
+  height: 600px;
+  height: 60rem;
   width: 100%;
   text-align: center;
   font-size: 14px;
@@ -888,17 +884,22 @@ footer .footer {
   }
 }
 
+@media (max-width: 56.25em) {
+  footer .footer {
+    margin-left: 2.6rem;
+  }
+}
+
 @media (max-width: 37.5em) {
   footer .footer {
-    top: 17.5%;
+    top: 30%;
     margin-left: 3rem;
-    padding-top: 4rem;
   }
 }
 
 @media (max-width: 22em) {
   footer .footer {
-    top: 23%;
+    top: 28%;
     margin-left: 3rem;
   }
 }
@@ -1007,48 +1008,48 @@ canvas {
 
 .we-create-particles {
   position: absolute;
-  top: -57%;
+  top: -55%;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: -1;
-  padding: 0 30px 30px 30px;
-  padding: 0 3rem 3rem 3rem;
+  padding: 0 30px 0px 30px;
+  padding: 0 3rem 0rem 3rem;
   width: 100%;
   height: 100%;
 }
 
 @media (min-width: 112.5em) {
   .we-create-particles {
-    top: -29%;
+    top: -30.5%;
     left: 0;
   }
 }
 
 @media (max-width: 75em) {
   .we-create-particles {
-    top: -57.5%;
+    top: -60.5%;
     left: -25.5px;
   }
 }
 
 @media (max-width: 56.25em) {
   .we-create-particles {
-    top: -52.5%;
+    top: -55%;
     left: -21.5px;
   }
 }
 
 @media (max-width: 37.5em) {
   .we-create-particles {
-    top: 4.7%;
+    top: -5%;
     left: -25.5px;
   }
 }
 
 @media (max-width: 22em) {
   .we-create-particles {
-    top: 4.7%;
+    top: -2.1%;
     left: -24.5px;
   }
 }
