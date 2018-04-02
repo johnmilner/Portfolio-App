@@ -10,9 +10,6 @@ footer {
     // background-repeat: no-repeat;
     // background-size: 100% 80%;
 
-    @include respond(phone) {
-        height: 500px;
-    }
 
 }
 
@@ -45,6 +42,7 @@ footer .footer {
     @include respond(phone) {
         top: 17.5%;
         margin-left: 3rem;
+        padding-top: 4rem;
     }
 
     @include respond(small-phone) {

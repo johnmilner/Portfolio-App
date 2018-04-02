@@ -860,12 +860,6 @@ footer {
   background-color: #f76c6c;
 }
 
-@media (max-width: 37.5em) {
-  footer {
-    height: 500px;
-  }
-}
-
 footer .footer {
   position: absolute;
   -webkit-transform-style: preserve-3d;
@@ -898,6 +892,7 @@ footer .footer {
   footer .footer {
     top: 17.5%;
     margin-left: 3rem;
+    padding-top: 4rem;
   }
 }
 
