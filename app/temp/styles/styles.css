@@ -995,21 +995,108 @@ footer .footer__copyright {
   }
 }
 
-/* Samsung Galaxy S5 */
-
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
-  footer .footer {
-    top: 23%;
-  }
-}
-
-/* Google Pixel 2 */
-
 /* Google Pixel 2 & 2XL */
 
 @media only screen and (min-width: 411px) and (max-width: 823px) {
   footer .footer {
     top: 42%;
+  }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  footer .footer {
+    top: 13.3%;
+    margin-left: 3rem;
+  }
+
+  .social-icons {
+    padding-top: 2rem;
+  }
+
+  .social-icons__icon {
+    width: 30px;
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  footer .footer {
+    top: 28.6%;
+    margin-left: 3rem;
+  }
+
+  .social-icons {
+    padding-top: 2rem;
+  }
+
+  .social-icons__icon {
+    width: 30px;
+  }
+
+  #we-create-particles {
+    top: -5.5%;
+    left: -25.5px;
+  }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  footer .footer {
+    top: 34.6%;
+    margin-left: 3rem;
+  }
+
+  .social-icons {
+    padding-top: 2rem;
+  }
+
+  .social-icons__icon {
+    width: 30px;
+  }
+
+  #we-create-particles {
+    top: -4.5%;
+    left: -25.5px;
+  }
+}
+
+/* ----------- iPhone X ----------- */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  footer .footer {
+    top: 41.6%;
+    margin-left: 3rem;
+  }
+
+  .social-icons {
+    padding-top: 2rem;
+  }
+
+  .social-icons__icon {
+    width: 30px;
+  }
+
+  #we-create-particles {
+    top: -6.3%;
+    left: -25.5px;
+  }
+}
+
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+  footer .footer {
+    top: 25%;
+    margin-left: 3rem;
+  }
+
+  #we-create-particles {
+    top: -4.8%;
+    left: -25.5px;
   }
 }
 
