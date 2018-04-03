@@ -37,11 +37,21 @@ header .devicons-list-container {
   -webkit-animation: cascade 500s linear infinite;
   animation: cascade 500s linear infinite;
 
+
   @include respond(ipad-port) {
     height: 2000px;
     width: 3000px;
-    -webkit-animation: cascade 500s linear infinite;
-    animation: cascade 500s linear infinite;
+
+  }
+
+  @include respond(phone) {
+    height: 1500px;
+    
+  }
+
+  @include respond(small-phone) {
+    height: 1500px;
+    
   }
 }
 

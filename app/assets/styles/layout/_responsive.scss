@@ -1,0 +1,39 @@
+/* Samsung Galaxy S5 */
+@media screen and 
+(device-width: 360px) and 
+(device-height: 640px) and 
+(-webkit-device-pixel-ratio: 3) {
+
+    footer .footer {
+        
+        top: 23%;
+        
+    }
+}
+
+/* Google Pixel 2 */
+// @media only screen and 
+// (min-width: 411px) and 
+// (max-width: 767px) {
+
+//     footer .footer {
+        
+//         top: 35%;
+        
+//     }
+
+// }
+
+/* Google Pixel 2 & 2XL */
+@media only screen and 
+(min-width: 411px) and 
+(max-width: 823px) {
+
+    footer .footer {
+        
+        top: 42%;
+        
+    }
+
+}
+

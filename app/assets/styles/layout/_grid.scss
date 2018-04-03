@@ -81,6 +81,7 @@
   }
 }
 
+//pointer events for footer icons enabled
 div#ps {
   @include respond(phone) {
     max-width: 100%;
