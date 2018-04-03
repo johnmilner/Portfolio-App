@@ -20,7 +20,7 @@
   
   section {
     position: relative;
-    z-index: 95;
+    //z-index: 95;
     pointer-events: auto;
   }
   
@@ -28,14 +28,14 @@
     text-decoration: none;
     color: #5f7683;
     outline: 0;
-    text-decoration: none !important;
+    text-decoration: none;
   }
   
   a:hover {
-    color: rgba(249, 87, 89, 0.5);
+    //color: rgba(249, 87, 89, 0.5);
     outline: 0;
-    text-decoration: none !important;
-    transition: all 100ms ease;
+    text-decoration: none;
+    // transition: all 100ms ease;
   }
   
   ul {

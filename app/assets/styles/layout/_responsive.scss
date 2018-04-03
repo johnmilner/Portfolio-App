@@ -44,33 +44,7 @@
       }
 
       #we-create-particles {
-        top: -5.5%;
-        left: -25.5px;
-      }
-}
-
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-
-    footer .footer {
-        top: 34.6%;
-        margin-left: 3rem;
-      }
-    
-      .social-icons {
-        padding-top: 2rem;
-      }
-    
-      .social-icons__icon {
-        width: 30px;
-      }
-
-      #we-create-particles {
-        top: -4.5%;
+        top: -6%;
         left: -25.5px;
       }
 }
@@ -101,6 +75,32 @@
       }
 }
 
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+    footer .footer {
+        top: 34.6%;
+        margin-left: 3rem;
+      }
+    
+      .social-icons {
+        padding-top: 2rem;
+      }
+    
+      .social-icons__icon {
+        width: 30px;
+      }
+
+      #we-create-particles {
+        top: -15.5%;
+        left: -25.5px;
+      }
+}
+
 /* ----------- Galaxy S4, S5 and Note 3 ----------- */
 
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3)
@@ -109,6 +109,14 @@
     footer .footer {
         top: 25%;
         margin-left: 3rem;
+    }
+
+    .social-icons {
+        padding-top: 2rem;
+      }
+    
+    .social-icons__icon {
+        width: 32px;
     }
 
     #we-create-particles {

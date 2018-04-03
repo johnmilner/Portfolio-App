@@ -8,6 +8,38 @@
   pointer-events: auto;
 }
 
+.btn-liquid {
+	display: inline-block;
+	position: relative;
+	width: 240px;
+	height: 20px;
+  opacity: 0; //for intro fade-in
+	border-radius: 27px;
+
+	color: #fff;
+	font: 700 14px/60px "Droid Sans", sans-serif;
+	letter-spacing: 0.05em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.btn-liquid .inner {
+	position: relative;
+
+	z-index: 2;
+}
+
+.btn-liquid canvas {
+	position: absolute;
+	top: -31.5px;
+	right: -50px;
+	bottom: -50px;
+	left: -50px;
+
+	z-index: 1;
+}
+
 .button-bar {
   height: 5rem;
   color: #fff;

@@ -23,6 +23,11 @@
   src: url("../../../assets/fonts/FuturaStd-Book.otf");
 }
 
+@font-face {
+  font-family: "Graphik-Regular";
+  src: url("../../../assets/fonts/Graphik-Regular.otf");
+}
+
 .tagline {
   color: #fff;
   text-align: center;
@@ -112,33 +117,33 @@ h3.cta {
 }
 
 
-.projects {
-  font-family: "SofiaProRegular", sans-serif;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  font-weight: 100;
-  color: #39414e;
-  width: 25%;
-  margin: 0 auto;
-  height: 6rem;
-  margin-top: -0.26rem;
-  letter-spacing: 2px;
-  cursor: pointer;
-  position: relative;
-  z-index: 95;
-  pointer-events: auto;
-  text-rendering: optimizeLegibility;
+// .projects {
+//   font-family: "Graphik-Regular", sans-serif;
+//   text-transform: uppercase;
+//   font-size: 1.3rem;
+//   font-weight: 100;
+//   color: #39414e;
+//   width: 25%;
+//   margin: 0 auto;
+//   height: 6rem;
+//   margin-top: -0.26rem;
+//   letter-spacing: 2px;
+//   cursor: pointer;
+//   position: relative;
+//   z-index: 95;
+//   pointer-events: auto;
+//   text-rendering: optimizeLegibility;
 
-  @include respond(tab-land) {
-    padding-top: 2.6rem;
-  }
-  @include respond(ipad-port) {
-    padding-top: 2.6rem;
-  }
-  @include respond(phone) {
-    padding-top: 2.2rem;
-  }
-}
+//   @include respond(tab-land) {
+//     padding-top: 2.6rem;
+//   }
+//   @include respond(ipad-port) {
+//     padding-top: 2.6rem;
+//   }
+//   @include respond(phone) {
+//     padding-top: 2.2rem;
+//   }
+// }
 
 .projects.is-closed {
   opacity: 0;
