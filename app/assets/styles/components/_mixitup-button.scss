@@ -21,7 +21,8 @@
 	letter-spacing: 0.05em;
 	text-align: center;
 	text-decoration: none;
-	text-transform: uppercase;
+  text-transform: uppercase;
+  -webkit-overflow-scrolling: touch;
 }
 
 .btn-liquid .inner {
