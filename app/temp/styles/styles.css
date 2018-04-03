@@ -142,7 +142,6 @@ div#projects {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  z-index: -1;
 }
 
 .header {
@@ -1112,7 +1111,7 @@ header i {
   margin: 0 auto;
   text-align: center;
   display: block;
-  z-index: 111;
+  z-index: 1;
   position: relative;
   pointer-events: auto;
 }
@@ -1124,6 +1123,7 @@ header i {
   height: 20px;
   opacity: 0;
   border-radius: 27px;
+  -webkit-tap-highlight-color: transparent;
   color: #fff;
   font: 700 14px/60px "Droid Sans", sans-serif;
   letter-spacing: 0.05em;
@@ -1143,7 +1143,7 @@ header i {
   right: -50px;
   bottom: -50px;
   left: -50px;
-  z-index: 1;
+  z-index: -1;
 }
 
 .button-bar {
@@ -1155,7 +1155,6 @@ header i {
 }
 
 #mix-wrapper {
-  z-index: 111;
   position: relative;
   pointer-events: none;
 }
@@ -1260,7 +1259,7 @@ button:after {
 
 .menu {
   position: fixed;
-  z-index: 1003;
+  z-index: 5000;
   outline: none;
   -webkit-tap-highlight-color: transparent;
   width: 50px;
@@ -1291,7 +1290,6 @@ button:after {
   right: 35px;
   right: 3.5rem;
   border-radius: 50%;
-  z-index: 2000;
   -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .1);
           box-shadow: 0 1rem 3rem rgba(0, 0, 0, .1);
   text-align: center;

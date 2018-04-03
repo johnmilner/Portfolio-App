@@ -3,7 +3,7 @@
   margin: 0 auto;
   text-align: center;
   display: block;
-  z-index: 111;
+  z-index: 1;
   position: relative;
   pointer-events: auto;
 }
@@ -15,7 +15,7 @@
 	height: 20px;
   opacity: 0; //for intro fade-in
 	border-radius: 27px;
-
+  -webkit-tap-highlight-color: transparent;
 	color: #fff;
 	font: 700 14px/60px "Droid Sans", sans-serif;
 	letter-spacing: 0.05em;
@@ -37,7 +37,7 @@
 	bottom: -50px;
 	left: -50px;
 
-	z-index: 1;
+	z-index: -1;
 }
 
 .button-bar {
@@ -49,7 +49,7 @@
 }
 
 #mix-wrapper {
-  z-index: 111;
+  //z-index: 111;
   position: relative;
   pointer-events: none;
 }
