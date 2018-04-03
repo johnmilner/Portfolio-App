@@ -21,13 +21,11 @@
   section {
     position: relative;
     z-index: 95;
-    //max-width: 100% !important; //for mixitup section width
     pointer-events: auto;
   }
   
   a {
     text-decoration: none;
-    //color: rgba(255,255,255,0.5);
     color: #5f7683;
     outline: 0;
     text-decoration: none !important;
@@ -69,7 +67,6 @@
     text-align: center;
     transform: scale(1.3);
     position: relative;
-    //padding-top: 4rem;
   
     @include respond(phone) {
       padding-top: 4rem;

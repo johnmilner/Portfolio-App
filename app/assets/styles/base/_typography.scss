@@ -1,6 +1,6 @@
 @font-face {
   font-family: "BrandonText-Medium";
-  src: url("../../../assets/fonts/BrandonText-Medium.OTF");
+  src: url("../../../assets/fonts/BrandonText-Medium.otf");
 }
 
 @font-face {
@@ -26,7 +26,6 @@
 .tagline {
   color: #fff;
   text-align: center;
-  //background-color: #343434;
   font-family: "FuturaStd-Book", sans-serif;
   text-transform: uppercase;
   padding-top: 10em;
@@ -66,14 +65,12 @@
 
 p {
   font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-  //font-family: 'EB Garamond', serif;
   font-size: 1.75rem;
   text-align: left;
   color: $color-white;
 }
 
 h3.cta {
-  //font-family: 'EB Garamond', serif;
   font-family: "FuturaStd-Bold", sans-serif;
   text-transform: uppercase;
   color: #fff;

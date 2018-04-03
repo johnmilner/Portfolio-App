@@ -409,7 +409,7 @@ svg:not(:root) {
 
 @font-face {
   font-family: "BrandonText-Medium";
-  src: url("../../../assets/fonts/BrandonText-Medium.OTF");
+  src: url("../../../assets/fonts/BrandonText-Medium.otf");
 }
 
 @font-face {
