@@ -25,14 +25,11 @@ footer .footer {
     transform:translateX(-50%);
     position:fixed;
     height: 60rem;
-    width: 100%;
+    width: 100vw;
     text-align:center;
     font-size: 1.4rem;
     color: $color-grey-light-1;
     
-    
-    
-
     @include respond(tab-land) {
         margin-left: 2.6rem;
 
@@ -43,13 +40,19 @@ footer .footer {
 
     }
 
-    @include respond(phone) {
+    @include respond(ipad-port) {
         top: 30%;
+        margin-left: 2.6rem;
+
+    }
+
+    @include respond(phone) {
+        //top: 30%;
         margin-left: 3rem;
     }
 
     @include respond(small-phone) {
-        top: 28%;
+        //top: 28%;
         margin-left: 3rem;
     }
     

@@ -83,6 +83,11 @@
 
 //pointer events for footer icons enabled
 div#ps {
+  
+  @include respond(ipad-port) {
+    top: 40%;
+  }
+
   @include respond(phone) {
     max-width: 100%;
     pointer-events: auto;

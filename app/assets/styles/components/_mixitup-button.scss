@@ -12,7 +12,7 @@
 	display: inline-block;
 	position: relative;
 	width: 240px;
-	height: 20px;
+  height: 20px;
   opacity: 0; //for intro fade-in
 	border-radius: 27px;
   -webkit-tap-highlight-color: transparent;
@@ -28,7 +28,7 @@
 .btn-liquid .inner {
 	position: relative;
 
-	z-index: 2;
+	z-index: 5;
 }
 
 .btn-liquid canvas {
